@@ -1,0 +1,152 @@
+{
+  "clean_extraction": "candidate full-project ZIP extraction",
+  "command_count": 13,
+  "commands": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "cpu_s": 1.73,
+      "cwd": "artifact/",
+      "exit_code": 0,
+      "maxrss_kib": 97200,
+      "name": "unit-tests",
+      "system_cpu_s": 0.07,
+      "user_cpu_s": 1.66,
+      "wall_s": 1.32
+    },
+    {
+      "command": "python reproduce.py --output /tmp/robust-plan-final/campaign",
+      "cpu_s": 11.11,
+      "cwd": "artifact/",
+      "exit_code": 0,
+      "maxrss_kib": 99884,
+      "name": "plan-campaign",
+      "system_cpu_s": 0.1,
+      "user_cpu_s": 11.01,
+      "wall_s": 10.71
+    },
+    {
+      "command": "python attestation_campaign.py --output /tmp/robust-plan-final/attestation",
+      "cpu_s": 5.82,
+      "cwd": "artifact/",
+      "exit_code": 0,
+      "maxrss_kib": 98732,
+      "name": "membership-campaign",
+      "system_cpu_s": 0.1,
+      "user_cpu_s": 5.72,
+      "wall_s": 5.41
+    },
+    {
+      "command": "python controls.py --output /tmp/robust-plan-final/controls",
+      "cpu_s": 2.11,
+      "cwd": "artifact/",
+      "exit_code": 0,
+      "maxrss_kib": 97708,
+      "name": "controls",
+      "system_cpu_s": 0.12,
+      "user_cpu_s": 1.99,
+      "wall_s": 1.78
+    },
+    {
+      "command": "python summarize.py --results /tmp/robust-plan-final/campaign --output /tmp/robust-plan-final/summary",
+      "cpu_s": 1.12,
+      "cwd": "artifact/",
+      "exit_code": 0,
+      "maxrss_kib": 94000,
+      "name": "summarize",
+      "system_cpu_s": 0.06,
+      "user_cpu_s": 1.06,
+      "wall_s": 0.74
+    },
+    {
+      "command": "python compare_results.py results/campaign /tmp/robust-plan-final/campaign",
+      "cpu_s": 1.05,
+      "cwd": "artifact/",
+      "exit_code": 0,
+      "maxrss_kib": 94128,
+      "name": "compare-plan",
+      "system_cpu_s": 0.08,
+      "user_cpu_s": 0.97,
+      "wall_s": 0.71
+    },
+    {
+      "command": "python compare_attestation.py results/attestation /tmp/robust-plan-final/attestation --output /tmp/robust-plan-final/attestation-comparison.json",
+      "cpu_s": 1.15,
+      "cwd": "artifact/",
+      "exit_code": 0,
+      "maxrss_kib": 93744,
+      "name": "compare-attestation",
+      "system_cpu_s": 0.06,
+      "user_cpu_s": 1.09,
+      "wall_s": 0.74
+    },
+    {
+      "command": "python generate_inputs.py /tmp/robust-plan-final/inputs",
+      "cpu_s": 1.18,
+      "cwd": "artifact/",
+      "exit_code": 0,
+      "maxrss_kib": 95412,
+      "name": "generate-inputs",
+      "system_cpu_s": 0.07,
+      "user_cpu_s": 1.11,
+      "wall_s": 0.82
+    },
+    {
+      "command": "python produce.py inputs/star-4-4-balanced-101.json /tmp/robust-plan-final/example-certificate.json",
+      "cpu_s": 1.07,
+      "cwd": "artifact/",
+      "exit_code": 0,
+      "maxrss_kib": 94384,
+      "name": "produce-example",
+      "system_cpu_s": 0.1,
+      "user_cpu_s": 0.97,
+      "wall_s": 0.71
+    },
+    {
+      "command": "python checker.py inputs/star-4-4-balanced-101.json /tmp/robust-plan-final/example-certificate.json",
+      "cpu_s": 1.12,
+      "cwd": "artifact/",
+      "exit_code": 0,
+      "maxrss_kib": 93996,
+      "name": "check-example",
+      "system_cpu_s": 0.1,
+      "user_cpu_s": 1.02,
+      "wall_s": 0.72
+    },
+    {
+      "command": "python verify_chain.py inputs/star-4-4-balanced-101.json results/attestation/examples/star-4-4-balanced-101-w0.snapshot.json results/attestation/examples/star-4-4-balanced-101-w0.attestation.json results/campaign/certificates/star-4-4-balanced-101.json",
+      "cpu_s": 1.07,
+      "cwd": "artifact/",
+      "exit_code": 0,
+      "maxrss_kib": 94512,
+      "name": "verify-chain",
+      "system_cpu_s": 0.05,
+      "user_cpu_s": 1.02,
+      "wall_s": 0.67
+    },
+    {
+      "command": "python validate_reproduction.py --campaign /tmp/robust-plan-final/campaign --attestation /tmp/robust-plan-final/attestation --controls /tmp/robust-plan-final/controls --summary /tmp/robust-plan-final/summary --inputs /tmp/robust-plan-final/inputs --example-certificate /tmp/robust-plan-final/example-certificate.json --output /tmp/robust-plan-final/semantic-comparison.json",
+      "cpu_s": 1.07,
+      "cwd": "artifact/",
+      "exit_code": 0,
+      "maxrss_kib": 94516,
+      "name": "validate-retained",
+      "system_cpu_s": 0.08,
+      "user_cpu_s": 0.99,
+      "wall_s": 0.67
+    },
+    {
+      "command": "python paper/build.py",
+      "cpu_s": 5.75,
+      "cwd": "project-root/",
+      "exit_code": 0,
+      "maxrss_kib": 92464,
+      "name": "paper-build",
+      "system_cpu_s": 0.3,
+      "user_cpu_s": 5.45,
+      "wall_s": 5.4
+    }
+  ],
+  "max_rss_kib": 99884,
+  "path_note": "Commands were executed from an extracted candidate archive; /tmp output paths are normalized in this retained record.",
+  "total_cpu_s": 35.35
+}

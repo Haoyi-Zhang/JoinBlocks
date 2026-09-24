@@ -1,0 +1,212 @@
+{
+  "alias_counts": {
+    "4": {
+      "box_improvements": 0,
+      "cases": 24,
+      "max_root_frontier": 6,
+      "median_root_frontier": 1.0,
+      "point_improvements": 0,
+      "zero_regret": 13
+    },
+    "5": {
+      "box_improvements": 4,
+      "cases": 24,
+      "max_root_frontier": 7,
+      "median_root_frontier": 2.0,
+      "point_improvements": 1,
+      "zero_regret": 8
+    },
+    "6": {
+      "box_improvements": 2,
+      "cases": 24,
+      "max_root_frontier": 12,
+      "median_root_frontier": 2.5,
+      "point_improvements": 0,
+      "zero_regret": 8
+    },
+    "7": {
+      "box_improvements": 4,
+      "cases": 30,
+      "max_root_frontier": 21,
+      "median_root_frontier": 3.0,
+      "point_improvements": 5,
+      "zero_regret": 8
+    }
+  },
+  "baselines": {
+    "box_regret": {
+      "max_gap": 36,
+      "strictly_better": 10,
+      "sum_gap": 115,
+      "tied": 92,
+      "worse": 0
+    },
+    "local_regret": {
+      "max_gap": 18,
+      "strictly_better": 5,
+      "sum_gap": 35,
+      "tied": 97,
+      "worse": 0
+    },
+    "point_regret": {
+      "max_gap": 18,
+      "strictly_better": 6,
+      "sum_gap": 54,
+      "tied": 96,
+      "worse": 0
+    },
+    "worst_cost_regret": {
+      "max_gap": 66,
+      "strictly_better": 16,
+      "sum_gap": 390,
+      "tied": 86,
+      "worse": 0
+    }
+  },
+  "box_bound_checks": 102,
+  "cases": 102,
+  "checker_slower_cases": 80,
+  "contract_prunes_more": 39,
+  "families": {
+    "branch": {
+      "cases": 32,
+      "max_cert_bytes": 9622,
+      "max_frontier": 12,
+      "max_plans": 248,
+      "median_regret": 8.0,
+      "sum_regret": 612,
+      "zero_regret": 14
+    },
+    "commerce": {
+      "cases": 6,
+      "max_cert_bytes": 7613,
+      "max_frontier": 4,
+      "max_plans": 200,
+      "median_regret": 2.5,
+      "sum_regret": 32,
+      "zero_regret": 3
+    },
+    "path": {
+      "cases": 32,
+      "max_cert_bytes": 6496,
+      "max_frontier": 4,
+      "max_plans": 132,
+      "median_regret": 0.0,
+      "sum_regret": 444,
+      "zero_regret": 17
+    },
+    "star": {
+      "cases": 32,
+      "max_cert_bytes": 29923,
+      "max_frontier": 21,
+      "max_plans": 720,
+      "median_regret": 12.0,
+      "sum_regret": 592,
+      "zero_regret": 3
+    }
+  },
+  "metrics": {
+    "case_cpu_s": {
+      "max": 1.618165937,
+      "median": 0.045040579,
+      "min": 0.009977204,
+      "sum": 18.024827583
+    },
+    "certificate_bytes": {
+      "max": 29923,
+      "median": 4182.5,
+      "min": 1758,
+      "sum": 597344
+    },
+    "checker_cpu_s": {
+      "max": 0.069727433,
+      "median": 0.0059469855,
+      "min": 0.00073603,
+      "sum": 1.336495033
+    },
+    "expansions": {
+      "max": 748,
+      "median": 44.0,
+      "min": 10,
+      "sum": 8624
+    },
+    "maxrss_kib": {
+      "max": 99500,
+      "median": 97452.0,
+      "min": 95148
+    },
+    "plans": {
+      "max": 720,
+      "median": 42.0,
+      "min": 5,
+      "sum": 12320
+    },
+    "producer_cpu_s": {
+      "max": 0.089605955,
+      "median": 0.0038829415,
+      "min": 0.000677487,
+      "sum": 0.733000216
+    },
+    "regret": {
+      "max": 150,
+      "median": 12.0,
+      "min": 0,
+      "sum": 1680
+    },
+    "root_frontier": {
+      "max": 21,
+      "median": 2.0,
+      "min": 1,
+      "sum": 333
+    },
+    "support_calls": {
+      "max": 13480,
+      "median": 144.0,
+      "min": 37,
+      "sum": 62236
+    },
+    "unique_profiles": {
+      "max": 350,
+      "median": 18.0,
+      "min": 3,
+      "sum": 5874
+    }
+  },
+  "regimes": {
+    "balanced": {
+      "box_improvements": 1,
+      "cases": 48,
+      "max_root_frontier": 12,
+      "median_root_frontier": 1.0,
+      "point_improvements": 2,
+      "zero_regret": 28
+    },
+    "filtered": {
+      "box_improvements": 1,
+      "cases": 3,
+      "max_root_frontier": 4,
+      "median_root_frontier": 4,
+      "point_improvements": 2,
+      "zero_regret": 0
+    },
+    "skewed": {
+      "box_improvements": 8,
+      "cases": 48,
+      "max_root_frontier": 21,
+      "median_root_frontier": 3.0,
+      "point_improvements": 2,
+      "zero_regret": 6
+    },
+    "unfiltered": {
+      "box_improvements": 0,
+      "cases": 3,
+      "max_root_frontier": 1,
+      "median_root_frontier": 1,
+      "point_improvements": 0,
+      "zero_regret": 3
+    }
+  },
+  "sql_plan_world_checks": 607,
+  "sql_profile_checks": 12816,
+  "zero_regret_cases": 37
+}

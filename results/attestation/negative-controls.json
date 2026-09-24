@@ -1,0 +1,56 @@
+{
+  "copy-count": {
+    "attempted": 306,
+    "example_reason": "attested copy count differs from shared total",
+    "rejected": 306,
+    "skipped": 0
+  },
+  "cross-copy-namespace": {
+    "attempted": 306,
+    "example_reason": "join-key namespace shared by two copies",
+    "rejected": 306,
+    "skipped": 0
+  },
+  "duplicate-assignment": {
+    "attempted": 306,
+    "example_reason": "snapshot row assigned more than once",
+    "rejected": 306,
+    "skipped": 0
+  },
+  "extra-attribute": {
+    "attempted": 306,
+    "example_reason": "snapshot edge attributes",
+    "rejected": 306,
+    "skipped": 0
+  },
+  "inconsistent-renaming": {
+    "attempted": 306,
+    "example_reason": "inconsistent key renaming",
+    "rejected": 306,
+    "skipped": 0
+  },
+  "missing-attribute": {
+    "attempted": 306,
+    "example_reason": "snapshot edge attributes",
+    "rejected": 306,
+    "skipped": 0
+  },
+  "noninjective-renaming": {
+    "attempted": 306,
+    "example_reason": "non-injective key renaming",
+    "rejected": 306,
+    "skipped": 0
+  },
+  "uncovered-row": {
+    "attempted": 306,
+    "example_reason": "snapshot row is not covered by attestation",
+    "rejected": 306,
+    "skipped": 0
+  },
+  "wrong-instance": {
+    "attempted": 306,
+    "example_reason": "snapshot instance mismatch",
+    "rejected": 306,
+    "skipped": 0
+  }
+}

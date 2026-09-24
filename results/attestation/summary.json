@@ -1,0 +1,23 @@
+{
+  "accepted_snapshots": 306,
+  "all_attempted_negative_controls_rejected": true,
+  "all_membership_checks_accepted": true,
+  "all_snapshot_regrets_within_certificate": true,
+  "all_sqlite_profiles_matched": true,
+  "attested_copies": 2106,
+  "campaign_cpu_s": 4.338805182,
+  "campaign_wall_s": 4.339009749,
+  "checker_cpu_s_sum": 2.614770629,
+  "end_to_end_chain_acceptances": 306,
+  "input_cases": 102,
+  "max_attestation_bytes": 932,
+  "max_snapshot_bytes": 5642,
+  "maxrss_kib": 98224,
+  "negative_controls_attempted": 2754,
+  "negative_controls_rejected": 2754,
+  "negative_controls_skipped": 0,
+  "snapshot_regret_bound_checks": 306,
+  "snapshot_regret_bound_tight": 126,
+  "snapshot_rows": 33204,
+  "sqlite_connected_subquery_checks": 7812
+}

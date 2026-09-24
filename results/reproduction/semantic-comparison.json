@@ -1,0 +1,81 @@
+{
+  "attestation": {
+    "excluded_case_observations": [
+      "checker_cpu_s"
+    ],
+    "excluded_summary_observations": [
+      "campaign_cpu_s",
+      "campaign_wall_s",
+      "checker_cpu_s_sum",
+      "maxrss_kib"
+    ],
+    "matching_example_json_files": 8,
+    "matching_negative_control_classes": 9,
+    "matching_snapshot_rows": 306,
+    "matching_summary_fields": 17
+  },
+  "candidate_archive_pdf_rebuild": {
+    "changed_pages_at_180_dpi": 0,
+    "extracted_text_identical": true,
+    "rendered_pages": 13
+  },
+  "control_semantics_match_excluding_observations": true,
+  "exact_control_packets": 4,
+  "example_certificate_exact": true,
+  "example_chain": {
+    "accepted": true,
+    "containment_masks": 11,
+    "copies": 5,
+    "coverage_records": 12,
+    "instance": "star-4-4-balanced-101",
+    "regret": 12,
+    "root_frontier": 2,
+    "snapshot_rows": 50,
+    "world": [
+      3,
+      2,
+      0,
+      0
+    ]
+  },
+  "example_checker": {
+    "accepted": true,
+    "containment_masks": 11,
+    "coverage_records": 12,
+    "regret": 12,
+    "root_frontier": 2,
+    "template_assignments": 456
+  },
+  "excluded_control_observations": [
+    "cpu_s",
+    "maxrss_kib"
+  ],
+  "excluded_summary_keys": [
+    "checker_slower_cases"
+  ],
+  "excluded_summary_metrics": [
+    "case_cpu_s",
+    "checker_cpu_s",
+    "maxrss_kib",
+    "producer_cpu_s"
+  ],
+  "fresh_timing_note": "Fresh timing and high-water-memory observations are excluded from semantic equality and do not replace the original one-observation paper timing record.",
+  "frontier_plot_data_exact": true,
+  "plan": {
+    "exact_certificates": 102,
+    "exact_details": 102,
+    "excluded_observations": [
+      "baseline_cpu_s",
+      "case_cpu_s",
+      "case_wall_s",
+      "checker_cpu_s",
+      "maxrss_kib",
+      "oracle_cpu_s",
+      "producer_cpu_s",
+      "sql_cpu_s"
+    ],
+    "matching_cases": 102
+  },
+  "regenerated_inputs_exact": 102,
+  "summary_scientific_fields_match_excluding_timing_observations": true
+}

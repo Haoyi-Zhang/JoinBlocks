@@ -1,0 +1,50 @@
+{
+  "sql_blocks_checked": 148,
+  "local_minimax_counterexample": {
+    "seed": 1,
+    "global_regret": 36,
+    "local_regret": 44,
+    "local_plan": [
+      [
+        [
+          [
+            [
+              0,
+              2
+            ],
+            4
+          ],
+          5
+        ],
+        1
+      ],
+      3
+    ],
+    "local_profile": [
+      8,
+      8,
+      16,
+      8
+    ]
+  },
+  "pairwise_indistinguishability": [
+    [
+      1,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      2,
+      1,
+      1,
+      1,
+      0
+    ]
+  ],
+  "cpu_s": 0.058848320999999926,
+  "maxrss_kib": 94244
+}

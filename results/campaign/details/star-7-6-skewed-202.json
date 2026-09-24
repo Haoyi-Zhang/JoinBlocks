@@ -1,0 +1,155 @@
+{
+  "baseline_details": {
+    "box_own_regret": 36,
+    "point_world": [
+      "3/2",
+      "3/2",
+      "3/2",
+      "3/2",
+      "3/2",
+      "3/2"
+    ]
+  },
+  "plans": {
+    "cardinality_box": [
+      [
+        [
+          [
+            [
+              [
+                0,
+                4
+              ],
+              5
+            ],
+            2
+          ],
+          1
+        ],
+        3
+      ],
+      6
+    ],
+    "certified": [
+      [
+        [
+          [
+            [
+              [
+                0,
+                4
+              ],
+              5
+            ],
+            2
+          ],
+          1
+        ],
+        3
+      ],
+      6
+    ],
+    "local_regret": [
+      [
+        [
+          [
+            [
+              [
+                0,
+                4
+              ],
+              5
+            ],
+            2
+          ],
+          1
+        ],
+        3
+      ],
+      6
+    ],
+    "point": [
+      [
+        [
+          [
+            [
+              [
+                0,
+                4
+              ],
+              5
+            ],
+            2
+          ],
+          1
+        ],
+        3
+      ],
+      6
+    ],
+    "worst_cost": [
+      [
+        [
+          [
+            [
+              [
+                0,
+                4
+              ],
+              5
+            ],
+            2
+          ],
+          1
+        ],
+        3
+      ],
+      6
+    ]
+  },
+  "regrets": {
+    "cardinality_box": 18,
+    "certified": 18,
+    "local_regret": 18,
+    "point": 18,
+    "worst_cost": 18
+  },
+  "sql_checks": [
+    {
+      "output_rows": 0,
+      "plans_checked": 1,
+      "world": [
+        0,
+        0,
+        0,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "output_rows": 0,
+      "plans_checked": 1,
+      "world": [
+        3,
+        3,
+        0,
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "output_rows": 0,
+      "plans_checked": 1,
+      "world": [
+        3,
+        3,
+        3,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

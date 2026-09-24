@@ -1,0 +1,125 @@
+{
+  "baseline_details": {
+    "box_own_regret": 60,
+    "point_world": [
+      "3/2",
+      "3/2",
+      "3/2",
+      "3/2",
+      "3/2",
+      "3/2"
+    ]
+  },
+  "plans": {
+    "cardinality_box": [
+      [
+        [
+          [
+            0,
+            4
+          ],
+          1
+        ],
+        3
+      ],
+      2
+    ],
+    "certified": [
+      [
+        [
+          [
+            0,
+            4
+          ],
+          1
+        ],
+        3
+      ],
+      2
+    ],
+    "local_regret": [
+      [
+        [
+          [
+            0,
+            4
+          ],
+          1
+        ],
+        3
+      ],
+      2
+    ],
+    "point": [
+      [
+        [
+          [
+            0,
+            4
+          ],
+          1
+        ],
+        3
+      ],
+      2
+    ],
+    "worst_cost": [
+      [
+        [
+          [
+            0,
+            4
+          ],
+          1
+        ],
+        3
+      ],
+      2
+    ]
+  },
+  "regrets": {
+    "cardinality_box": 24,
+    "certified": 24,
+    "local_regret": 24,
+    "point": 24,
+    "worst_cost": 24
+  },
+  "sql_checks": [
+    {
+      "output_rows": 0,
+      "plans_checked": 1,
+      "world": [
+        0,
+        0,
+        0,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "output_rows": 48,
+      "plans_checked": 1,
+      "world": [
+        3,
+        3,
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "output_rows": 48,
+      "plans_checked": 1,
+      "world": [
+        3,
+        3,
+        3,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

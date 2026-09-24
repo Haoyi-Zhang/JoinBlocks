@@ -1,0 +1,18 @@
+{
+  "bib_sha256": "e5dc124c7a481f60ec7b286cf746d7b7e0b4ccfb465ca76752870250b44356b4",
+  "bibliography_entries": 39,
+  "cited_entries": 39,
+  "doi_entries": 33,
+  "ledger_full_text_records": 0,
+  "ledger_limited_access_records": 0,
+  "ledger_other_or_metadata_records": 39,
+  "ledger_records_with_stable_url": 39,
+  "ledger_sha256": "b83d17f5a3825a2f45f2ca07b45107051de2860eb94549b4232b4c01b6ac5aa0",
+  "literature_ledger_records": 39,
+  "nocite_present": false,
+  "offline_scope": "Structural consistency only; DOI/URL existence and theorem-level novelty require external source access and expert review.",
+  "schema_version": 1,
+  "uncited_entries": 0,
+  "unknown_citations": 0,
+  "url_entries_in_bib": 0
+}

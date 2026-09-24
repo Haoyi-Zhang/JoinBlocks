@@ -1,0 +1,147 @@
+{
+  "baseline_details": {
+    "box_own_regret": 20,
+    "point_world": [
+      "5/4",
+      "5/4",
+      "5/4",
+      "5/4"
+    ]
+  },
+  "plans": {
+    "cardinality_box": [
+      [
+        [
+          [
+            [
+              [
+                0,
+                1
+              ],
+              6
+            ],
+            5
+          ],
+          2
+        ],
+        3
+      ],
+      4
+    ],
+    "certified": [
+      [
+        [
+          [
+            [
+              [
+                0,
+                1
+              ],
+              6
+            ],
+            5
+          ],
+          2
+        ],
+        3
+      ],
+      4
+    ],
+    "local_regret": [
+      [
+        [
+          [
+            [
+              [
+                0,
+                1
+              ],
+              6
+            ],
+            5
+          ],
+          2
+        ],
+        3
+      ],
+      4
+    ],
+    "point": [
+      [
+        [
+          [
+            [
+              [
+                0,
+                1
+              ],
+              6
+            ],
+            5
+          ],
+          2
+        ],
+        3
+      ],
+      4
+    ],
+    "worst_cost": [
+      [
+        [
+          [
+            [
+              [
+                0,
+                1
+              ],
+              6
+            ],
+            5
+          ],
+          2
+        ],
+        3
+      ],
+      4
+    ]
+  },
+  "regrets": {
+    "cardinality_box": 20,
+    "certified": 20,
+    "local_regret": 20,
+    "point": 20,
+    "worst_cost": 20
+  },
+  "sql_checks": [
+    {
+      "output_rows": 0,
+      "plans_checked": 1,
+      "world": [
+        0,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "output_rows": 0,
+      "plans_checked": 1,
+      "world": [
+        3,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "output_rows": 0,
+      "plans_checked": 1,
+      "world": [
+        3,
+        2,
+        0,
+        0
+      ]
+    }
+  ]
+}

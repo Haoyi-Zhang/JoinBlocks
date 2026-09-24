@@ -1,0 +1,17 @@
+{
+  "command": "python -m unittest discover -s tests -v",
+  "composition_methods": 3,
+  "composition_rejection_methods": 2,
+  "exact_support_cases": 83150,
+  "independent_crosscheck_instances": 36,
+  "independent_crosscheck_methods": 1,
+  "membership_methods": 20,
+  "membership_rejection_methods": 18,
+  "observed_line": "Ran 64 tests in 0.592s; OK",
+  "plan_certificate_methods": 40,
+  "plan_certificate_rejection_methods": 38,
+  "rejection_oriented_methods": 58,
+  "status": "passed in candidate full-project ZIP extraction",
+  "test_methods": 64,
+  "valid_support_composition_or_crosscheck_methods": 6
+}

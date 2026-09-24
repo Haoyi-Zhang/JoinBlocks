@@ -1,0 +1,15 @@
+{
+  "excluded_case_observations": [
+    "checker_cpu_s"
+  ],
+  "excluded_summary_observations": [
+    "campaign_cpu_s",
+    "campaign_wall_s",
+    "checker_cpu_s_sum",
+    "maxrss_kib"
+  ],
+  "matching_example_json_files": 8,
+  "matching_negative_control_classes": 9,
+  "matching_snapshot_rows": 306,
+  "matching_summary_fields": 17
+}

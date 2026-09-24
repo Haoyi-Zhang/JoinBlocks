@@ -1,0 +1,15 @@
+{
+  "exact_certificates": 102,
+  "exact_details": 102,
+  "excluded_observations": [
+    "baseline_cpu_s",
+    "case_cpu_s",
+    "case_wall_s",
+    "checker_cpu_s",
+    "maxrss_kib",
+    "oracle_cpu_s",
+    "producer_cpu_s",
+    "sql_cpu_s"
+  ],
+  "matching_cases": 102
+}

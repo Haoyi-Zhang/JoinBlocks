@@ -1,0 +1,33 @@
+{
+  "pilot": [
+    {
+      "n": 4,
+      "shape": "star",
+      "plans": 6,
+      "profiles": 2,
+      "integer_worlds": 40,
+      "rstar": 0,
+      "oracle_match": true
+    },
+    {
+      "n": 5,
+      "shape": "path",
+      "plans": 14,
+      "profiles": 5,
+      "integer_worlds": 40,
+      "rstar": 0,
+      "oracle_match": true
+    },
+    {
+      "n": 6,
+      "shape": "star",
+      "plans": 120,
+      "profiles": 29,
+      "integer_worlds": 40,
+      "rstar": 12,
+      "oracle_match": true
+    }
+  ],
+  "cpu_s": 0.05500640300000004,
+  "maxrss_kib": 92588
+}

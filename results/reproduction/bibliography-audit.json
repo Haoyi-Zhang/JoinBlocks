@@ -1,0 +1,25 @@
+{
+  "all_bibliography_keys_mapped_to_scholarly_resource": true,
+  "bibliography_entries": 39,
+  "citation_occurrences": 54,
+  "entries_with_doi": 33,
+  "entries_with_stable_url_in_literature_record": 39,
+  "literature_key_set_matches_bibliography": true,
+  "literature_records": 39,
+  "missing_bibliography_keys": [],
+  "nocite_used": false,
+  "reading_depth_counts": {
+    "bibliographic metadata verified; narrow background citation only": 19,
+    "formal PVLDB metadata and public abstract; not counted as a full-paper calibration read": 1,
+    "full-paper calibration reading": 17,
+    "public abstract and bibliographic metadata; publisher full text inaccessible": 1,
+    "selected preprint passages; not counted as a full-paper calibration read": 1
+  },
+  "scholarly_external_resource_rows": 39,
+  "scope_note": "This checks internal traceability and citation use. It does not replace source-by-source scholarly judgment; literature.json records the verified access depth and limitations for every item.",
+  "uncited_bibliography_keys": [],
+  "unique_bibliography_keys": 39,
+  "unique_cited_keys": 39,
+  "year_max": 2026,
+  "year_min": 1979
+}

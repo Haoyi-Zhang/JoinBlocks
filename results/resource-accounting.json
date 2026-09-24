@@ -1,0 +1,56 @@
+{
+  "accounting_gaps": [
+    "CPU for the interrupted in-flight case and some earlier exploratory/test invocations was not retained; known_recorded_cpu_s is a conservative lower bound, not an exact whole-session total.",
+    "GNU time reports the final clean-command CPU aggregate to 0.01 second precision; retained campaign counters preserve their original finer precision.",
+    "Web-tool-managed literature and rules-page transfer bytes were not metered. No byte-exact total-download claim is made.",
+    "Interactive inspection, literature reading, packaging, and some compilation outside the recorded final clean command set are not included.",
+    "The final post-seal archive validation is reported in the sibling artifact audit rather than written back into the archive it checked."
+  ],
+  "intake": {
+    "cgroup_use_bytes": 359456768,
+    "cpu_quota": 4,
+    "ram_bytes": 4294967296,
+    "swap_bytes": 0,
+    "writable_free_bytes": 32029876224
+  },
+  "limits": {
+    "address_space_bytes": 3221225472,
+    "cpu_hours_ceiling": 8,
+    "peak_rss_ceiling_bytes": 3758096384,
+    "repair_reserved_cpu_hours": 2,
+    "scientific_workers": 1,
+    "zip_ceiling_bytes": 134217728
+  },
+  "recorded": {
+    "attestation_campaign_cpu_s": 4.338805182,
+    "attestation_campaign_maxrss_kib": 98224,
+    "attestation_campaign_snapshots": 306,
+    "candidate_archive_full_commands": 13,
+    "candidate_archive_full_cpu_s": 35.35,
+    "candidate_archive_full_maxrss_kib": 99884,
+    "candidate_archive_repo_commands": 12,
+    "candidate_archive_repo_cpu_s": 28.81,
+    "candidate_archive_repo_maxrss_kib": 99628,
+    "candidate_clean_commands": 13,
+    "candidate_clean_commands_cpu_s": 35.45,
+    "candidate_clean_maxrss_kib": 99624,
+    "clean_commands_cpu_s": 37.89308,
+    "control_cpu_s": 1.561407482,
+    "earlier_partial_reproduction_case_cpu_s": 0.064161388,
+    "earlier_partial_reproduction_cases": 1,
+    "final_clean_commands": 13,
+    "final_clean_commands_cpu_s": 35.35,
+    "final_clean_maxrss_kib": 99884,
+    "interrupted_completed_case_cpu_s": 20.585327667,
+    "interrupted_completed_cases": 37,
+    "known_recorded_cpu_s": 215.421464026,
+    "largest_clean_children_highwater_rss_kib": 99628,
+    "largest_primary_rss_kib": 99500,
+    "pilot_cpu_s": 0.11385472399999996,
+    "primary_case_cpu_s": 18.024827583,
+    "primary_cases": 102
+  },
+  "retained_input_policy": "Exact original JSON inputs; cited papers are not redistributed; no external experimental dataset.",
+  "scientific_inputs_bytes": 535080,
+  "scope": "Recorded scientific runs plus clean candidate/final-package reproduction commands; not all conversation, browsing, or interactive inspection activity."
+}
