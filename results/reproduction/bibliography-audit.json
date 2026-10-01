@@ -1,25 +1,1031 @@
 {
-  "all_bibliography_keys_mapped_to_scholarly_resource": true,
-  "bibliography_entries": 39,
-  "citation_occurrences": 54,
-  "entries_with_doi": 33,
-  "entries_with_stable_url_in_literature_record": 39,
-  "literature_key_set_matches_bibliography": true,
-  "literature_records": 39,
-  "missing_bibliography_keys": [],
-  "nocite_used": false,
-  "reading_depth_counts": {
-    "bibliographic metadata verified; narrow background citation only": 19,
-    "formal PVLDB metadata and public abstract; not counted as a full-paper calibration read": 1,
-    "full-paper calibration reading": 17,
-    "public abstract and bibliographic metadata; publisher full text inaccessible": 1,
-    "selected preprint passages; not counted as a full-paper calibration read": 1
-  },
-  "scholarly_external_resource_rows": 39,
-  "scope_note": "This checks internal traceability and citation use. It does not replace source-by-source scholarly judgment; literature.json records the verified access depth and limitations for every item.",
-  "uncited_bibliography_keys": [],
-  "unique_bibliography_keys": 39,
-  "unique_cited_keys": 39,
-  "year_max": 2026,
-  "year_min": 1979
+  "active_tex_sources": [
+    "figures/certificate.tex",
+    "figures/frontiers.tex",
+    "figures/hedge.tex",
+    "figures/timings.tex",
+    "main.tex",
+    "supplement.tex"
+  ],
+  "bibliography_entries": 64,
+  "citation_evidence_records": 64,
+  "cited_entries": 64,
+  "doi_entries": 54,
+  "ledger_full_text_records": 17,
+  "ledger_limited_access_records": 2,
+  "ledger_other_or_metadata_records": 45,
+  "ledger_records_with_stable_url": 64,
+  "literature_ledger_records": 64,
+  "minimum_reference_count": 60,
+  "nocite_present": false,
+  "offline_scope": "Checks identity consistency, active citation locations and presence of curated source/claim evidence. It does not independently authenticate websites, certify every cited assertion, or turn metadata into full-text reading.",
+  "references": [
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 38
+        },
+        {
+          "file": "main.tex",
+          "line": 555
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "selinger",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://doi.org/10.1145/582095.582099",
+      "supported_claim": "Foundational dynamic-programming access-path and join-order search; cited only for that lineage."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 56
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "yannakakis",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://dblp.org/rec/conf/vldb/Yannakakis81",
+      "supported_claim": "Foundational algorithms for acyclic database schemes; cited for the acyclic-join context, not as the present certificate mechanism."
+    },
+    {
+      "access_basis": "primary publication metadata and abstract inspected",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 550
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "poosala",
+      "ledger_reading_category": "other",
+      "source_locator": "VLDB official publication record: authors, title, pages 486--495 and abstract.",
+      "source_url": "https://www.vldb.org/dblp/db/conf/vldb/PoosalaI97.html",
+      "supported_claim": "Correlation-aware selectivity estimation without attribute-value independence; cited as contract-acquisition context."
+    },
+    {
+      "access_basis": "primary publication metadata and abstract inspected",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 540
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "parametric",
+      "ledger_reading_category": "other",
+      "source_locator": "SIGMOD publication archive: four authors, title, 6(2), 132--151 and abstract.",
+      "source_url": "https://www.sigmod.org/publications/dblp/db/journals/vldb/IoannidisNSS97.html",
+      "supported_claim": "Parametric query optimization over changing parameter values; cited to distinguish parameter-space plan maps from one checked minimax packet."
+    },
+    {
+      "access_basis": "primary author metadata and abstract inspected",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 545
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "progressive",
+      "ledger_reading_category": "other",
+      "source_locator": "IBM author publication record: all six authors and abstract on monitoring and reoptimization.",
+      "source_url": "https://research.ibm.com/publications/robust-query-processing-through-progressive-optimization",
+      "supported_claim": "Runtime progressive reoptimization under observed cardinalities; cited to distinguish feedback from the static certificate."
+    },
+    {
+      "access_basis": "primary PDF title, selected passage and pagination inspected; not a full-paper reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 540
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "plandiagrams",
+      "ledger_reading_category": "other",
+      "source_locator": "Published PDF, title page and printed final page 1239; Section 4 on PQO. The primary 12-page PDF spans 1228--1239; a catalogue endpoint of 1240 was not adopted.",
+      "source_url": "https://www.vldb.org/archives/website/2005/program/paper/fri/p1228-reddy.pdf",
+      "supported_claim": "Plan diagrams over selectivity space; cited as parameter-space plan-choice context."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 540
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "babcock",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.cs.cmu.edu/~natassa/courses/15-823/F02/papers/p119-babcock.pdf",
+      "supported_claim": "Bayesian sampling uncertainty and risk quantiles, restricted FK join synopses, monotone cost. SQL Server integration, correlated and TPC-H-derived families; multiple independent samples, thresholds and optimization overhead. Strong separation of statistical premise and robust decision. Influential precursor cited by the robust-optimizer cohort."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 555
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "moerkotte2006",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://dblp.org/rec/conf/vldb/MoerkotteN06",
+      "supported_claim": "Complete bushy join enumeration without Cartesian products; cited for legal-plan generation lineage."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 555
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "dpstrikes",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://doi.org/10.1145/1376616.1376672",
+      "supported_claim": "Connected-subgraph/complement dynamic programming for join enumeration; cited for enumeration lineage."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 38
+        },
+        {
+          "file": "main.tex",
+          "line": 420
+        },
+        {
+          "file": "main.tex",
+          "line": 525
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "job",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.vldb.org/pvldb/vol9/p204-leis.pdf",
+      "supported_claim": "Separates cardinality, cost model and enumeration using 113 queries and 33 shapes on real correlated data. True-cardinality intervention and multiple engines/index settings. Figures isolate components rather than count synthetic cases. Strong public workload connection. Adopt component-level falsification, not its text."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 38
+        },
+        {
+          "file": "main.tex",
+          "line": 550
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "qerror",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.vldb.org/pvldb/vol2/vldb09-657.pdf",
+      "supported_claim": "Model-specific q-error guarantees with full assumptions: ASI restrictions and fixed-memory polynomial cost. Convex approximation and histograms connect bounds to estimation. Citation/data examples are not general physical-runtime claims. Pattern: state the cost family before a multiplicative theorem and retain counter-regimes."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 48
+        },
+        {
+          "file": "main.tex",
+          "line": 153
+        },
+        {
+          "file": "main.tex",
+          "line": 540
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "expand",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://vldb.org/pvldb/vol3/R101.pdf",
+      "supported_claim": "Closest mechanism: multiple stable candidates per DP state, safety/benefit comparisons, Root/NodeExpand and dominance composition (Appendix D). Always-second-best plans discussed in Section 4.1. PostgreSQL/TPC-H/DS and grid/overhead evidence. Do not claim multiple frontiers, compositional pruning, or hedge intuition as new."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 555
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "counter",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.vldb.org/pvldb/vol6/p1822-fender.pdf",
+      "supported_claim": "Top-down hypergraph partition enumeration with non-inner-join legality. Proofs of generation and pruning precede matched C++ infrastructure comparisons; random graphs and TPC schemas. Timing explicitly excludes graph preparation. Separate structural enumeration from the cost objective and include complete split coverage."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 545
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "planbouquets",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://doi.org/10.1145/2588555.2588566",
+      "supported_claim": "Execution strategy designed to avoid selectivity estimation; cited to distinguish adaptive execution from static certification."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 547
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "uncertainty",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.vldb.org/pvldb/vol7/p1857-wu.pdf",
+      "supported_claim": "Execution-cost uncertainty with sampled selectivity, shared-sample covariance and unit-cost assumptions. PostgreSQL/TPC-H, microbenchmarks and two hardware configurations. Calibration and overhead figures; distinguishes model-error from parameter uncertainty. Do not reinterpret prediction intervals as deterministic containment."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 550
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "exord",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.vldb.org/pvldb/vol9/p1005-liu.pdf",
+      "supported_claim": "Declared correlations are scan-validated; exception values/rows repair soft violations. Hive/Hadoop airline and synthetic workloads measure construction, violations and pruning. Integration diagrams expose where a declaration enters execution. Stronger practical contract-acquisition evidence than the present literal-template prototype."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 547
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "lip",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.vldb.org/pvldb/vol10/p889-zhu.pdf",
+      "supported_claim": "Lookahead Bloom filtering plus adaptation for restricted star joins. Theory assumptions differ from empirical skew/correlation regimes. Quickstep, SSB, many join orders, memory and configuration ablations. Title honestly names the restricted initial case. Figures show robustness across orders, not just a best speedup."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 538
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "metrics",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.vldb.org/pvldb/vol11/p1360-wolf.pdf",
+      "supported_claim": "Defines plan-cost-function robustness criteria before metrics; tests modified JOB and synthetic graphs with repeated measurements and overhead. Heuristic/numerical metric evidence differs from a universally checked regret bound. Figures connect sensitivity shapes and decisions; keep regression cases visible."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 547
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "stitch",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.vldb.org/pvldb/vol11/p1123-ding.pdf",
+      "supported_claim": "Restricted AND/OR subplan recombination with physical-property validity and cost assumptions. SQL Server plan forcing/fallback, TPC-DS plus customer workloads, parameter/data changes. Proof and implementation boundaries both explicit. Figures separate search space from deployment checks; practical equivalence is not merely count equality."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 552
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "pessimistic",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://homes.cs.washington.edu/~suciu/sigmod-2019-pessimistic.pdf",
+      "supported_claim": "Degree/sketch partitions tighten worst-case bounds; set-uniqueness and covered-attribute conditions matter. Shows nonmonotonic refinement counterexample. PostgreSQL GooglePlus/JOB, timeouts/index options; appendices expose substantial preprocessing overhead. Pattern: couple a bound to construction and runtime costs without conflating them."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 552
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "simplicity",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.cidrdb.org/cidr2021/papers/cidr2021_paper01.pdf",
+      "supported_claim": "Max-frequency upper bounds and greedy join ordering with FK treatment and sampling refinements. Multiple PostgreSQL/MonetDB configurations on JOB; planning overhead included. Base-filter estimation and complex predicates can undermine bounds. Tables/diagrams connect modest algorithmic choices to actual execution rather than theorem-only validation."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 550
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "flat",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://kai-zeng.github.io/papers/FLAT.pdf",
+      "supported_claim": "Factorized probabilistic model combines conditional and approximate local independence. GAS/DMV/IMDB, single/multitable, updates, model storage and PostgreSQL end-to-end. Some proof details are referred to a separate report, not counted as read. Diagrams explain decomposition; no deterministic correlation-contract certificate."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 552
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "safebound",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://doi.org/10.1145/3588907",
+      "supported_claim": "Practical generation of cardinality bounds; cited as a deployable-summary comparator to literal-template profiles."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 547
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "kepler",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://doi.org/10.1145/3588963",
+      "supported_claim": "Learned parametric query optimization; cited to distinguish learned candidate selection from exact contract checking."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 547
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "rome",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://doi.org/10.1145/3654973",
+      "supported_claim": "Parallel multi-plan execution for robust optimization; cited to distinguish execution-time robustness from abstract additive-cardinality cost."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 542
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "parqo",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.vldb.org/pvldb/vol17/p4627-xiu.pdf",
+      "supported_claim": "Expected penalty, querylets, learned selectivity-error distributions and cached candidate plans. Runtime, tails, sensitivity and amortization on three DB workloads. Public implementation described. RQ-led loss-to-runtime narrative. No exact minimax certificate; model/plan-pool assumptions matter."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 538
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "rqpsurvey",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://doi.org/10.1561/1900000089",
+      "supported_claim": "Survey taxonomy for robust query processing; cited for field framing, not as evidence for the paper theorem."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 542
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "roq",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.vldb.org/pvldb/vol18/p2626-kamali.pdf",
+      "supported_claim": "Risk-aware plan evaluation from approximate uncertainty; distributional assumptions precede scoring. Db2/CEB/JOB/DSB, seeds, folds, out-of-distribution and ablation. Tables separate estimation and plan quality. Not a hard worst-case guarantee. Learn to report costs excluded from plan generation."
+    },
+    {
+      "access_basis": "formal PVLDB metadata and public abstract; not counted as a full-paper calibration read",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 48
+        },
+        {
+          "file": "main.tex",
+          "line": 542
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "conformal",
+      "ledger_reading_category": "limited",
+      "source_locator": "Retained literature record; formal PVLDB metadata and public abstract; not counted as a full-paper calibration read",
+      "source_url": "https://doi.org/10.14778/3742728.3742755",
+      "supported_claim": "Formal PVLDB record for probabilistic latency ranges and violation handling in learned query optimization; cited to distinguish statistical verification from exact structural membership."
+    },
+    {
+      "access_basis": "published PDF front matter and selected problem-definition passages checked; not a full-paper read",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 542
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "par2qo",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; published PDF front matter and selected problem-definition passages checked; not a full-paper read",
+      "source_url": "https://www.vldb.org/pvldb/vol18/p4532-xiu.pdf",
+      "supported_claim": "Published title is Parametric Penalty-Aware Robust Query Optimization. Section 2.1 defines conditional expected penalty; Section 3 caches plan-penalty profiles. This differs from a distribution-free maximum over integer copy worlds."
+    },
+    {
+      "access_basis": "public abstract and bibliographic metadata; publisher full text inaccessible",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 48
+        },
+        {
+          "file": "main.tex",
+          "line": 153
+        },
+        {
+          "file": "main.tex",
+          "line": 540
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "coresets",
+      "ledger_reading_category": "limited",
+      "source_locator": "Retained literature record; public abstract and bibliographic metadata; publisher full text inaccessible",
+      "source_url": "https://doi.org/10.1145/3801896",
+      "supported_claim": "Closest-work abstract reports plan/robust coresets and positive, negative, and workload-aware size results. No theorem-level priority, approximation, size, or subsumption claim is made without lawful full text."
+    },
+    {
+      "access_basis": "primary author/institution metadata and abstract inspected; not full text",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 48
+        },
+        {
+          "file": "main.tex",
+          "line": 538
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "alyoubi",
+      "ledger_reading_category": "other",
+      "source_locator": "Author-institution record and author publication list: CIKM 2015, 1521--1530; abstract specifies interval selectivities and minimax regret. Companion preprint 1507.08257 is not a second cited work.",
+      "source_url": "https://bia.unibz.it/esploro/outputs/conferenceProceeding/Ordering-Selection-Operators-Under-Partial-Ignorance/991006493697701241",
+      "supported_claim": "Minmax-regret selection ordering under partial selectivity information. Formal CIKM article; the earlier arXiv title is not counted as another work. First author is Khaled H. Alyoubi."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 552
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "agm",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://doi.org/10.1137/110859440",
+      "supported_claim": "Worst-case size bounds for relational joins; cited as broader structural-bound context."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 552
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "nprr",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://doi.org/10.1145/2213556.2213565",
+      "supported_claim": "Worst-case optimal join algorithms; cited as broader join-theory context."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 48
+        },
+        {
+          "file": "main.tex",
+          "line": 538
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "minmaxsurvey",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://doi.org/10.1016/j.ejor.2008.09.012",
+      "supported_claim": "General min--max and min--max-regret combinatorial-optimization survey; cited for objective lineage."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 557
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "blumkannan",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://doi.org/10.1145/200836.200880",
+      "supported_claim": "Foundational self-checking-program framework; cited for the result-versus-evidence distinction."
+    },
+    {
+      "access_basis": "bibliographic metadata verified; narrow background citation only",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 557
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "certifying",
+      "ledger_reading_category": "other",
+      "source_locator": "Retained literature record; bibliographic metadata verified; narrow background citation only",
+      "source_url": "https://doi.org/10.1016/j.cosrev.2010.09.009",
+      "supported_claim": "Survey/formalization of certifying algorithms; cited for producer/checker evidence terminology."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 557
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "necula",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://courses.grainger.illinois.edu/cs421/fa2010/papers/necula-pcc.pdf",
+      "supported_claim": "Untrusted producer supplies a safety proof checked under a consumer policy. Trusted VC generation and LF checking, soundness/adequacy, packet-filter and foreign-function examples. Proof search can be expensive. Foundational source for explicit producer/checker trust separation; not a claim that this Python checker is mechanically verified."
+    },
+    {
+      "access_basis": "full-paper calibration reading",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 557
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "appel",
+      "ledger_reading_category": "full",
+      "source_locator": "Retained literature record; full-paper calibration reading",
+      "source_url": "https://www.cs.princeton.edu/~appel/papers/fpcc.pdf",
+      "supported_claim": "Shrinks trusted assumptions by deriving machine-code safety from a foundational logic and semantic models. Discusses indexed types, modular proof engineering and remaining mutable-field difficulties. Approximately 30,000 proof lines reported, not a timing benchmark. Pattern: distinguish a theorem about a checker from a proved checker."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 552
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "provenance",
+      "ledger_reading_category": "other",
+      "source_locator": "Provenance semirings entry, author list and abstract",
+      "source_url": "https://sigmod.org/pods/opentoc/pods2007.html",
+      "supported_claim": "Semiring annotations unify bag multiplicities and why-provenance; they do not authenticate a snapshot origin."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 557
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "hottsql",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://doi.org/10.1145/3062341.3062348",
+      "supported_claim": "HoTTSQL mechanizes SQL rewrite reasoning; it is not a minimax-cost certificate."
+    },
+    {
+      "access_basis": "published PDF front matter and selected passages checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 557
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "usql",
+      "ledger_reading_category": "other",
+      "source_locator": "p.1482 abstract and introduction",
+      "source_url": "https://www.vldb.org/pvldb/vol11/p1482-chu.pdf",
+      "supported_claim": "U-semiring axioms support SQL equivalence reasoning; the published paper uses Lean, unlike this unverified Python implementation."
+    },
+    {
+      "access_basis": "published PDF front matter and selected passages checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 557
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "cosette",
+      "ledger_reading_category": "other",
+      "source_locator": "p.1 abstract and introduction",
+      "source_url": "https://www.cidrdb.org/cidr2017/papers/p51-chu-cidr17.pdf",
+      "supported_claim": "Cosette combines counterexample search and proof-based query equivalence reasoning."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 552
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "provsurvey",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://www.research.ed.ac.uk/en/publications/provenance-in-databases-why-how-and-where/",
+      "supported_claim": "Why/how/where provenance concerns data derivations, not evidence that the supplied bytes came from an authenticated capture."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 38
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "overview",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/",
+      "supported_claim": "Query optimization comprises transformations, cost estimation and search; our guarantee fixes the cost and search scope."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 555
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "evaluation",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://sigmod.org/publications/dblp/db/journals/csur/Graefe93.html",
+      "supported_claim": "Physical query evaluation uses operator and storage techniques omitted by the cardinality-only cost."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 555
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "volcano",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://sigmod.org/publications/dblp/db/conf/icde/GraefeM93.html",
+      "supported_claim": "Volcano separates logical and physical optimization with extensible search; our certificate does not cover these physical properties."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 555
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "cascades",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://www.sigmod.org/publications/dblp/db/journals/debu/Graefe95a.html",
+      "supported_claim": "Cascades supports extensible query transformation and search rather than this restricted tree-only protocol."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 545
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "eddies",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://sigmod.org/publications/discs/2001/out/p_eddiescontinuourojo.htm",
+      "supported_claim": "Eddies adapts tuple routing during execution; our certificate selects a fixed pre-execution plan."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 545
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "proactive",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://doi.org/10.1145/1066157.1066171",
+      "supported_claim": "Proactive re-optimization uses uncertainty information and execution feedback; our contract is supplied and snapshot-specific."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 550
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "leo",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://research.ibm.com/publications/leo-db2s-learning-optimizer",
+      "supported_claim": "LEO uses observed execution cardinalities to improve estimates, not literal-template membership certificates."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 555
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "onolohman",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://www.sigmod.org/publications/dblp/db/conf/vldb/OnoL90.html",
+      "supported_claim": "Join enumeration complexity depends on query structure; a finite instance count alone does not demonstrate broad scalability."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 550
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "mscn",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://www.vldb.org/cidrdb/2019/learned-cardinalities-estimating-correlated-joins-with-deep-learning.html",
+      "supported_claim": "MSCN learns correlated join cardinalities from query representations; it is a predictive estimator rather than an exact structural attestation."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 550
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "deepdb",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://www.dfki.de/en/web/research/projects-and-publications/publication/14425",
+      "supported_claim": "DeepDB learns a data-driven model rather than a workload-supervised one; neither input is the literal-template contract used here."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 550
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "neurocard",
+      "ledger_reading_category": "other",
+      "source_locator": "Author preprint abstract; published volume/issue/pages linked by DOI",
+      "source_url": "https://arxiv.org/abs/2006.08109",
+      "supported_claim": "NeuroCard learns a neural density model across tables to capture correlations; prediction is distinct from exact membership."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 550
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "factorjoin",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://doi.org/10.1145/3588721",
+      "supported_claim": "FactorJoin combines single-table information through a factor-graph model of joins, unlike exact isolated-copy reconstruction."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 538
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "robustprice",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://pubsonline.informs.org/doi/10.1287/opre.1030.0065",
+      "supported_claim": "Uncertainty-set design trades nominal performance for robustness; our shared mass has the concrete meaning of copy count, not a learned confidence level."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 538
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "robustconvex",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://pubsonline.informs.org/doi/abs/10.1287/moor.23.4.769",
+      "supported_claim": "Robust optimization quantifies over a specified uncertainty set; this alone cannot establish whether a current database belongs to that set."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 547
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "neo",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://scholarworks.brandeis.edu/esploro/outputs/journalArticle/Neo-a-learned-query-optimizer/9924086682001921",
+      "supported_claim": "Neo trains a neural optimizer using previous queries; our synthetic checks measure finite correctness, not learned generalization."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 547
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "bao",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://doi.org/10.1145/3448016.3452838",
+      "supported_claim": "Bao uses learned hint selection and execution feedback; it addresses runtime choices rather than exact minimax certificates."
+    },
+    {
+      "access_basis": "author PDF front matter and selected passages checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 545
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "skinner",
+      "ledger_reading_category": "other",
+      "source_locator": "p.1 abstract and introduction; execution-quality criterion",
+      "source_url": "https://arxiv.org/pdf/1901.05152",
+      "supported_claim": "SkinnerDB learns join orders during the current query and bounds expected execution cost relative to an optimal order, unlike fixed-plan worst-case additive cardinality regret."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 557
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "sqlsolver",
+      "ledger_reading_category": "other",
+      "source_locator": "Authors own repository README description and publication BibTeX",
+      "source_url": "https://github.com/SJTU-IPADS/SQLSolver",
+      "supported_claim": "SQLSolver proves SQL equivalence using linear integer arithmetic with unbounded sums; this is result equivalence rather than minimax cost."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 555
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "sqlite",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://doi.org/10.14778/3554821.3554842",
+      "supported_claim": "SQLite is the separate execution engine used for finite count checks, not a production performance baseline in this work."
+    },
+    {
+      "access_basis": "primary-source abstract and metadata checked",
+      "cited_at": [
+        {
+          "file": "main.tex",
+          "line": 545
+        }
+      ],
+      "identity_matches_ledger": true,
+      "key": "midquery",
+      "ledger_reading_category": "other",
+      "source_locator": "Published abstract and bibliographic record",
+      "source_url": "https://www.vldb.org/dblp/db/conf/sigmod/KabraD98.html",
+      "supported_claim": "Mid-query reoptimization collects runtime statistics and revises remaining execution; our certificate does not adapt during execution."
+    }
+  ],
+  "schema_version": 2,
+  "uncited_entries": 0,
+  "unknown_citations": 0
 }

@@ -1,0 +1,201 @@
+{
+  "containment": {
+    "1": {
+      "lower": 6,
+      "max_threshold": 1,
+      "max_world": [
+        1,
+        2,
+        3
+      ],
+      "min_threshold": -1,
+      "min_world": [
+        1,
+        2,
+        3
+      ],
+      "upper": 6
+    },
+    "2": {
+      "lower": 16,
+      "max_threshold": 3,
+      "max_world": [
+        1,
+        2,
+        3
+      ],
+      "min_threshold": -3,
+      "min_world": [
+        1,
+        2,
+        3
+      ],
+      "upper": 16
+    },
+    "4": {
+      "lower": 10,
+      "max_threshold": 1,
+      "max_world": [
+        1,
+        2,
+        3
+      ],
+      "min_threshold": -3,
+      "min_world": [
+        1,
+        2,
+        3
+      ],
+      "upper": 10
+    },
+    "5": {
+      "lower": 10,
+      "max_threshold": 1,
+      "max_world": [
+        1,
+        2,
+        3
+      ],
+      "min_threshold": -3,
+      "min_world": [
+        1,
+        2,
+        3
+      ],
+      "upper": 10
+    },
+    "6": {
+      "lower": 17,
+      "max_threshold": 2,
+      "max_world": [
+        1,
+        2,
+        3
+      ],
+      "min_threshold": -5,
+      "min_world": [
+        1,
+        2,
+        3
+      ],
+      "upper": 17
+    },
+    "7": {
+      "lower": 17,
+      "max_threshold": 2,
+      "max_world": [
+        1,
+        2,
+        3
+      ],
+      "min_threshold": -5,
+      "min_world": [
+        1,
+        2,
+        3
+      ],
+      "upper": 17
+    }
+  },
+  "instance": "invariance-7013-contract-refinement",
+  "lower_witnesses": [
+    {
+      "rival": 0,
+      "world": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "regret": 0,
+  "selected": 0,
+  "states": {
+    "1": {
+      "coverage": [],
+      "plans": [
+        0
+      ]
+    },
+    "2": {
+      "coverage": [],
+      "plans": [
+        1
+      ]
+    },
+    "4": {
+      "coverage": [],
+      "plans": [
+        2
+      ]
+    },
+    "5": {
+      "coverage": [
+        [
+          1,
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "plans": [
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "6": {
+      "coverage": [
+        [
+          2,
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "plans": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "7": {
+      "coverage": [
+        [
+          1,
+          6,
+          0,
+          0,
+          0,
+          -2
+        ],
+        [
+          5,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "plans": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ]
+      ]
+    }
+  },
+  "upper_thresholds": [
+    0
+  ]
+}

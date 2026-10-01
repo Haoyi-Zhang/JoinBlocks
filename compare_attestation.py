@@ -59,6 +59,11 @@ def compare(reference: Path, candidate: Path) -> dict[str, Any]:
     if reference_negative != candidate_negative:
         raise AssertionError("negative-control outcomes differ")
 
+    reference_overhead = load_json(reference / "overhead.json")
+    candidate_overhead = load_json(candidate / "overhead.json")
+    if reference_overhead != candidate_overhead:
+        raise AssertionError("attestation overhead summary differs")
+
     reference_examples = relative_json(reference)
     candidate_examples = relative_json(candidate)
     if reference_examples != candidate_examples:
@@ -69,6 +74,7 @@ def compare(reference: Path, candidate: Path) -> dict[str, Any]:
         "matching_summary_fields": len(reference_summary),
         "matching_negative_control_classes": len(reference_negative),
         "matching_example_json_files": len(reference_examples),
+        "overhead_summary_exact": True,
         "excluded_case_observations": sorted(CASE_OBSERVATIONS),
         "excluded_summary_observations": sorted(SUMMARY_OBSERVATIONS),
     }

@@ -90,7 +90,7 @@ def _normalize_tree_edges(n, edges):
         if key in seen:
             raise ValueError("duplicate undirected edge")
         seen.add(key)
-        out.append((a, b))
+        out.append([a, b])
     if len(out) != n - 1:
         raise ValueError("a tree on n vertices must have n-1 edges")
     adj = [[] for _ in range(n)]

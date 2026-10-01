@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "bibliography_entries": 64,
+  "cited_entries": 64,
+  "uncited_entries": 0,
+  "unknown_citations": 0,
+  "nocite_present": false,
+  "doi_entries": 54,
+  "literature_ledger_records": 64,
+  "ledger_records_with_stable_url": 64,
+  "citation_evidence_records": 64,
+  "ledger_full_text_records": 17,
+  "ledger_limited_access_records": 2,
+  "ledger_other_or_metadata_records": 45,
+  "minimum_reference_count": 60,
+  "active_tex_sources": [
+    "figures/certificate.tex",
+    "figures/frontiers.tex",
+    "figures/hedge.tex",
+    "figures/timings.tex",
+    "main.tex",
+    "supplement.tex"
+  ],
+  "offline_scope": "Checks identity consistency, active citation locations and presence of curated source/claim evidence. It does not independently authenticate websites, certify every cited assertion, or turn metadata into full-text reading."
+}

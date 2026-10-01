@@ -1,7 +1,7 @@
 # Attested block contracts and proof-carrying minimax plans
 
 This repository is the standalone artifact for a bounded research prototype.  It
-implements two independently checked packets over the same acyclic bag-equijoin
+implements two independently checked packets over the same tree-shaped connected binary inner bag-equijoin
 contract:
 
 1. a **snapshot-membership attestation** that partitions every join-key row
@@ -35,7 +35,8 @@ Neither Python checker is mechanically verified.
 
 ## Requirements
 
-- Python 3.10 or newer;
+- Python 3.10 or newer on Linux/POSIX (the campaigns use the standard-library
+  `resource` module; native Windows execution has not been validated);
 - only the Python standard library and its SQLite module;
 - no network access, package installation, GPU, external solver, or private data.
 
@@ -72,41 +73,36 @@ finite campaign; `attest.py` does not import it.
 
 ## Full deterministic reproduction
 
-Use fresh output directories:
+Use a fresh output directory (the entry point also works when invoked by absolute
+path from another working directory):
 
 ```sh
-python -m unittest discover -s tests -v
-python reproduce.py --output /tmp/robust-plan-campaign
-python attestation_campaign.py --output /tmp/robust-plan-attestation
-python controls.py --output /tmp/robust-plan-controls
-python summarize.py \
-  --results /tmp/robust-plan-campaign \
-  --output /tmp/robust-plan-summary
-python compare_results.py results/campaign /tmp/robust-plan-campaign
-python compare_attestation.py \
-  results/attestation /tmp/robust-plan-attestation
-python generate_inputs.py /tmp/robust-plan-inputs
-python produce.py \
-  inputs/star-4-4-balanced-101.json \
-  /tmp/robust-plan-example-certificate.json
-python validate_reproduction.py \
-  --campaign /tmp/robust-plan-campaign \
-  --attestation /tmp/robust-plan-attestation \
-  --controls /tmp/robust-plan-controls \
-  --summary /tmp/robust-plan-summary \
-  --inputs /tmp/robust-plan-inputs \
-  --example-certificate /tmp/robust-plan-example-certificate.json
+python full_reproduction.py --output /tmp/robust-plan-full
 ```
 
-`reproduce.py` runs all 102 frozen primary instances and writes each completed
-case durably.  It accepts `--case EXACT-STEM` and `--resume` for bounded chunks.
-`attestation_campaign.py` accepts the same repeatable `--case` selector but
-requires a fresh directory.  `generate_inputs.py` deterministically rebuilds the
-102 JSON inputs.  `validate_reproduction.py` performs the combined retained-data
-check: plan and membership semantics, exact regenerated inputs and control
-packets, non-observational control and summary fields, frontier plot data, and
-the fresh worked-example certificate.  It deliberately excludes only the
-listed timing and high-water-memory observations.
+The orchestrator runs the traceable 68-method test protocol, the 102-case plan
+campaign, the 306-snapshot membership campaign, controls, summaries, deterministic
+input regeneration, the 20-case topology-interface route, the attestation-overhead
+gate, a fresh worked certificate, retained-versus-fresh comparisons, and one
+complete two-packet chain. It also runs 29 separately inventoried adapter tests
+and a 32-base-contract/224-execution representation-invariance campaign, then
+compares all 674 new JSON assets against a distinct regenerated directory. There
+are 17 required stages with the paper directory and 16 in the standalone artifact;
+only the paper-side bibliography audit is omitted in the latter. Every subprocess
+return code is recorded, and a partial run is not labelled complete.  The test
+protocol writes the discovered method name, source file and line, evidence area,
+orientation, and associated retained inputs to `tests/inventory.json`; the
+retained copy is under `results/tests/`.
+
+`reproduce.py` and `attestation_campaign.py` remain independently invocable for
+bounded reruns.  The former accepts `--case EXACT-STEM` and `--resume`; the latter
+accepts the same repeatable selector but requires a fresh directory.
+`validate_reproduction.py` compares the 102/306 core evidence and exact controls.
+`compare_tests.py` compares the discovered test inventory and passing logs.
+`compare_topology.py` compares a distinct retained and fresh topology directory
+and rejects a same-directory comparison.  Timing and high-water-memory
+observations are excluded from semantic equality; inputs, packets, oracle values,
+counts, acceptance decisions, and bounded-regret results are not.
 
 ## Retained evidence
 
@@ -125,13 +121,50 @@ that selected-plan regret is no larger than the plan certificate; the bound is
 tight on 126 snapshots.  Nine semantic mutation classes produce 2,754 attempted
 corruptions, all rejected with none skipped.
 
-The regression suite has 64 test methods: 40 plan-certificate methods (38
+The regression suite has 68 test methods: 40 plan-certificate methods (38
 rejection-oriented), 20 membership methods (18 rejection-oriented), three
-composition methods (two rejection-oriented), and one independently written
-crosscheck method that exercises 36 additional small contracts.  Thus 58 methods
-are rejection-oriented and six are valid, support-sweep, composition, or
-crosscheck methods.  Finite tests complement the written proofs but do not prove
-the implementations correct for all admitted inputs.
+composition methods (two rejection-oriented), one independently written
+crosscheck method over 36 additional small contracts, and four topology-interface
+methods (one rejection-oriented).  Thus 59 methods are rejection-oriented and
+nine are valid, support, validation, or crosscheck methods.  The retained
+inventory identifies every method's source line and evidence area; the retained
+log reports 68/68 passed.  Finite tests complement the written proofs but do not
+prove the implementations correct for all admitted inputs.
+
+The topology-interface route is auxiliary and excluded from the 102 primary
+contracts and 306 snapshot totals.  It uses five pinned public JOB SQL files only
+to derive connected equality-reduced tree topologies, then supplies synthetic
+literal templates.  Two regimes and two seeds give 20 exact producer/checker/
+oracle cases.  `results/topology/source-manifest.json` records repository commit,
+SQL blob identifiers, aliases, equality counts, and derived edges.  Oracle output
+uses a lossless JSON schema for tuple-keyed regret profiles.  This route is not a
+JOB data or runtime benchmark.
+
+`attestation_overhead.py` reads the campaign's actual `snapshot_rows` and
+`regret_within_bound` columns.  Its retained and fresh gates both confirm 306
+snapshots, 33,204 rows, all chains accepted, and all realized-regret bounds held.
+The separate two-copy drift control is also end-to-end: its plan packet accepts
+the declared $N=1$ family, while membership and composition reject the supplied
+two-copy snapshot.  It is not counted among the 2,754 campaign mutations.
+
+## Additional finite invariance evidence
+
+`invariance_campaign.py` uses a separate Pruefer-tree generator for seeds
+7001--7032, with nonuniform multiplicity bounds and 3--5 aliases. Each of 32
+base contracts is evaluated unchanged and after alias/template/edge permutations,
+a bijective key renaming, bag-row reversal, and one feasible coordinate fixation.
+All 224 cases agree with the SQLite/exhaustive-plan/world oracle and satisfy
+optimum invariance or nonincreasing regret under refinement. Only four base
+optima are nonzero; four refinements strictly improve regret. The route performs
+7,539 SQLite profile checks, separate from the primary counts. No seed is replaced.
+
+The protocol was written before executing this suite. Inputs, certificates and
+lossless oracle records are retained under `results/invariance/`; these newly
+formed results are not described as reconstructed older assets. `--compare A B`
+rejects identical directories, missing files, and semantic differences. These
+are 32 related groups, not 224 independent queries or a population generalization
+study. No model is trained. `audit_tests/` contains 25 bibliography and four
+comparison-adapter test methods, separate from `tests/` and its 68 methods.
 
 ## Repository map
 
@@ -140,12 +173,16 @@ the implementations correct for all admitted inputs.
 - `verify_chain.py`: composition CLI over one contract and snapshot;
 - `produce.py`: untrusted plan-certificate producer;
 - `attestation_campaign.py`: finite end-to-end snapshot campaign and mutations;
+- `attestation_overhead.py`: row-explicit packet-size and bound-consistency gate;
 - `compare_attestation.py`: semantic comparison excluding observation-only timing/RSS fields;
-- `validate_reproduction.py`: combined fresh-output validation against all retained non-observational evidence;
+- `test_protocol.py` and `compare_tests.py`: discovered test inventory, log, and retained/fresh comparison;
+- `topology_campaign.py` and `compare_topology.py`: auxiliary pinned-topology route and comparison;
+- `full_reproduction.py`: default complete reproduction route;
+- `validate_reproduction.py`: combined fresh-output validation against retained 102/306 core evidence;
 - `reproduce.py`: frozen 102-case plan campaign;
 - `controls.py`: hedge, local-pruning, pairwise-correlation, and drift controls;
-- `src/`: producer, optimizer, exact oracle, SQL and model helpers;
-- `tests/`: 64 deterministic regression methods, including a 36-instance independent crosscheck;
+- `src/`: producer, optimizer, exact oracle, lossless oracle JSON, SQL, and model helpers;
+- `tests/`: 68 deterministic regression methods, including a 36-instance independent crosscheck;
 - `inputs/`: exact frozen JSON contracts;
 - `results/`: retained raw campaign, control, test, and reproduction evidence;
 - `claim_evidence_ledger.csv`: material claim-to-evidence map;

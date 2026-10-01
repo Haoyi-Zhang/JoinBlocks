@@ -1,0 +1,176 @@
+[
+  {
+    "id": "test_bibliography.BibliographyTests.test_author_order_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 47,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_comment_citation_is_not_counted",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 65,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_duplicate_bib_key_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 61,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_duplicate_ledger_record_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 59,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_duplicate_work_title_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 88,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_escaped_percent_retains_citation",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 97,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_input_outside_paper_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 95,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_minimum_count_enforced",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 80,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_missing_claim_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 78,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_missing_evidence_record_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 76,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_missing_input_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 93,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_missing_ledger_record_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 57,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_nocite_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 74,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_orphan_tex_citation_is_not_counted",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 67,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_reachable_input_is_counted",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 69,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_reading_negation_is_not_full",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 86,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_typographic_accents_normalize",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 83,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_unknown_citation_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 72,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_unused_entry_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 63,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_valid_fixture",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 44,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_wrong_author_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 45,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_wrong_doi_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 53,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_wrong_pages_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 55,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_wrong_title_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 49,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_bibliography.BibliographyTests.test_wrong_year_rejected",
+    "source": "audit_tests/test_bibliography.py",
+    "line": 51,
+    "input": "temporary, explicitly fictitious bibliography fixture"
+  },
+  {
+    "id": "test_invariance.InvarianceComparisonTests.test_altered_input_rejected",
+    "source": "audit_tests/test_invariance.py",
+    "line": 24,
+    "input": "temporary invariance campaign; corrupted fresh comparison copy"
+  },
+  {
+    "id": "test_invariance.InvarianceComparisonTests.test_altered_oracle_rejected",
+    "source": "audit_tests/test_invariance.py",
+    "line": 29,
+    "input": "temporary invariance campaign; corrupted fresh comparison copy"
+  },
+  {
+    "id": "test_invariance.InvarianceComparisonTests.test_missing_input_rejected",
+    "source": "audit_tests/test_invariance.py",
+    "line": 20,
+    "input": "temporary invariance campaign; corrupted fresh comparison copy"
+  },
+  {
+    "id": "test_invariance.InvarianceComparisonTests.test_same_directory_rejected",
+    "source": "audit_tests/test_invariance.py",
+    "line": 17,
+    "input": "temporary invariance campaign; corrupted fresh comparison copy"
+  }
+]

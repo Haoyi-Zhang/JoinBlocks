@@ -1,0 +1,19 @@
+{
+  "chain": {
+    "accepted": false,
+    "reason": "membership: attested copy count differs from shared total"
+  },
+  "counted_in_2754_mutations": false,
+  "membership": {
+    "accepted": false,
+    "reason": "attested copy count differs from shared total"
+  },
+  "plan_only": {
+    "accepted": true,
+    "containment_masks": 3,
+    "coverage_records": 1,
+    "regret": 0,
+    "root_frontier": 1,
+    "template_assignments": 3
+  }
+}

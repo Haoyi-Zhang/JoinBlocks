@@ -1,0 +1,34 @@
+test_author_order_rejected (test_bibliography.BibliographyTests.test_author_order_rejected) ... ok
+test_comment_citation_is_not_counted (test_bibliography.BibliographyTests.test_comment_citation_is_not_counted) ... ok
+test_duplicate_bib_key_rejected (test_bibliography.BibliographyTests.test_duplicate_bib_key_rejected) ... ok
+test_duplicate_ledger_record_rejected (test_bibliography.BibliographyTests.test_duplicate_ledger_record_rejected) ... ok
+test_duplicate_work_title_rejected (test_bibliography.BibliographyTests.test_duplicate_work_title_rejected) ... ok
+test_escaped_percent_retains_citation (test_bibliography.BibliographyTests.test_escaped_percent_retains_citation) ... ok
+test_input_outside_paper_rejected (test_bibliography.BibliographyTests.test_input_outside_paper_rejected) ... ok
+test_minimum_count_enforced (test_bibliography.BibliographyTests.test_minimum_count_enforced) ... ok
+test_missing_claim_rejected (test_bibliography.BibliographyTests.test_missing_claim_rejected) ... ok
+test_missing_evidence_record_rejected (test_bibliography.BibliographyTests.test_missing_evidence_record_rejected) ... ok
+test_missing_input_rejected (test_bibliography.BibliographyTests.test_missing_input_rejected) ... ok
+test_missing_ledger_record_rejected (test_bibliography.BibliographyTests.test_missing_ledger_record_rejected) ... ok
+test_nocite_rejected (test_bibliography.BibliographyTests.test_nocite_rejected) ... ok
+test_orphan_tex_citation_is_not_counted (test_bibliography.BibliographyTests.test_orphan_tex_citation_is_not_counted) ... ok
+test_reachable_input_is_counted (test_bibliography.BibliographyTests.test_reachable_input_is_counted) ... ok
+test_reading_negation_is_not_full (test_bibliography.BibliographyTests.test_reading_negation_is_not_full) ... ok
+test_typographic_accents_normalize (test_bibliography.BibliographyTests.test_typographic_accents_normalize) ... ok
+test_unknown_citation_rejected (test_bibliography.BibliographyTests.test_unknown_citation_rejected) ... ok
+test_unused_entry_rejected (test_bibliography.BibliographyTests.test_unused_entry_rejected) ... ok
+test_valid_fixture (test_bibliography.BibliographyTests.test_valid_fixture) ... ok
+test_wrong_author_rejected (test_bibliography.BibliographyTests.test_wrong_author_rejected) ... ok
+test_wrong_doi_rejected (test_bibliography.BibliographyTests.test_wrong_doi_rejected) ... ok
+test_wrong_pages_rejected (test_bibliography.BibliographyTests.test_wrong_pages_rejected) ... ok
+test_wrong_title_rejected (test_bibliography.BibliographyTests.test_wrong_title_rejected) ... ok
+test_wrong_year_rejected (test_bibliography.BibliographyTests.test_wrong_year_rejected) ... ok
+test_altered_input_rejected (test_invariance.InvarianceComparisonTests.test_altered_input_rejected) ... ok
+test_altered_oracle_rejected (test_invariance.InvarianceComparisonTests.test_altered_oracle_rejected) ... ok
+test_missing_input_rejected (test_invariance.InvarianceComparisonTests.test_missing_input_rejected) ... ok
+test_same_directory_rejected (test_invariance.InvarianceComparisonTests.test_same_directory_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 1.645s
+
+OK

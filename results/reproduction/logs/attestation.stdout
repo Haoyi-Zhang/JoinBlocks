@@ -1,0 +1,307 @@
+{"case": "branch-4-4-balanced-101", "checks": "accepted", "rows": 60, "world": [3, 2, 0, 0]}
+{"case": "branch-4-4-balanced-101", "checks": "accepted", "rows": 60, "world": [2, 1, 1, 1]}
+{"case": "branch-4-4-balanced-101", "checks": "accepted", "rows": 60, "world": [0, 0, 2, 3]}
+{"case": "branch-4-4-balanced-202", "checks": "accepted", "rows": 60, "world": [3, 2, 0, 0]}
+{"case": "branch-4-4-balanced-202", "checks": "accepted", "rows": 60, "world": [2, 1, 1, 1]}
+{"case": "branch-4-4-balanced-202", "checks": "accepted", "rows": 60, "world": [0, 0, 2, 3]}
+{"case": "branch-4-4-skewed-101", "checks": "accepted", "rows": 60, "world": [3, 2, 0, 0]}
+{"case": "branch-4-4-skewed-101", "checks": "accepted", "rows": 60, "world": [2, 1, 1, 1]}
+{"case": "branch-4-4-skewed-101", "checks": "accepted", "rows": 60, "world": [0, 0, 2, 3]}
+{"case": "branch-4-4-skewed-202", "checks": "accepted", "rows": 60, "world": [3, 2, 0, 0]}
+{"case": "branch-4-4-skewed-202", "checks": "accepted", "rows": 60, "world": [2, 1, 1, 1]}
+{"case": "branch-4-4-skewed-202", "checks": "accepted", "rows": 60, "world": [0, 0, 2, 3]}
+{"case": "branch-4-6-balanced-101", "checks": "accepted", "rows": 108, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-4-6-balanced-101", "checks": "accepted", "rows": 108, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-4-6-balanced-101", "checks": "accepted", "rows": 108, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-4-6-balanced-202", "checks": "accepted", "rows": 108, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-4-6-balanced-202", "checks": "accepted", "rows": 108, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-4-6-balanced-202", "checks": "accepted", "rows": 108, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-4-6-skewed-101", "checks": "accepted", "rows": 108, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-4-6-skewed-101", "checks": "accepted", "rows": 108, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-4-6-skewed-101", "checks": "accepted", "rows": 108, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-4-6-skewed-202", "checks": "accepted", "rows": 108, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-4-6-skewed-202", "checks": "accepted", "rows": 108, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-4-6-skewed-202", "checks": "accepted", "rows": 108, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-5-4-balanced-101", "checks": "accepted", "rows": 70, "world": [3, 2, 0, 0]}
+{"case": "branch-5-4-balanced-101", "checks": "accepted", "rows": 70, "world": [2, 1, 1, 1]}
+{"case": "branch-5-4-balanced-101", "checks": "accepted", "rows": 70, "world": [0, 0, 2, 3]}
+{"case": "branch-5-4-balanced-202", "checks": "accepted", "rows": 70, "world": [3, 2, 0, 0]}
+{"case": "branch-5-4-balanced-202", "checks": "accepted", "rows": 70, "world": [2, 1, 1, 1]}
+{"case": "branch-5-4-balanced-202", "checks": "accepted", "rows": 70, "world": [0, 0, 2, 3]}
+{"case": "branch-5-4-skewed-101", "checks": "accepted", "rows": 70, "world": [3, 2, 0, 0]}
+{"case": "branch-5-4-skewed-101", "checks": "accepted", "rows": 70, "world": [2, 1, 1, 1]}
+{"case": "branch-5-4-skewed-101", "checks": "accepted", "rows": 70, "world": [0, 0, 2, 3]}
+{"case": "branch-5-4-skewed-202", "checks": "accepted", "rows": 70, "world": [3, 2, 0, 0]}
+{"case": "branch-5-4-skewed-202", "checks": "accepted", "rows": 70, "world": [2, 1, 1, 1]}
+{"case": "branch-5-4-skewed-202", "checks": "accepted", "rows": 70, "world": [0, 0, 2, 3]}
+{"case": "branch-5-6-balanced-101", "checks": "accepted", "rows": 126, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-5-6-balanced-101", "checks": "accepted", "rows": 126, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-5-6-balanced-101", "checks": "accepted", "rows": 126, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-5-6-balanced-202", "checks": "accepted", "rows": 126, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-5-6-balanced-202", "checks": "accepted", "rows": 126, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-5-6-balanced-202", "checks": "accepted", "rows": 126, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-5-6-skewed-101", "checks": "accepted", "rows": 126, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-5-6-skewed-101", "checks": "accepted", "rows": 126, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-5-6-skewed-101", "checks": "accepted", "rows": 126, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-5-6-skewed-202", "checks": "accepted", "rows": 126, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-5-6-skewed-202", "checks": "accepted", "rows": 126, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-5-6-skewed-202", "checks": "accepted", "rows": 126, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-6-4-balanced-101", "checks": "accepted", "rows": 90, "world": [3, 2, 0, 0]}
+{"case": "branch-6-4-balanced-101", "checks": "accepted", "rows": 90, "world": [2, 1, 1, 1]}
+{"case": "branch-6-4-balanced-101", "checks": "accepted", "rows": 90, "world": [0, 0, 2, 3]}
+{"case": "branch-6-4-balanced-202", "checks": "accepted", "rows": 90, "world": [3, 2, 0, 0]}
+{"case": "branch-6-4-balanced-202", "checks": "accepted", "rows": 90, "world": [2, 1, 1, 1]}
+{"case": "branch-6-4-balanced-202", "checks": "accepted", "rows": 90, "world": [0, 0, 2, 3]}
+{"case": "branch-6-4-skewed-101", "checks": "accepted", "rows": 90, "world": [3, 2, 0, 0]}
+{"case": "branch-6-4-skewed-101", "checks": "accepted", "rows": 90, "world": [2, 1, 1, 1]}
+{"case": "branch-6-4-skewed-101", "checks": "accepted", "rows": 90, "world": [0, 0, 2, 3]}
+{"case": "branch-6-4-skewed-202", "checks": "accepted", "rows": 90, "world": [3, 2, 0, 0]}
+{"case": "branch-6-4-skewed-202", "checks": "accepted", "rows": 90, "world": [2, 1, 1, 1]}
+{"case": "branch-6-4-skewed-202", "checks": "accepted", "rows": 90, "world": [0, 0, 2, 3]}
+{"case": "branch-6-6-balanced-101", "checks": "accepted", "rows": 162, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-6-6-balanced-101", "checks": "accepted", "rows": 162, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-6-6-balanced-101", "checks": "accepted", "rows": 162, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-6-6-balanced-202", "checks": "accepted", "rows": 162, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-6-6-balanced-202", "checks": "accepted", "rows": 162, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-6-6-balanced-202", "checks": "accepted", "rows": 162, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-6-6-skewed-101", "checks": "accepted", "rows": 162, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-6-6-skewed-101", "checks": "accepted", "rows": 162, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-6-6-skewed-101", "checks": "accepted", "rows": 162, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-6-6-skewed-202", "checks": "accepted", "rows": 162, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-6-6-skewed-202", "checks": "accepted", "rows": 162, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-6-6-skewed-202", "checks": "accepted", "rows": 162, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-7-4-balanced-101", "checks": "accepted", "rows": 100, "world": [3, 2, 0, 0]}
+{"case": "branch-7-4-balanced-101", "checks": "accepted", "rows": 100, "world": [2, 1, 1, 1]}
+{"case": "branch-7-4-balanced-101", "checks": "accepted", "rows": 100, "world": [0, 0, 2, 3]}
+{"case": "branch-7-4-balanced-202", "checks": "accepted", "rows": 100, "world": [3, 2, 0, 0]}
+{"case": "branch-7-4-balanced-202", "checks": "accepted", "rows": 100, "world": [2, 1, 1, 1]}
+{"case": "branch-7-4-balanced-202", "checks": "accepted", "rows": 100, "world": [0, 0, 2, 3]}
+{"case": "branch-7-4-skewed-101", "checks": "accepted", "rows": 100, "world": [3, 2, 0, 0]}
+{"case": "branch-7-4-skewed-101", "checks": "accepted", "rows": 100, "world": [2, 1, 1, 1]}
+{"case": "branch-7-4-skewed-101", "checks": "accepted", "rows": 100, "world": [0, 0, 2, 3]}
+{"case": "branch-7-4-skewed-202", "checks": "accepted", "rows": 100, "world": [3, 2, 0, 0]}
+{"case": "branch-7-4-skewed-202", "checks": "accepted", "rows": 100, "world": [2, 1, 1, 1]}
+{"case": "branch-7-4-skewed-202", "checks": "accepted", "rows": 100, "world": [0, 0, 2, 3]}
+{"case": "branch-7-6-balanced-101", "checks": "accepted", "rows": 180, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-7-6-balanced-101", "checks": "accepted", "rows": 180, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-7-6-balanced-101", "checks": "accepted", "rows": 180, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-7-6-balanced-202", "checks": "accepted", "rows": 180, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-7-6-balanced-202", "checks": "accepted", "rows": 180, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-7-6-balanced-202", "checks": "accepted", "rows": 180, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-7-6-skewed-101", "checks": "accepted", "rows": 180, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-7-6-skewed-101", "checks": "accepted", "rows": 180, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-7-6-skewed-101", "checks": "accepted", "rows": 180, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "branch-7-6-skewed-202", "checks": "accepted", "rows": 180, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "branch-7-6-skewed-202", "checks": "accepted", "rows": 180, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "branch-7-6-skewed-202", "checks": "accepted", "rows": 180, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "commerce-303-0", "checks": "accepted", "rows": 95, "world": [3, 2, 0, 0]}
+{"case": "commerce-303-0", "checks": "accepted", "rows": 95, "world": [2, 1, 1, 1]}
+{"case": "commerce-303-0", "checks": "accepted", "rows": 95, "world": [0, 0, 2, 3]}
+{"case": "commerce-303-1", "checks": "accepted", "rows": 85, "world": [3, 2, 0, 0]}
+{"case": "commerce-303-1", "checks": "accepted", "rows": 85, "world": [2, 1, 1, 1]}
+{"case": "commerce-303-1", "checks": "accepted", "rows": 85, "world": [0, 0, 2, 3]}
+{"case": "commerce-404-0", "checks": "accepted", "rows": 95, "world": [3, 2, 0, 0]}
+{"case": "commerce-404-0", "checks": "accepted", "rows": 95, "world": [2, 1, 1, 1]}
+{"case": "commerce-404-0", "checks": "accepted", "rows": 95, "world": [0, 0, 2, 3]}
+{"case": "commerce-404-1", "checks": "accepted", "rows": 85, "world": [3, 2, 0, 0]}
+{"case": "commerce-404-1", "checks": "accepted", "rows": 85, "world": [2, 1, 1, 1]}
+{"case": "commerce-404-1", "checks": "accepted", "rows": 85, "world": [0, 0, 2, 3]}
+{"case": "commerce-505-0", "checks": "accepted", "rows": 95, "world": [3, 2, 0, 0]}
+{"case": "commerce-505-0", "checks": "accepted", "rows": 95, "world": [2, 1, 1, 1]}
+{"case": "commerce-505-0", "checks": "accepted", "rows": 95, "world": [0, 0, 2, 3]}
+{"case": "commerce-505-1", "checks": "accepted", "rows": 85, "world": [3, 2, 0, 0]}
+{"case": "commerce-505-1", "checks": "accepted", "rows": 85, "world": [2, 1, 1, 1]}
+{"case": "commerce-505-1", "checks": "accepted", "rows": 85, "world": [0, 0, 2, 3]}
+{"case": "path-4-4-balanced-101", "checks": "accepted", "rows": 60, "world": [3, 2, 0, 0]}
+{"case": "path-4-4-balanced-101", "checks": "accepted", "rows": 60, "world": [2, 1, 1, 1]}
+{"case": "path-4-4-balanced-101", "checks": "accepted", "rows": 60, "world": [0, 0, 2, 3]}
+{"case": "path-4-4-balanced-202", "checks": "accepted", "rows": 60, "world": [3, 2, 0, 0]}
+{"case": "path-4-4-balanced-202", "checks": "accepted", "rows": 60, "world": [2, 1, 1, 1]}
+{"case": "path-4-4-balanced-202", "checks": "accepted", "rows": 60, "world": [0, 0, 2, 3]}
+{"case": "path-4-4-skewed-101", "checks": "accepted", "rows": 60, "world": [3, 2, 0, 0]}
+{"case": "path-4-4-skewed-101", "checks": "accepted", "rows": 60, "world": [2, 1, 1, 1]}
+{"case": "path-4-4-skewed-101", "checks": "accepted", "rows": 60, "world": [0, 0, 2, 3]}
+{"case": "path-4-4-skewed-202", "checks": "accepted", "rows": 60, "world": [3, 2, 0, 0]}
+{"case": "path-4-4-skewed-202", "checks": "accepted", "rows": 60, "world": [2, 1, 1, 1]}
+{"case": "path-4-4-skewed-202", "checks": "accepted", "rows": 60, "world": [0, 0, 2, 3]}
+{"case": "path-4-6-balanced-101", "checks": "accepted", "rows": 108, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-4-6-balanced-101", "checks": "accepted", "rows": 108, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-4-6-balanced-101", "checks": "accepted", "rows": 108, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-4-6-balanced-202", "checks": "accepted", "rows": 108, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-4-6-balanced-202", "checks": "accepted", "rows": 108, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-4-6-balanced-202", "checks": "accepted", "rows": 108, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-4-6-skewed-101", "checks": "accepted", "rows": 108, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-4-6-skewed-101", "checks": "accepted", "rows": 108, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-4-6-skewed-101", "checks": "accepted", "rows": 108, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-4-6-skewed-202", "checks": "accepted", "rows": 108, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-4-6-skewed-202", "checks": "accepted", "rows": 108, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-4-6-skewed-202", "checks": "accepted", "rows": 108, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-5-4-balanced-101", "checks": "accepted", "rows": 80, "world": [3, 2, 0, 0]}
+{"case": "path-5-4-balanced-101", "checks": "accepted", "rows": 80, "world": [2, 1, 1, 1]}
+{"case": "path-5-4-balanced-101", "checks": "accepted", "rows": 80, "world": [0, 0, 2, 3]}
+{"case": "path-5-4-balanced-202", "checks": "accepted", "rows": 80, "world": [3, 2, 0, 0]}
+{"case": "path-5-4-balanced-202", "checks": "accepted", "rows": 80, "world": [2, 1, 1, 1]}
+{"case": "path-5-4-balanced-202", "checks": "accepted", "rows": 80, "world": [0, 0, 2, 3]}
+{"case": "path-5-4-skewed-101", "checks": "accepted", "rows": 80, "world": [3, 2, 0, 0]}
+{"case": "path-5-4-skewed-101", "checks": "accepted", "rows": 80, "world": [2, 1, 1, 1]}
+{"case": "path-5-4-skewed-101", "checks": "accepted", "rows": 80, "world": [0, 0, 2, 3]}
+{"case": "path-5-4-skewed-202", "checks": "accepted", "rows": 80, "world": [3, 2, 0, 0]}
+{"case": "path-5-4-skewed-202", "checks": "accepted", "rows": 80, "world": [2, 1, 1, 1]}
+{"case": "path-5-4-skewed-202", "checks": "accepted", "rows": 80, "world": [0, 0, 2, 3]}
+{"case": "path-5-6-balanced-101", "checks": "accepted", "rows": 144, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-5-6-balanced-101", "checks": "accepted", "rows": 144, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-5-6-balanced-101", "checks": "accepted", "rows": 144, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-5-6-balanced-202", "checks": "accepted", "rows": 144, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-5-6-balanced-202", "checks": "accepted", "rows": 144, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-5-6-balanced-202", "checks": "accepted", "rows": 144, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-5-6-skewed-101", "checks": "accepted", "rows": 144, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-5-6-skewed-101", "checks": "accepted", "rows": 144, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-5-6-skewed-101", "checks": "accepted", "rows": 144, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-5-6-skewed-202", "checks": "accepted", "rows": 144, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-5-6-skewed-202", "checks": "accepted", "rows": 144, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-5-6-skewed-202", "checks": "accepted", "rows": 144, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-6-4-balanced-101", "checks": "accepted", "rows": 100, "world": [3, 2, 0, 0]}
+{"case": "path-6-4-balanced-101", "checks": "accepted", "rows": 100, "world": [2, 1, 1, 1]}
+{"case": "path-6-4-balanced-101", "checks": "accepted", "rows": 100, "world": [0, 0, 2, 3]}
+{"case": "path-6-4-balanced-202", "checks": "accepted", "rows": 100, "world": [3, 2, 0, 0]}
+{"case": "path-6-4-balanced-202", "checks": "accepted", "rows": 100, "world": [2, 1, 1, 1]}
+{"case": "path-6-4-balanced-202", "checks": "accepted", "rows": 100, "world": [0, 0, 2, 3]}
+{"case": "path-6-4-skewed-101", "checks": "accepted", "rows": 100, "world": [3, 2, 0, 0]}
+{"case": "path-6-4-skewed-101", "checks": "accepted", "rows": 100, "world": [2, 1, 1, 1]}
+{"case": "path-6-4-skewed-101", "checks": "accepted", "rows": 100, "world": [0, 0, 2, 3]}
+{"case": "path-6-4-skewed-202", "checks": "accepted", "rows": 100, "world": [3, 2, 0, 0]}
+{"case": "path-6-4-skewed-202", "checks": "accepted", "rows": 100, "world": [2, 1, 1, 1]}
+{"case": "path-6-4-skewed-202", "checks": "accepted", "rows": 100, "world": [0, 0, 2, 3]}
+{"case": "path-6-6-balanced-101", "checks": "accepted", "rows": 180, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-6-6-balanced-101", "checks": "accepted", "rows": 180, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-6-6-balanced-101", "checks": "accepted", "rows": 180, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-6-6-balanced-202", "checks": "accepted", "rows": 180, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-6-6-balanced-202", "checks": "accepted", "rows": 180, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-6-6-balanced-202", "checks": "accepted", "rows": 180, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-6-6-skewed-101", "checks": "accepted", "rows": 180, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-6-6-skewed-101", "checks": "accepted", "rows": 180, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-6-6-skewed-101", "checks": "accepted", "rows": 180, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-6-6-skewed-202", "checks": "accepted", "rows": 180, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-6-6-skewed-202", "checks": "accepted", "rows": 180, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-6-6-skewed-202", "checks": "accepted", "rows": 180, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-7-4-balanced-101", "checks": "accepted", "rows": 120, "world": [3, 2, 0, 0]}
+{"case": "path-7-4-balanced-101", "checks": "accepted", "rows": 120, "world": [2, 1, 1, 1]}
+{"case": "path-7-4-balanced-101", "checks": "accepted", "rows": 120, "world": [0, 0, 2, 3]}
+{"case": "path-7-4-balanced-202", "checks": "accepted", "rows": 120, "world": [3, 2, 0, 0]}
+{"case": "path-7-4-balanced-202", "checks": "accepted", "rows": 120, "world": [2, 1, 1, 1]}
+{"case": "path-7-4-balanced-202", "checks": "accepted", "rows": 120, "world": [0, 0, 2, 3]}
+{"case": "path-7-4-skewed-101", "checks": "accepted", "rows": 120, "world": [3, 2, 0, 0]}
+{"case": "path-7-4-skewed-101", "checks": "accepted", "rows": 120, "world": [2, 1, 1, 1]}
+{"case": "path-7-4-skewed-101", "checks": "accepted", "rows": 120, "world": [0, 0, 2, 3]}
+{"case": "path-7-4-skewed-202", "checks": "accepted", "rows": 120, "world": [3, 2, 0, 0]}
+{"case": "path-7-4-skewed-202", "checks": "accepted", "rows": 120, "world": [2, 1, 1, 1]}
+{"case": "path-7-4-skewed-202", "checks": "accepted", "rows": 120, "world": [0, 0, 2, 3]}
+{"case": "path-7-6-balanced-101", "checks": "accepted", "rows": 216, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-7-6-balanced-101", "checks": "accepted", "rows": 216, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-7-6-balanced-101", "checks": "accepted", "rows": 216, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-7-6-balanced-202", "checks": "accepted", "rows": 216, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-7-6-balanced-202", "checks": "accepted", "rows": 216, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-7-6-balanced-202", "checks": "accepted", "rows": 216, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-7-6-skewed-101", "checks": "accepted", "rows": 216, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-7-6-skewed-101", "checks": "accepted", "rows": 216, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-7-6-skewed-101", "checks": "accepted", "rows": 216, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "path-7-6-skewed-202", "checks": "accepted", "rows": 216, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "path-7-6-skewed-202", "checks": "accepted", "rows": 216, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "path-7-6-skewed-202", "checks": "accepted", "rows": 216, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-4-4-balanced-101", "checks": "accepted", "rows": 50, "world": [3, 2, 0, 0]}
+{"case": "star-4-4-balanced-101", "checks": "accepted", "rows": 50, "world": [2, 1, 1, 1]}
+{"case": "star-4-4-balanced-101", "checks": "accepted", "rows": 50, "world": [0, 0, 2, 3]}
+{"case": "star-4-4-balanced-202", "checks": "accepted", "rows": 50, "world": [3, 2, 0, 0]}
+{"case": "star-4-4-balanced-202", "checks": "accepted", "rows": 50, "world": [2, 1, 1, 1]}
+{"case": "star-4-4-balanced-202", "checks": "accepted", "rows": 50, "world": [0, 0, 2, 3]}
+{"case": "star-4-4-skewed-101", "checks": "accepted", "rows": 50, "world": [3, 2, 0, 0]}
+{"case": "star-4-4-skewed-101", "checks": "accepted", "rows": 50, "world": [2, 1, 1, 1]}
+{"case": "star-4-4-skewed-101", "checks": "accepted", "rows": 50, "world": [0, 0, 2, 3]}
+{"case": "star-4-4-skewed-202", "checks": "accepted", "rows": 50, "world": [3, 2, 0, 0]}
+{"case": "star-4-4-skewed-202", "checks": "accepted", "rows": 50, "world": [2, 1, 1, 1]}
+{"case": "star-4-4-skewed-202", "checks": "accepted", "rows": 50, "world": [0, 0, 2, 3]}
+{"case": "star-4-6-balanced-101", "checks": "accepted", "rows": 90, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-4-6-balanced-101", "checks": "accepted", "rows": 90, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-4-6-balanced-101", "checks": "accepted", "rows": 90, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-4-6-balanced-202", "checks": "accepted", "rows": 90, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-4-6-balanced-202", "checks": "accepted", "rows": 90, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-4-6-balanced-202", "checks": "accepted", "rows": 90, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-4-6-skewed-101", "checks": "accepted", "rows": 90, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-4-6-skewed-101", "checks": "accepted", "rows": 90, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-4-6-skewed-101", "checks": "accepted", "rows": 90, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-4-6-skewed-202", "checks": "accepted", "rows": 90, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-4-6-skewed-202", "checks": "accepted", "rows": 90, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-4-6-skewed-202", "checks": "accepted", "rows": 90, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-5-4-balanced-101", "checks": "accepted", "rows": 60, "world": [3, 2, 0, 0]}
+{"case": "star-5-4-balanced-101", "checks": "accepted", "rows": 60, "world": [2, 1, 1, 1]}
+{"case": "star-5-4-balanced-101", "checks": "accepted", "rows": 60, "world": [0, 0, 2, 3]}
+{"case": "star-5-4-balanced-202", "checks": "accepted", "rows": 60, "world": [3, 2, 0, 0]}
+{"case": "star-5-4-balanced-202", "checks": "accepted", "rows": 60, "world": [2, 1, 1, 1]}
+{"case": "star-5-4-balanced-202", "checks": "accepted", "rows": 60, "world": [0, 0, 2, 3]}
+{"case": "star-5-4-skewed-101", "checks": "accepted", "rows": 60, "world": [3, 2, 0, 0]}
+{"case": "star-5-4-skewed-101", "checks": "accepted", "rows": 60, "world": [2, 1, 1, 1]}
+{"case": "star-5-4-skewed-101", "checks": "accepted", "rows": 60, "world": [0, 0, 2, 3]}
+{"case": "star-5-4-skewed-202", "checks": "accepted", "rows": 60, "world": [3, 2, 0, 0]}
+{"case": "star-5-4-skewed-202", "checks": "accepted", "rows": 60, "world": [2, 1, 1, 1]}
+{"case": "star-5-4-skewed-202", "checks": "accepted", "rows": 60, "world": [0, 0, 2, 3]}
+{"case": "star-5-6-balanced-101", "checks": "accepted", "rows": 108, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-5-6-balanced-101", "checks": "accepted", "rows": 108, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-5-6-balanced-101", "checks": "accepted", "rows": 108, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-5-6-balanced-202", "checks": "accepted", "rows": 108, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-5-6-balanced-202", "checks": "accepted", "rows": 108, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-5-6-balanced-202", "checks": "accepted", "rows": 108, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-5-6-skewed-101", "checks": "accepted", "rows": 108, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-5-6-skewed-101", "checks": "accepted", "rows": 108, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-5-6-skewed-101", "checks": "accepted", "rows": 108, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-5-6-skewed-202", "checks": "accepted", "rows": 108, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-5-6-skewed-202", "checks": "accepted", "rows": 108, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-5-6-skewed-202", "checks": "accepted", "rows": 108, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-6-4-balanced-101", "checks": "accepted", "rows": 70, "world": [3, 2, 0, 0]}
+{"case": "star-6-4-balanced-101", "checks": "accepted", "rows": 70, "world": [2, 1, 1, 1]}
+{"case": "star-6-4-balanced-101", "checks": "accepted", "rows": 70, "world": [0, 0, 2, 3]}
+{"case": "star-6-4-balanced-202", "checks": "accepted", "rows": 70, "world": [3, 2, 0, 0]}
+{"case": "star-6-4-balanced-202", "checks": "accepted", "rows": 70, "world": [2, 1, 1, 1]}
+{"case": "star-6-4-balanced-202", "checks": "accepted", "rows": 70, "world": [0, 0, 2, 3]}
+{"case": "star-6-4-skewed-101", "checks": "accepted", "rows": 70, "world": [3, 2, 0, 0]}
+{"case": "star-6-4-skewed-101", "checks": "accepted", "rows": 70, "world": [2, 1, 1, 1]}
+{"case": "star-6-4-skewed-101", "checks": "accepted", "rows": 70, "world": [0, 0, 2, 3]}
+{"case": "star-6-4-skewed-202", "checks": "accepted", "rows": 70, "world": [3, 2, 0, 0]}
+{"case": "star-6-4-skewed-202", "checks": "accepted", "rows": 70, "world": [2, 1, 1, 1]}
+{"case": "star-6-4-skewed-202", "checks": "accepted", "rows": 70, "world": [0, 0, 2, 3]}
+{"case": "star-6-6-balanced-101", "checks": "accepted", "rows": 126, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-6-6-balanced-101", "checks": "accepted", "rows": 126, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-6-6-balanced-101", "checks": "accepted", "rows": 126, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-6-6-balanced-202", "checks": "accepted", "rows": 126, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-6-6-balanced-202", "checks": "accepted", "rows": 126, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-6-6-balanced-202", "checks": "accepted", "rows": 126, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-6-6-skewed-101", "checks": "accepted", "rows": 126, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-6-6-skewed-101", "checks": "accepted", "rows": 126, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-6-6-skewed-101", "checks": "accepted", "rows": 126, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-6-6-skewed-202", "checks": "accepted", "rows": 126, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-6-6-skewed-202", "checks": "accepted", "rows": 126, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-6-6-skewed-202", "checks": "accepted", "rows": 126, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-7-4-balanced-101", "checks": "accepted", "rows": 80, "world": [3, 2, 0, 0]}
+{"case": "star-7-4-balanced-101", "checks": "accepted", "rows": 80, "world": [2, 1, 1, 1]}
+{"case": "star-7-4-balanced-101", "checks": "accepted", "rows": 80, "world": [0, 0, 2, 3]}
+{"case": "star-7-4-balanced-202", "checks": "accepted", "rows": 80, "world": [3, 2, 0, 0]}
+{"case": "star-7-4-balanced-202", "checks": "accepted", "rows": 80, "world": [2, 1, 1, 1]}
+{"case": "star-7-4-balanced-202", "checks": "accepted", "rows": 80, "world": [0, 0, 2, 3]}
+{"case": "star-7-4-skewed-101", "checks": "accepted", "rows": 80, "world": [3, 2, 0, 0]}
+{"case": "star-7-4-skewed-101", "checks": "accepted", "rows": 80, "world": [2, 1, 1, 1]}
+{"case": "star-7-4-skewed-101", "checks": "accepted", "rows": 80, "world": [0, 0, 2, 3]}
+{"case": "star-7-4-skewed-202", "checks": "accepted", "rows": 80, "world": [3, 2, 0, 0]}
+{"case": "star-7-4-skewed-202", "checks": "accepted", "rows": 80, "world": [2, 1, 1, 1]}
+{"case": "star-7-4-skewed-202", "checks": "accepted", "rows": 80, "world": [0, 0, 2, 3]}
+{"case": "star-7-6-balanced-101", "checks": "accepted", "rows": 144, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-7-6-balanced-101", "checks": "accepted", "rows": 144, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-7-6-balanced-101", "checks": "accepted", "rows": 144, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-7-6-balanced-202", "checks": "accepted", "rows": 144, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-7-6-balanced-202", "checks": "accepted", "rows": 144, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-7-6-balanced-202", "checks": "accepted", "rows": 144, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-7-6-skewed-101", "checks": "accepted", "rows": 144, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-7-6-skewed-101", "checks": "accepted", "rows": 144, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-7-6-skewed-101", "checks": "accepted", "rows": 144, "world": [0, 0, 0, 3, 3, 3]}
+{"case": "star-7-6-skewed-202", "checks": "accepted", "rows": 144, "world": [3, 3, 3, 0, 0, 0]}
+{"case": "star-7-6-skewed-202", "checks": "accepted", "rows": 144, "world": [2, 2, 2, 1, 1, 1]}
+{"case": "star-7-6-skewed-202", "checks": "accepted", "rows": 144, "world": [0, 0, 0, 3, 3, 3]}
+{"accepted_snapshots": 306, "all_attempted_negative_controls_rejected": true, "all_membership_checks_accepted": true, "all_snapshot_regrets_within_certificate": true, "all_sqlite_profiles_matched": true, "attested_copies": 2106, "campaign_cpu_s": 7.541900968, "campaign_wall_s": 7.560801703, "checker_cpu_s_sum": 4.343680483, "end_to_end_chain_acceptances": 306, "input_cases": 102, "max_attestation_bytes": 932, "max_snapshot_bytes": 5642, "maxrss_kib": 98220, "negative_controls_attempted": 2754, "negative_controls_rejected": 2754, "negative_controls_skipped": 0, "snapshot_regret_bound_checks": 306, "snapshot_regret_bound_tight": 126, "snapshot_rows": 33204, "sqlite_connected_subquery_checks": 7812}

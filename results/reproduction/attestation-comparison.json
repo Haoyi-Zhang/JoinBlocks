@@ -11,5 +11,6 @@
   "matching_example_json_files": 8,
   "matching_negative_control_classes": 9,
   "matching_snapshot_rows": 306,
-  "matching_summary_fields": 17
+  "matching_summary_fields": 17,
+  "overhead_summary_exact": true
 }

@@ -1,0 +1,426 @@
+{
+  "containment": {
+    "1": {
+      "lower": 20,
+      "max_threshold": 1,
+      "max_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "min_threshold": -3,
+      "min_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "upper": 20
+    },
+    "12": {
+      "lower": 13,
+      "max_threshold": 1,
+      "max_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "min_threshold": -2,
+      "min_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "upper": 13
+    },
+    "13": {
+      "lower": 20,
+      "max_threshold": 1,
+      "max_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "min_threshold": -4,
+      "min_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "upper": 20
+    },
+    "14": {
+      "lower": 11,
+      "max_threshold": 1,
+      "max_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "min_threshold": -2,
+      "min_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "upper": 11
+    },
+    "15": {
+      "lower": 20,
+      "max_threshold": 1,
+      "max_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "min_threshold": -4,
+      "min_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "upper": 20
+    },
+    "2": {
+      "lower": 16,
+      "max_threshold": 1,
+      "max_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "min_threshold": -3,
+      "min_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "upper": 16
+    },
+    "4": {
+      "lower": 13,
+      "max_threshold": 1,
+      "max_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "min_threshold": -3,
+      "min_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "upper": 13
+    },
+    "5": {
+      "lower": 18,
+      "max_threshold": 2,
+      "max_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "min_threshold": -2,
+      "min_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "upper": 18
+    },
+    "6": {
+      "lower": 11,
+      "max_threshold": 1,
+      "max_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "min_threshold": -2,
+      "min_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "upper": 11
+    },
+    "7": {
+      "lower": 18,
+      "max_threshold": 2,
+      "max_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "min_threshold": -2,
+      "min_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "upper": 18
+    },
+    "8": {
+      "lower": 15,
+      "max_threshold": 1,
+      "max_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "min_threshold": -3,
+      "min_world": [
+        2,
+        3,
+        2,
+        2
+      ],
+      "upper": 15
+    }
+  },
+  "instance": "invariance-7008-template-permutation",
+  "lower_witnesses": [
+    {
+      "rival": 0,
+      "world": [
+        2,
+        3,
+        2,
+        2
+      ]
+    }
+  ],
+  "regret": 0,
+  "selected": 0,
+  "states": {
+    "1": {
+      "coverage": [],
+      "plans": [
+        0
+      ]
+    },
+    "12": {
+      "coverage": [
+        [
+          4,
+          8,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "plans": [
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "13": {
+      "coverage": [
+        [
+          1,
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          8,
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "plans": [
+        [
+          0,
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    },
+    "14": {
+      "coverage": [
+        [
+          2,
+          12,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          6,
+          8,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "plans": [
+        [
+          [
+            1,
+            2
+          ],
+          3
+        ]
+      ]
+    },
+    "15": {
+      "coverage": [
+        [
+          1,
+          14,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          8,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          13,
+          2,
+          0,
+          0,
+          0,
+          -3
+        ]
+      ],
+      "plans": [
+        [
+          0,
+          [
+            [
+              1,
+              2
+            ],
+            3
+          ]
+        ]
+      ]
+    },
+    "2": {
+      "coverage": [],
+      "plans": [
+        1
+      ]
+    },
+    "4": {
+      "coverage": [],
+      "plans": [
+        2
+      ]
+    },
+    "5": {
+      "coverage": [
+        [
+          1,
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "plans": [
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "6": {
+      "coverage": [
+        [
+          2,
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "plans": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "7": {
+      "coverage": [
+        [
+          1,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          2,
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "plans": [
+        [
+          0,
+          [
+            1,
+            2
+          ]
+        ]
+      ]
+    },
+    "8": {
+      "coverage": [],
+      "plans": [
+        3
+      ]
+    }
+  },
+  "upper_thresholds": [
+    0
+  ]
+}

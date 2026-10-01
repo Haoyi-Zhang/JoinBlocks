@@ -1,0 +1,16 @@
+{
+  "accepted": true,
+  "containment_masks": 11,
+  "copies": 5,
+  "coverage_records": 12,
+  "instance": "star-4-4-balanced-101",
+  "regret": 12,
+  "root_frontier": 2,
+  "snapshot_rows": 50,
+  "world": [
+    3,
+    2,
+    0,
+    0
+  ]
+}

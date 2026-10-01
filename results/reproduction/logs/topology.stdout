@@ -1,0 +1,81 @@
+{
+  "all_checker_accepted": true,
+  "all_oracle_match": true,
+  "by_n": {
+    "4": {
+      "cases": 4,
+      "certificate_bytes_max": 1813,
+      "certificate_bytes_median": 1789.5,
+      "certificate_bytes_min": 1767,
+      "checker_cpu_seconds_median": 0.001218914,
+      "input_bytes_median": 880.0,
+      "oracle_cpu_seconds_median": 0.002920992,
+      "plan_count_max": 5,
+      "producer_cpu_seconds_median": 0.000835199,
+      "root_frontier_max": 2
+    },
+    "5": {
+      "cases": 4,
+      "certificate_bytes_max": 2851,
+      "certificate_bytes_median": 2738.5,
+      "certificate_bytes_min": 2682,
+      "checker_cpu_seconds_median": 0.0024737965,
+      "input_bytes_median": 1118.0,
+      "oracle_cpu_seconds_median": 0.003127535,
+      "plan_count_max": 14,
+      "producer_cpu_seconds_median": 0.0015445609999999999,
+      "root_frontier_max": 3
+    },
+    "6": {
+      "cases": 4,
+      "certificate_bytes_max": 4059,
+      "certificate_bytes_median": 3964.0,
+      "certificate_bytes_min": 3870,
+      "checker_cpu_seconds_median": 0.01009726,
+      "input_bytes_median": 1358.0,
+      "oracle_cpu_seconds_median": 0.005546774,
+      "plan_count_max": 42,
+      "producer_cpu_seconds_median": 0.0039143024999999994,
+      "root_frontier_max": 2
+    },
+    "7": {
+      "cases": 4,
+      "certificate_bytes_max": 8711,
+      "certificate_bytes_median": 7575.0,
+      "certificate_bytes_min": 7052,
+      "checker_cpu_seconds_median": 0.029289872,
+      "input_bytes_median": 1532.0,
+      "oracle_cpu_seconds_median": 0.012186142,
+      "plan_count_max": 222,
+      "producer_cpu_seconds_median": 0.0090091865,
+      "root_frontier_max": 6
+    },
+    "8": {
+      "cases": 4,
+      "certificate_bytes_max": 11864,
+      "certificate_bytes_median": 10807.0,
+      "certificate_bytes_min": 9999,
+      "checker_cpu_seconds_median": 0.130475764,
+      "input_bytes_median": 1770.0,
+      "oracle_cpu_seconds_median": 0.038058757,
+      "plan_count_max": 794,
+      "producer_cpu_seconds_median": 0.01727833,
+      "root_frontier_max": 2
+    }
+  },
+  "cases": 20,
+  "certificate_bytes_max": 11864,
+  "n_max": 8,
+  "n_min": 4,
+  "query_ids": [
+    "3b",
+    "6a",
+    "17a",
+    "18a",
+    "16a"
+  ],
+  "schema_version": 1,
+  "scope": "Exact proof/check/oracle runs on JOB-derived equality-reduced tree topologies with synthetic literal templates; not a JOB data or runtime benchmark.",
+  "source_commit": "a39603662e023e449cb2121997a5034df9e02ebf",
+  "source_repository": "gregrahn/join-order-benchmark"
+}

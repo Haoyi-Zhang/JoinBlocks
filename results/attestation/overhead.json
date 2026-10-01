@@ -1,0 +1,23 @@
+{
+  "all_bounds_hold": true,
+  "all_chain_accepted": true,
+  "attestation_bytes_per_row_max_milli": 5960,
+  "attestation_bytes_per_row_median_milli": 4958,
+  "attestation_bytes_per_row_p90_milli": 5481,
+  "attestation_bytes_total": 162669,
+  "attestation_to_snapshot_ratio_max_ppm": 226302,
+  "attestation_to_snapshot_ratio_median_ppm": 175809,
+  "attestation_to_snapshot_ratio_min_ppm": 150781,
+  "attestation_to_snapshot_ratio_p90_ppm": 223583,
+  "interpretation": "The packet is an explicit row-occurrence mapping, not a succinct proof. Ratios include canonical JSON field-name overhead and are not asymptotic constants.",
+  "quantile_definition": "nearest-rank",
+  "rows_max": 216,
+  "rows_median": 100.0,
+  "rows_min": 50,
+  "rows_p90": 180,
+  "rows_total": 33204,
+  "schema_version": 1,
+  "snapshot_bytes_per_row_median_milli": 26619,
+  "snapshot_bytes_total": 904503,
+  "snapshots": 306
+}

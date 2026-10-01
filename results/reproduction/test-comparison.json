@@ -1,0 +1,7 @@
+{
+  "both_logs_pass": true,
+  "inventory_exact": true,
+  "rejection_oriented_methods": 59,
+  "summary_exact": true,
+  "test_methods": 68
+}

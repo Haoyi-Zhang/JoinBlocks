@@ -160,13 +160,33 @@ Nine deterministic mutation operators are attempted on every accepted snapshot:
 
 All 2,754 attempted mutations are rejected and none is skipped.  Additional unit
 tests reject unknown template types, boolean row indices, changed templates, and
-duplicate JSON keys.
+duplicate JSON keys.  A separate minimal drift control is excluded from that
+count: the plan packet accepts the declared one-copy family, while a supplied
+two-copy snapshot is rejected by membership and composition with a shared-total
+mismatch.
 
-The full regression suite has 64 methods: 40 plan-certificate methods
+The full regression suite has 68 methods: 40 plan-certificate methods
 (38 rejection-oriented), 20 membership methods (18 rejection-oriented), three
-composition methods (two rejection-oriented), and one independent crosscheck
-method covering 36 small contracts.  These are finite attacks, not exhaustive
-malicious-input coverage.
+composition methods (two rejection-oriented), one independent crosscheck method
+covering 36 small contracts, and four topology-interface methods (one
+rejection-oriented).  Thus 59 methods are rejection-oriented and nine are
+valid/support/validation/crosscheck methods.  `test_protocol.py` discovers these
+methods rather than relying on a handwritten count and records each method's
+source file, source line, area, orientation, and input association.  These are
+finite attacks, not exhaustive malicious-input coverage.
+
+### Auxiliary topology-interface route
+
+Five public JOB SQL files are pinned by repository commit and blob identifier.
+Their aliases are vertices; equality predicates are reduced transitively to a
+connected spanning tree.  Synthetic literal templates are then generated for two
+regimes and two seeds, producing 20 exact cases with 4--8 aliases.  The route
+checks list-of-lists edge encoding, producer/checker/oracle agreement, the
+oracle's actual `optimum` field, and a lossless deterministic JSON schema whose
+`regret_by_profile` records restore tuple keys exactly.  It is excluded from the
+102 primary contracts and 306 snapshots and is neither a JOB data nor runtime
+benchmark.  The retained source manifest, inputs, certificates, oracle packets,
+case CSV, and summary are all present under `results/topology/`.
 
 ## 7. Measured plan outcomes
 
@@ -199,15 +219,34 @@ invocations are not claimed as byte- or CPU-exact campaign totals.
 
 ## 9. Reproduction and comparison policy
 
-`reproduce.py` writes a fresh plan campaign.  `compare_results.py` compares all
-non-observational CSV fields plus every certificate and detail object with the
-retained campaign; CPU, wall-time, and RSS are deliberately excluded from exact
-semantic equality.  `attestation_campaign.py` writes a fresh membership campaign.
-`compare_attestation.py` compares it with the retained campaign.  The semantic
-comparison excludes only `checker_cpu_s`, total CPU, wall time, and RSS; worlds,
-counts, acceptance, SQL matches, regret checks, packet sizes, example packets,
-and mutation outcomes must match.
+`full_reproduction.py` is the default route.  It runs `test_protocol.py`, the
+102-case plan campaign, the 306-snapshot campaign, controls, summaries, input
+regeneration, the 20-case topology route, attestation-overhead validation, a fresh
+worked certificate, retained/fresh comparisons, and one complete chain.
 
-A successful command demonstrates reproduction of the finite retained evidence.
-It is not, by itself, a proof of the mathematical theorems or of checker
-correctness.
+`compare_results.py` compares all non-observational plan fields plus every
+certificate and detail object.  `compare_attestation.py` compares worlds, counts,
+acceptance, SQLite matches, realized-regret checks, packet sizes, overhead, example
+packets, and mutation outcomes.  `attestation_overhead.py` reads the actual
+`snapshot_rows` and `regret_within_bound` columns and enforces 306 snapshots,
+33,204 rows, all accepted chains, and all bounds.  `compare_tests.py` requires an
+identical discovered test inventory and passing retained/fresh logs.
+`compare_topology.py` requires the source manifest, inputs, certificates, oracle
+packets, cases, and summary in two distinct directories; it rejects comparing a
+directory with itself.  The topology oracle JSON representation is decoded before
+semantic comparison, so tuple-keyed profiles are compared losslessly rather than
+stringified.
+
+CPU, wall-time, and RSS are deliberately excluded from exact semantic equality.
+A successful command demonstrates reproduction of the finite retained evidence;
+it is not, by itself, a proof of the mathematical theorems or checker correctness.
+
+## Separate evidence-adapter and invariance checks
+
+The primary counts above remain unchanged. The independently specified protocol
+in `docs/invariance-protocol.md` adds 32 base cases and 224 transformed executions,
+retained under `results/invariance/`. All expected relations and oracle matches
+hold; 4/32 base optima are nonzero and four refinements strictly reduce regret.
+`audit_test_protocol.py` discovers 29 adapter methods and records their exact
+source locations and actual passing log separately from the 68 science methods.
+The complete offline route has 17 stages with paper sources and 16 standalone.

@@ -30,6 +30,18 @@ def strip_observations(value):
 
 
 def compare(retained: Path, reproduced: Path) -> dict:
+    retained = retained.resolve()
+    reproduced = reproduced.resolve()
+    if retained == reproduced:
+        raise RuntimeError("retained and reproduced topology directories must be distinct")
+    required = {"source-manifest.json", "cases.csv", "summary.json"}
+    for directory in (retained, reproduced):
+        missing = sorted(name for name in required if not (directory / name).is_file())
+        for subdir in ("inputs", "certificates", "oracles"):
+            if not (directory / subdir).is_dir():
+                missing.append(subdir + "/")
+        if missing:
+            raise RuntimeError(f"incomplete topology evidence in {directory}: {missing}")
     for name in ("source-manifest.json",):
         if (retained / name).read_bytes() != (reproduced / name).read_bytes():
             raise RuntimeError(f"byte mismatch: {name}")

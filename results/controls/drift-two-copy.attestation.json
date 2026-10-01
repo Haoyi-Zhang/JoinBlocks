@@ -1,0 +1,27 @@
+{
+  "copies": [
+    {
+      "rows": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "type": 0
+    },
+    {
+      "rows": [
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "type": 0
+    }
+  ],
+  "instance": "two-copy-drift-control"
+}

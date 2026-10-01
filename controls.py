@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Reproduce negative controls and contract edge cases, independently against SQLite."""
 from __future__ import annotations
-import argparse,itertools,json,os,resource,sqlite3,time
+import argparse,copy,itertools,json,os,resource,sqlite3,time
 from pathlib import Path
 from src.generate import make
 from src.model import all_plans,plan_cost,block_profile,support,as_plan,execute_plan,instantiate
@@ -10,6 +10,9 @@ from src.oracle import oracle
 from src.baselines import select_baselines
 from src.sqlcheck import check_world
 from checker import verify
+from attest import Rejected as MembershipRejected, verify as verify_membership
+from verify_chain import Rejected as ChainRejected, verify as verify_chain
+from src.attestation import materialize_attestation
 
 def hedge_instance():
     # Six distinct central rows. Each leaf is a bag of two equal zero-valued rows.
@@ -20,6 +23,15 @@ def hedge_instance():
     return {'name':'pointwise-cover-counterexample','n':4,'edges':[[0,1],[0,2],[0,3]],
             'lower':[0,0],'upper':[1,1],'total':1,'blocks':blocks,
             'family':'star','regime':'hedging'}
+
+def drift_instance():
+    return {
+        'name':'two-copy-drift-control','n':2,'edges':[[0,1]],
+        'lower':[0],'upper':[2],'total':1,
+        'blocks':[[[{'0':0}],[{'0':0}]]],
+        'family':'control','regime':'out-of-contract-drift',
+        'provenance':'Minimal end-to-end drift control; abstract join-key snapshot only.'
+    }
 
 def run(out):
     start=time.process_time();data={}
@@ -62,15 +74,53 @@ def run(out):
             assert verify(z,cc)['regret']==oo['optimum'] and hh==oo['h']
             edges.append({'k':k,'mode':mode,'regret':cc['regret'],'worlds':len(oo['worlds'])})
     data['contract_edges']=edges
-    # In-contract movement is already covered by all worlds above. Out-of-contract mass
-    # can violate the single-relation interval; packet checking alone cannot detect a live DB.
-    h=hedge_instance();cc,_,_=optimize(h)
-    w=[1,1];size=len(instantiate(h,w)[0]);bound=cc['containment']['1']['upper']
-    assert size==12 and bound==6 and verify(h,cc)['accepted']
-    data['out_of_contract_drift']={'declared_total':1,'actual_total':2,
-        'declared_base_upper':bound,'actual_base_count':size,
-        'unchanged_declared_packet_accepts':True,
-        'meaning':'No live-database membership attestation is claimed.'}
+    # Plan-only acceptance is conditional on the declared N=1 contract.  A separately
+    # materialized two-copy snapshot supplies the missing end-to-end drift control:
+    # membership and therefore the composed chain reject it.  This control is not one
+    # of the per-snapshot mutation attempts in attestation_campaign.py.
+    drift=drift_instance(); drift_cert,_,_=optimize(drift)
+    plan_verdict=verify(drift,drift_cert)
+    source_contract=copy.deepcopy(drift); source_contract['total']=2
+    snapshot,packet=materialize_attestation(source_contract,[2],seed=23)
+    bound=drift_cert['containment']['1']['upper']; actual_base_count=len(snapshot['tables'][0])
+    membership_reason=None; chain_reason=None
+    try:
+        verify_membership(drift,snapshot,packet)
+    except MembershipRejected as exc:
+        membership_reason=str(exc)
+    else:
+        raise AssertionError('two-copy drift snapshot unexpectedly passed membership')
+    try:
+        verify_chain(drift,snapshot,packet,drift_cert)
+    except ChainRejected as exc:
+        chain_reason=str(exc)
+    else:
+        raise AssertionError('two-copy drift snapshot unexpectedly passed composed chain')
+    assert plan_verdict['accepted'] and actual_base_count==2 and bound==1
+    assert membership_reason=='attested copy count differs from shared total'
+    assert chain_reason=='membership: attested copy count differs from shared total'
+    drift_assets={
+        'drift-declared-input.json':drift,
+        'drift-plan-certificate.json':drift_cert,
+        'drift-two-copy.snapshot.json':snapshot,
+        'drift-two-copy.attestation.json':packet,
+        'drift-rejections.json':{
+            'plan_only':plan_verdict,
+            'membership':{'accepted':False,'reason':membership_reason},
+            'chain':{'accepted':False,'reason':chain_reason},
+            'counted_in_2754_mutations':False,
+        },
+    }
+    for filename,value in drift_assets.items():
+        (out/filename).write_text(json.dumps(value,sort_keys=True,indent=2)+'\n')
+    data['out_of_contract_drift']={
+        'declared_total':1,'actual_copy_count':2,
+        'declared_base_upper':bound,'actual_base_count':actual_base_count,
+        'plan_only_certificate_accepted':True,
+        'membership_rejected':True,'membership_reason':membership_reason,
+        'chain_rejected':True,'chain_reason':chain_reason,
+        'counted_in_2754_mutations':False,
+        'meaning':'The plan packet remains valid for the declared family; the supplied two-copy snapshot is outside that family and is rejected by membership and composition.'}
     data['cpu_s']=time.process_time()-start
     data['maxrss_kib']=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
     (out/'controls.json').write_text(json.dumps(data,sort_keys=True,indent=2)+'\n')

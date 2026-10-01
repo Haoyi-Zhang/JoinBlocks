@@ -25,6 +25,11 @@ CONTROL_PACKET_FILES = (
     "pointwise-cover-certificate.json",
     "local-pruning-input.json",
     "local-pruning-certificate.json",
+    "drift-declared-input.json",
+    "drift-plan-certificate.json",
+    "drift-two-copy.snapshot.json",
+    "drift-two-copy.attestation.json",
+    "drift-rejections.json",
 )
 
 

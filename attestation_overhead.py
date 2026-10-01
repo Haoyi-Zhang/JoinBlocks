@@ -18,17 +18,17 @@ def q(values, numerator, denominator):
     return values[max(0, min(len(values) - 1, rank - 1))]
 
 
-def run(results: Path, output: Path) -> dict:
+def run(results: Path, output: Path, expected_snapshots: int | None = None, expected_rows: int | None = None) -> dict:
     with (results / "cases.csv").open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
     if not rows:
         raise ValueError("attestation cases.csv is empty")
-    required = {"rows", "snapshot_bytes", "attestation_bytes", "chain_accepted", "bound_holds"}
+    required = {"snapshot_rows", "snapshot_bytes", "attestation_bytes", "chain_accepted", "regret_within_bound"}
     if not required.issubset(rows[0]):
         raise ValueError(f"missing fields: {sorted(required - set(rows[0]))}")
     parsed = []
     for row in rows:
-        nrows = int(row["rows"])
+        nrows = int(row["snapshot_rows"])
         snapshot = int(row["snapshot_bytes"])
         packet = int(row["attestation_bytes"])
         if nrows <= 0 or snapshot <= 0 or packet <= 0:
@@ -57,9 +57,15 @@ def run(results: Path, output: Path) -> dict:
         "attestation_bytes_per_row_max_milli": max(packet_per_row_milli),
         "snapshot_bytes_per_row_median_milli": int(statistics.median(snapshot_per_row_milli)),
         "all_chain_accepted": all(row["chain_accepted"].lower() == "true" for row in rows),
-        "all_bounds_hold": all(row["bound_holds"].lower() == "true" for row in rows),
+        "all_bounds_hold": all(row["regret_within_bound"].lower() == "true" for row in rows),
         "interpretation": "The packet is an explicit row-occurrence mapping, not a succinct proof. Ratios include canonical JSON field-name overhead and are not asymptotic constants.",
     }
+    if expected_snapshots is not None and summary["snapshots"] != expected_snapshots:
+        raise ValueError(f"snapshot count mismatch: {summary['snapshots']} != {expected_snapshots}")
+    if expected_rows is not None and summary["rows_total"] != expected_rows:
+        raise ValueError(f"row count mismatch: {summary['rows_total']} != {expected_rows}")
+    if not summary["all_chain_accepted"] or not summary["all_bounds_hold"]:
+        raise ValueError("not all retained chain/bound checks hold")
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(summary, sort_keys=True, indent=2) + "\n", encoding="utf-8")
     return summary
@@ -69,8 +75,10 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--results", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--expect-snapshots", type=int)
+    parser.add_argument("--expect-rows", type=int)
     args = parser.parse_args()
-    print(json.dumps(run(args.results, args.output), sort_keys=True, indent=2))
+    print(json.dumps(run(args.results, args.output, args.expect_snapshots, args.expect_rows), sort_keys=True, indent=2))
 
 
 if __name__ == "__main__":

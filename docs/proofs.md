@@ -369,10 +369,21 @@ The retained evidence is finite validation, not a substitute for the proofs:
 - direct realized-plan evaluation checks `actual regret <= r` on all 306
   snapshots, with equality on 126;
 - 2,754 semantic attestation corruptions across nine classes are all rejected;
-- 64 regression methods pass: 58 rejection-oriented methods across the plan,
-  membership, and composition protocols, plus six valid/support/composition or
-  independent-crosscheck methods; the crosscheck covers 36 additional small
-  contracts with independently enumerated plans, worlds, and SQLite counts;
+- 68 regression methods pass: 59 rejection-oriented methods and nine
+  valid/support/validation/crosscheck methods; the inventory maps every method to
+  its source line and evidence area, and the independent crosscheck covers 36
+  additional small contracts with separately enumerated plans, worlds, and SQLite
+  counts;
+- an auxiliary 20-case topology-interface route over five pinned public-query
+  equality trees validates edge encoding, producer/checker/oracle agreement, and
+  lossless tuple-keyed oracle serialization; it is excluded from the 102/306 core
+  totals and is not a data or runtime benchmark;
+- the retained and fresh attestation-overhead gates both read 306 snapshots and
+  33,204 rows from the actual CSV fields and confirm every chain and realized
+  regret bound;
+- a separate two-copy drift packet leaves the one-copy plan certificate valid but
+  is rejected by membership and composition; it is not counted in the 2,754
+  mutation attempts;
 - a realizable hedge shows pointwise envelope preservation can lose the minimax
   candidate, and a six-alias control shows one local minimax winner per state can
   increase global regret from 36 to 44.

@@ -109,7 +109,7 @@
       "worlds": 1107
     }
   ],
-  "cpu_s": 1.0131823679999998,
+  "cpu_s": 0.9272465440000001,
   "local_pruning": {
     "baselines": {
       "cardinality_box": 44,
@@ -142,14 +142,19 @@
     ],
     "regret": 36
   },
-  "maxrss_kib": 97580,
+  "maxrss_kib": 96812,
   "out_of_contract_drift": {
-    "actual_base_count": 12,
-    "actual_total": 2,
-    "declared_base_upper": 6,
+    "actual_base_count": 2,
+    "actual_copy_count": 2,
+    "chain_reason": "membership: attested copy count differs from shared total",
+    "chain_rejected": true,
+    "counted_in_2754_mutations": false,
+    "declared_base_upper": 1,
     "declared_total": 1,
-    "meaning": "No live-database membership attestation is claimed.",
-    "unchanged_declared_packet_accepts": true
+    "meaning": "The plan packet remains valid for the declared family; the supplied two-copy snapshot is outside that family and is rejected by membership and composition.",
+    "membership_reason": "attested copy count differs from shared total",
+    "membership_rejected": true,
+    "plan_only_certificate_accepted": true
   },
   "pairwise_indistinguishability": [
     [

@@ -1,0 +1,7 @@
+{
+  "cases": 20,
+  "certificates": 20,
+  "inputs": 20,
+  "oracles": 20,
+  "semantic_match": true
+}

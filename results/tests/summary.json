@@ -1,0 +1,26 @@
+{
+  "area_counts": {
+    "composition": 3,
+    "independent-crosscheck": 1,
+    "membership": 20,
+    "plan": 40,
+    "topology-interface": 4
+  },
+  "command": "python test_protocol.py --output OUTPUT",
+  "discovered_methods": 68,
+  "errors": 0,
+  "failures": 0,
+  "non_rejection_methods": 9,
+  "orientation_counts": {
+    "crosscheck": 1,
+    "rejection": 59,
+    "support": 1,
+    "valid": 4,
+    "validation": 3
+  },
+  "passed": true,
+  "rejection_oriented_methods": 59,
+  "schema_version": 1,
+  "skipped": 0,
+  "tests_run": 68
+}

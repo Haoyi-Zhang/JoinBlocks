@@ -1,0 +1,123 @@
+{
+  "h": [
+    {
+      "mask": 1,
+      "profile": [
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "mask": 2,
+      "profile": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "mask": 3,
+      "profile": [
+        1,
+        1,
+        4
+      ]
+    },
+    {
+      "mask": 4,
+      "profile": [
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "mask": 5,
+      "profile": [
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "mask": 7,
+      "profile": [
+        1,
+        3,
+        4
+      ]
+    }
+  ],
+  "optimum": 0,
+  "plan_count": 2,
+  "plans": [
+    {
+      "plan": [
+        [
+          0,
+          1
+        ],
+        2
+      ],
+      "profile": [
+        2,
+        4,
+        8
+      ]
+    },
+    {
+      "plan": [
+        [
+          0,
+          2
+        ],
+        1
+      ],
+      "profile": [
+        2,
+        6,
+        7
+      ]
+    }
+  ],
+  "regret_by_profile": [
+    {
+      "profile": [
+        2,
+        4,
+        8
+      ],
+      "regret": 0
+    },
+    {
+      "profile": [
+        2,
+        6,
+        7
+      ],
+      "regret": 4
+    }
+  ],
+  "schema_version": 1,
+  "sql_profile_checks": 18,
+  "unique_profiles": 2,
+  "vertices": 3,
+  "worlds": [
+    [
+      2,
+      2,
+      1
+    ],
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      3,
+      2,
+      0
+    ]
+  ]
+}

@@ -45,8 +45,8 @@ for label,tokens in baseline_tokens.items():
         worse=sum(int(r[regret]) > int(r[col]) for r in campaign)
         baselines[label]={'column':col,'lower':lower,'equal':equal,'worse':worse}
 
-sqlite_cols=[c for c in nums if 'sqlite' in c.lower() and ('check' in c.lower() or 'count' in c.lower())]
-bag_cols=[c for c in nums if 'bag' in c.lower() and ('check' in c.lower() or 'compar' in c.lower())]
+sqlite_cols=[c for c in ('sql_profile_checks',) if c in fields]
+bag_cols=[c for c in ('sql_plan_world_checks',) if c in fields]
 cert_col=choose(fields,('certificate','bytes')) or choose(fields,('cert','bytes'))
 root_col=choose(fields,('root','frontier'))
 checker_cpu=choose(fields,('checker','cpu'))
@@ -75,9 +75,9 @@ metrics={
  'attestation':{
    'snapshots':len(att),
    'copies':sum(int(r['copies']) for r in att),
-   'rows':sum(int(r['rows']) for r in att),
-   'sqlite_checks':sum(int(r['sqlite_count_checks']) for r in att),
-   'bound_tight':sum(r['bound_tight'].lower()=='true' for r in att),
+   'rows':sum(int(r['snapshot_rows']) for r in att),
+   'sqlite_checks':sum(int(r['connected_subqueries']) for r in att),
+   'bound_tight':sum(int(r['actual_snapshot_regret'])==int(r['certified_regret']) for r in att),
  },
  'topology':{
    'cases':len(topo),'query_ids':sorted({r['query_id'] for r in topo}),
@@ -86,13 +86,13 @@ metrics={
    'certificate_bytes_max':max(int(r['certificate_bytes']) for r in topo),
    'root_frontier_max':max(int(r['root_frontier']) for r in topo),
  },
- 'tests':json.loads((ROOT/'results/test-summary.json').read_text()),
+ 'tests':json.loads((ROOT/'results/tests/summary.json').read_text()),
  'overhead':json.loads((ROOT/'results/attestation/overhead.json').read_text()),
 }
 att_summary=json.loads((ROOT/'results/attestation/summary.json').read_text())
-metrics['attestation']['mutation_attempts']=att_summary['mutation_attempts']
-metrics['attestation']['mutation_rejections']=att_summary['mutation_rejections']
-metrics['attestation']['chain_acceptances']=att_summary['chain_acceptances']
-metrics['attestation']['regret_bound_violations']=att_summary['regret_bound_violations']
+metrics['attestation']['mutation_attempts']=att_summary['negative_controls_attempted']
+metrics['attestation']['mutation_rejections']=att_summary['negative_controls_rejected']
+metrics['attestation']['chain_acceptances']=att_summary['end_to_end_chain_acceptances']
+metrics['attestation']['regret_bound_violations']=att_summary['snapshot_regret_bound_checks']-sum(r['regret_within_bound'].lower()=='true' for r in att)
 (ROOT/'results/reviewer-metrics.json').write_text(json.dumps(metrics,sort_keys=True,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(metrics,sort_keys=True,indent=2))

@@ -1,0 +1,194 @@
+{
+  "attestation": {
+    "bound_tight": 126,
+    "chain_acceptances": 306,
+    "copies": 2106,
+    "mutation_attempts": 2754,
+    "mutation_rejections": 2754,
+    "regret_bound_violations": 0,
+    "rows": 33204,
+    "snapshots": 306,
+    "sqlite_checks": 7812
+  },
+  "campaign_fields": [
+    "case",
+    "family",
+    "regime",
+    "n",
+    "k",
+    "integer_worlds",
+    "vertices",
+    "plans",
+    "unique_profiles",
+    "regret",
+    "point_regret",
+    "worst_cost_regret",
+    "box_regret",
+    "local_regret",
+    "box_claim",
+    "support_calls",
+    "expansions",
+    "root_frontier",
+    "max_frontier",
+    "states",
+    "component_frontier",
+    "component_expansions",
+    "certificate_bytes",
+    "checker_records",
+    "sql_profile_checks",
+    "sql_plan_world_checks",
+    "producer_cpu_s",
+    "checker_cpu_s",
+    "oracle_cpu_s",
+    "baseline_cpu_s",
+    "sql_cpu_s",
+    "case_cpu_s",
+    "case_wall_s",
+    "maxrss_kib",
+    "oracle_match",
+    "checker_accepted"
+  ],
+  "core": {
+    "bag_checks": 607,
+    "baselines": {
+      "independent box": {
+        "column": "box_regret",
+        "equal": 92,
+        "lower": 10,
+        "worse": 0
+      },
+      "local minimax": {
+        "column": "local_regret",
+        "equal": 97,
+        "lower": 5,
+        "worse": 0
+      },
+      "point estimate": {
+        "column": "point_regret",
+        "equal": 96,
+        "lower": 6,
+        "worse": 0
+      },
+      "worst cost": {
+        "column": "worst_cost_regret",
+        "equal": 86,
+        "lower": 16,
+        "worse": 0
+      }
+    },
+    "cases": 102,
+    "certificate_bytes_max": 29923,
+    "certificate_bytes_min": 1758,
+    "checker_slower": 80,
+    "n_max": 7,
+    "n_min": 4,
+    "root_frontier_max": 21,
+    "root_frontier_min": 1,
+    "sqlite_checks": 12816,
+    "zero_regret": 37
+  },
+  "field_mapping": {
+    "bag_columns": [
+      "sql_plan_world_checks"
+    ],
+    "baselines": {
+      "independent box": {
+        "column": "box_regret",
+        "equal": 92,
+        "lower": 10,
+        "worse": 0
+      },
+      "local minimax": {
+        "column": "local_regret",
+        "equal": 97,
+        "lower": 5,
+        "worse": 0
+      },
+      "point estimate": {
+        "column": "point_regret",
+        "equal": 96,
+        "lower": 6,
+        "worse": 0
+      },
+      "worst cost": {
+        "column": "worst_cost_regret",
+        "equal": 86,
+        "lower": 16,
+        "worse": 0
+      }
+    },
+    "certificate_bytes": "certificate_bytes",
+    "checker_cpu": "checker_cpu_s",
+    "producer_cpu": "producer_cpu_s",
+    "regret": "regret",
+    "root_frontier": "root_frontier",
+    "sqlite_columns": [
+      "sql_profile_checks"
+    ]
+  },
+  "overhead": {
+    "all_bounds_hold": true,
+    "all_chain_accepted": true,
+    "attestation_bytes_per_row_max_milli": 5960,
+    "attestation_bytes_per_row_median_milli": 4958,
+    "attestation_bytes_per_row_p90_milli": 5481,
+    "attestation_bytes_total": 162669,
+    "attestation_to_snapshot_ratio_max_ppm": 226302,
+    "attestation_to_snapshot_ratio_median_ppm": 175809,
+    "attestation_to_snapshot_ratio_min_ppm": 150781,
+    "attestation_to_snapshot_ratio_p90_ppm": 223583,
+    "interpretation": "The packet is an explicit row-occurrence mapping, not a succinct proof. Ratios include canonical JSON field-name overhead and are not asymptotic constants.",
+    "quantile_definition": "nearest-rank",
+    "rows_max": 216,
+    "rows_median": 100.0,
+    "rows_min": 50,
+    "rows_p90": 180,
+    "rows_total": 33204,
+    "schema_version": 1,
+    "snapshot_bytes_per_row_median_milli": 26619,
+    "snapshot_bytes_total": 904503,
+    "snapshots": 306
+  },
+  "schema_version": 1,
+  "tests": {
+    "area_counts": {
+      "composition": 3,
+      "independent-crosscheck": 1,
+      "membership": 20,
+      "plan": 40,
+      "topology-interface": 4
+    },
+    "command": "python test_protocol.py --output OUTPUT",
+    "discovered_methods": 68,
+    "errors": 0,
+    "failures": 0,
+    "non_rejection_methods": 9,
+    "orientation_counts": {
+      "crosscheck": 1,
+      "rejection": 59,
+      "support": 1,
+      "valid": 4,
+      "validation": 3
+    },
+    "passed": true,
+    "rejection_oriented_methods": 59,
+    "schema_version": 1,
+    "skipped": 0,
+    "tests_run": 68
+  },
+  "topology": {
+    "cases": 20,
+    "certificate_bytes_max": 11864,
+    "n_max": 8,
+    "n_min": 4,
+    "plan_count_max": 794,
+    "query_ids": [
+      "16a",
+      "17a",
+      "18a",
+      "3b",
+      "6a"
+    ],
+    "root_frontier_max": 6
+  }
+}

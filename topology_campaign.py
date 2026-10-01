@@ -17,6 +17,7 @@ from checker import verify
 from src.generate import load_job_tree_topologies, make_job_topology
 from src.optimizer import optimize
 from src.oracle import oracle
+from src.oracle_json import to_jsonable as oracle_to_jsonable
 
 
 def canonical_bytes(value: object) -> bytes:
@@ -27,19 +28,6 @@ def dump_json(path: Path, value: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(canonical_bytes(value))
 
-
-def first(mapping: dict, names: tuple[str, ...], default=None):
-    for name in names:
-        if name in mapping:
-            return mapping[name]
-    return default
-
-
-def exact_regret(result: dict) -> int:
-    value = first(result, ("optimal_regret", "minimax_regret", "regret"))
-    if value is None:
-        raise RuntimeError(f"oracle result lacks a regret field: {sorted(result)}")
-    return value
 
 
 def run(output: Path) -> dict:
@@ -66,9 +54,9 @@ def run(output: Path) -> dict:
                 start = time.process_time()
                 exact = oracle(instance)
                 oracle_cpu = time.process_time() - start
-                dump_json(output / "oracles" / f"{case}.json", exact)
+                dump_json(output / "oracles" / f"{case}.json", oracle_to_jsonable(exact))
 
-                r_exact = exact_regret(exact)
+                r_exact = exact["optimum"]
                 if certificate["regret"] != r_exact:
                     raise RuntimeError(f"exact regret mismatch for {case}: {certificate['regret']} != {r_exact}")
 
@@ -90,11 +78,11 @@ def run(output: Path) -> dict:
                     "oracle_match": True,
                     "input_bytes": input_bytes,
                     "certificate_bytes": cert_bytes,
-                    "root_frontier": first(stats, ("root_frontier", "root_frontier_size"), ""),
-                    "states": first(stats, ("states", "state_count"), ""),
-                    "expansions": first(stats, ("expansions", "candidate_expansions"), ""),
-                    "plan_count": first(exact, ("plan_count", "plans"), ""),
-                    "unique_profiles": first(exact, ("unique_profiles", "profile_count"), ""),
+                    "root_frontier": stats["root_frontier"],
+                    "states": stats["states"],
+                    "expansions": stats["expansions"],
+                    "plan_count": exact["plan_count"],
+                    "unique_profiles": exact["unique_profiles"],
                     "producer_cpu_seconds": f"{producer_cpu:.9f}",
                     "checker_cpu_seconds": f"{checker_cpu:.9f}",
                     "oracle_cpu_seconds": f"{oracle_cpu:.9f}",

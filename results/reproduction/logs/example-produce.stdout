@@ -1,0 +1,1 @@
+{"checker": {"accepted": true, "containment_masks": 11, "coverage_records": 12, "regret": 12, "root_frontier": 2, "template_assignments": 456}, "producer": {"expansions": 12, "max_frontier": 2, "root_frontier": 2, "states": 11, "support_calls": 46}}

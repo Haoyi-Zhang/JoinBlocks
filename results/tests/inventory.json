@@ -1,0 +1,753 @@
+{
+  "discovered_methods": 68,
+  "records": [
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 72,
+      "test_id": "test_attestation.AttestationTests.test_bad_template_type"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 79,
+      "test_id": "test_attestation.AttestationTests.test_boolean_row_index"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 86,
+      "test_id": "test_attestation.AttestationTests.test_changed_template"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 57,
+      "test_id": "test_attestation.AttestationTests.test_copy_count"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 63,
+      "test_id": "test_attestation.AttestationTests.test_cross_copy_namespace"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 45,
+      "test_id": "test_attestation.AttestationTests.test_duplicate_assignment"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 116,
+      "test_id": "test_attestation.AttestationTests.test_duplicate_json_key"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 102,
+      "test_id": "test_attestation.AttestationTests.test_extra_attestation_field"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 54,
+      "test_id": "test_attestation.AttestationTests.test_extra_attribute"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 89,
+      "test_id": "test_attestation.AttestationTests.test_extra_contract_field"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 95,
+      "test_id": "test_attestation.AttestationTests.test_extra_snapshot_field"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 69,
+      "test_id": "test_attestation.AttestationTests.test_inconsistent_renaming"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 51,
+      "test_id": "test_attestation.AttestationTests.test_missing_attribute"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 66,
+      "test_id": "test_attestation.AttestationTests.test_noninjective_renaming"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 92,
+      "test_id": "test_attestation.AttestationTests.test_null_seed"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "valid",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 38,
+      "test_id": "test_attestation.AttestationTests.test_three_campaign_worlds"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 109,
+      "test_id": "test_attestation.AttestationTests.test_top_level_array_json"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 48,
+      "test_id": "test_attestation.AttestationTests.test_uncovered_row"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "valid",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 33,
+      "test_id": "test_attestation.AttestationTests.test_valid"
+    },
+    {
+      "area": "membership",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: src.attestation.materialize_attestation"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_attestation.py",
+      "source_line": 60,
+      "test_id": "test_attestation.AttestationTests.test_wrong_instance"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 58,
+      "test_id": "test_certificate.PacketTests.test_bad_lower_rival"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 59,
+      "test_id": "test_certificate.PacketTests.test_bad_lower_world"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 66,
+      "test_id": "test_certificate.PacketTests.test_bad_selected"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 56,
+      "test_id": "test_certificate.PacketTests.test_bad_upper"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 63,
+      "test_id": "test_certificate.PacketTests.test_bool_regret"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 52,
+      "test_id": "test_certificate.PacketTests.test_cartesian_plan"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 71,
+      "test_id": "test_certificate.PacketTests.test_changed_template"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 69,
+      "test_id": "test_certificate.PacketTests.test_cycle_graph"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 48,
+      "test_id": "test_certificate.PacketTests.test_duplicate_coverage"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 54,
+      "test_id": "test_certificate.PacketTests.test_duplicate_frontier_plan"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 90,
+      "test_id": "test_certificate.PacketTests.test_duplicate_json_key"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 68,
+      "test_id": "test_certificate.PacketTests.test_empty_contract"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 82,
+      "test_id": "test_certificate.PacketTests.test_extra_certificate_field"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 84,
+      "test_id": "test_certificate.PacketTests.test_extra_containment_field"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 76,
+      "test_id": "test_certificate.PacketTests.test_extra_contract_field"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 88,
+      "test_id": "test_certificate.PacketTests.test_extra_lower_witness_field"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 86,
+      "test_id": "test_certificate.PacketTests.test_extra_state_field"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 60,
+      "test_id": "test_certificate.PacketTests.test_false_lower_witness"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 64,
+      "test_id": "test_certificate.PacketTests.test_float_regret"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 65,
+      "test_id": "test_certificate.PacketTests.test_huge_regret"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 49,
+      "test_id": "test_certificate.PacketTests.test_invalid_dominator"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 50,
+      "test_id": "test_certificate.PacketTests.test_invalid_threshold"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 62,
+      "test_id": "test_certificate.PacketTests.test_larger_regret"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 43,
+      "test_id": "test_certificate.PacketTests.test_missing_containment"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 80,
+      "test_id": "test_certificate.PacketTests.test_missing_contract_field"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 47,
+      "test_id": "test_certificate.PacketTests.test_missing_coverage"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 57,
+      "test_id": "test_certificate.PacketTests.test_missing_lower"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 46,
+      "test_id": "test_certificate.PacketTests.test_missing_state"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 55,
+      "test_id": "test_certificate.PacketTests.test_missing_upper"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 78,
+      "test_id": "test_certificate.PacketTests.test_null_seed"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 51,
+      "test_id": "test_certificate.PacketTests.test_repeated_leaf"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 61,
+      "test_id": "test_certificate.PacketTests.test_smaller_regret"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 72,
+      "test_id": "test_certificate.PacketTests.test_top_level_array_json"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "valid",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 42,
+      "test_id": "test_certificate.PacketTests.test_valid"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 44,
+      "test_id": "test_certificate.PacketTests.test_wrong_containment_lower"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 45,
+      "test_id": "test_certificate.PacketTests.test_wrong_containment_upper"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 67,
+      "test_id": "test_certificate.PacketTests.test_wrong_instance_name"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 70,
+      "test_id": "test_certificate.PacketTests.test_wrong_key_schema"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 53,
+      "test_id": "test_certificate.PacketTests.test_wrong_state_plan"
+    },
+    {
+      "area": "plan",
+      "input_associations": [
+        "generated: src.generate.make(6, star, 4, balanced, 1)",
+        "generated: exhaustive bounded-mass directions in SupportTests"
+      ],
+      "orientation": "support",
+      "source_file": "tests/test_certificate.py",
+      "source_line": 11,
+      "test_id": "test_certificate.SupportTests.test_exhaustive_bounded_mass"
+    },
+    {
+      "area": "composition",
+      "input_associations": [
+        "inputs/star-4-4-balanced-101.json",
+        "results/campaign/certificates/star-4-4-balanced-101.json"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_chain.py",
+      "source_line": 31,
+      "test_id": "test_chain.ChainTests.test_membership_failure_is_labeled"
+    },
+    {
+      "area": "composition",
+      "input_associations": [
+        "inputs/star-4-4-balanced-101.json",
+        "results/campaign/certificates/star-4-4-balanced-101.json"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_chain.py",
+      "source_line": 37,
+      "test_id": "test_chain.ChainTests.test_plan_failure_is_labeled"
+    },
+    {
+      "area": "composition",
+      "input_associations": [
+        "inputs/star-4-4-balanced-101.json",
+        "results/campaign/certificates/star-4-4-balanced-101.json"
+      ],
+      "orientation": "valid",
+      "source_file": "tests/test_chain.py",
+      "source_line": 25,
+      "test_id": "test_chain.ChainTests.test_valid_chain"
+    },
+    {
+      "area": "independent-crosscheck",
+      "input_associations": [
+        "generated: 36 contracts over n=3..5, three shapes, two regimes, two seeds"
+      ],
+      "orientation": "crosscheck",
+      "source_file": "tests/test_crosscheck.py",
+      "source_line": 14,
+      "test_id": "test_crosscheck.IndependentCrossCheckTests.test_optimizer_checker_and_oracle_agree_on_36_instances"
+    },
+    {
+      "area": "topology-interface",
+      "input_associations": [
+        "benchmarks/job-tree-topologies.json",
+        "generated: src.generate.make_tree/make_job_topology"
+      ],
+      "orientation": "validation",
+      "source_file": "tests/test_job_topologies.py",
+      "source_line": 41,
+      "test_id": "test_job_topologies.JobTopologyTests.test_each_derived_topology_has_exact_checked_solution"
+    },
+    {
+      "area": "topology-interface",
+      "input_associations": [
+        "benchmarks/job-tree-topologies.json",
+        "generated: src.generate.make_tree/make_job_topology"
+      ],
+      "orientation": "validation",
+      "source_file": "tests/test_job_topologies.py",
+      "source_line": 18,
+      "test_id": "test_job_topologies.JobTopologyTests.test_generic_path_is_original_generator"
+    },
+    {
+      "area": "topology-interface",
+      "input_associations": [
+        "benchmarks/job-tree-topologies.json",
+        "generated: src.generate.make_tree/make_job_topology"
+      ],
+      "orientation": "validation",
+      "source_file": "tests/test_job_topologies.py",
+      "source_line": 35,
+      "test_id": "test_job_topologies.JobTopologyTests.test_manifest_is_closed_and_tree_validated"
+    },
+    {
+      "area": "topology-interface",
+      "input_associations": [
+        "benchmarks/job-tree-topologies.json",
+        "generated: src.generate.make_tree/make_job_topology"
+      ],
+      "orientation": "rejection",
+      "source_file": "tests/test_job_topologies.py",
+      "source_line": 51,
+      "test_id": "test_job_topologies.JobTopologyTests.test_tree_validation_rejects_non_trees"
+    }
+  ],
+  "schema_version": 1
+}

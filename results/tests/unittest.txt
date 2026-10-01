@@ -62,8 +62,12 @@ test_membership_failure_is_labeled (test_chain.ChainTests.test_membership_failur
 test_plan_failure_is_labeled (test_chain.ChainTests.test_plan_failure_is_labeled) ... ok
 test_valid_chain (test_chain.ChainTests.test_valid_chain) ... ok
 test_optimizer_checker_and_oracle_agree_on_36_instances (test_crosscheck.IndependentCrossCheckTests.test_optimizer_checker_and_oracle_agree_on_36_instances) ... ok
+test_each_derived_topology_has_exact_checked_solution (test_job_topologies.JobTopologyTests.test_each_derived_topology_has_exact_checked_solution) ... ok
+test_generic_path_is_original_generator (test_job_topologies.JobTopologyTests.test_generic_path_is_original_generator) ... ok
+test_manifest_is_closed_and_tree_validated (test_job_topologies.JobTopologyTests.test_manifest_is_closed_and_tree_validated) ... ok
+test_tree_validation_rejects_non_trees (test_job_topologies.JobTopologyTests.test_tree_validation_rejects_non_trees) ... ok
 
 ----------------------------------------------------------------------
-Ran 64 tests in 0.649s
+Ran 68 tests in 0.836s
 
 OK
