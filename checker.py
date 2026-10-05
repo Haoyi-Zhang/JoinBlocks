@@ -125,11 +125,13 @@ def verify(inst: dict, cert: dict) -> dict:
     blocks=inst['blocks'];require(type(blocks) is list and len(blocks)==k,'template count')
     cardinalities={s:[0]*k for s in masks};work=0
     for j,block in enumerate(blocks):
+        require(type(block) is list,'template relation container')
         require(len(block)==n,'template relation count')
         for i,rows in enumerate(block):
             attrs={str(e) for e,(a,b) in enumerate(edges) if i==a or i==b}
             require(type(rows) is list and len(rows)<=8,'template row budget')
             for row in rows:
+                require(type(row) is dict,'template row object')
                 require(set(row)==attrs,'template edge attributes')
                 for x in row.values():require(0<=integer(x)<=1024,'key domain')
         for s in masks:
