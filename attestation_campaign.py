@@ -7,7 +7,6 @@ import copy
 import csv
 import json
 import os
-import resource
 import sqlite3
 import time
 from collections import Counter, defaultdict
@@ -34,10 +33,13 @@ def sql_profile(inst: dict[str, Any], snapshot: dict[str, Any]) -> dict[int, int
             for relation in range(inst["n"])
         ]
         for relation, edges in enumerate(incident):
-            columns = ", ".join(f"e{edge} INTEGER NOT NULL" for edge in edges)
+            # Snapshot keys admit exact integers up to 120 bits, wider than
+            # SQLite INTEGER. Canonical decimal text is injective on integers;
+            # binary text equality preserves the declared equijoin predicates.
+            columns = ", ".join(f"e{edge} TEXT COLLATE BINARY NOT NULL" for edge in edges)
             connection.execute(f"CREATE TABLE t{relation} ({columns})")
             placeholders = ",".join("?" for _ in edges)
-            rows = [tuple(row[str(edge)] for edge in edges) for row in snapshot["tables"][relation]]
+            rows = [tuple(str(row[str(edge)]) for edge in edges) for row in snapshot["tables"][relation]]
             if rows:
                 connection.executemany(f"INSERT INTO t{relation} VALUES ({placeholders})", rows)
         results: dict[int, int] = {}
@@ -257,6 +259,9 @@ MUTATIONS: dict[str, Mutation] = {
 
 
 def main() -> None:
+    # Pure count/mutation helpers do not require the POSIX campaign limits.
+    import resource
+
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--case", action="append", default=[], help="exact input stem; may repeat")

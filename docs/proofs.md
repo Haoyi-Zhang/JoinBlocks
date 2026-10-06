@@ -109,7 +109,10 @@ row originates in exactly one copy, so the cover is exact.
 Completeness is relative to this explicit representation.  Arbitrary databases
 may have no useful isolated-template decomposition, and the checker does not
 search for one.  It verifies a supplied decomposition in time linear in the
-packet size up to dictionary operations.
+combined contract, snapshot, and packet sizes, up to dictionary operations.
+Contract validation reads even unused template types; row-schema validation
+reads the supplied snapshot before the cover is checked. Those input costs are
+not bounded by the mapping packet alone.
 
 ## 3. Linear plan costs
 

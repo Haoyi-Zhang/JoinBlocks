@@ -56,6 +56,12 @@ Rows are addressed by zero-based position, so duplicates remain distinguishable.
 The checker accepts only a complete supplied projection; it does not query a DBMS
 or authenticate how the projection was captured.
 
+Snapshot keys are exact signed integers with at most 120 magnitude bits. The
+SQLite snapshot-count adapter binds their canonical decimal strings to binary
+text columns: this injective encoding preserves equality without narrowing keys
+to SQLite's signed 64-bit `INTEGER` domain. It does not change bag multiplicity,
+the admitted key domain, or the cost model.
+
 ## 3. Snapshot-membership packet
 
 A membership packet has the form

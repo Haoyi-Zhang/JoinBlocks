@@ -43,6 +43,15 @@ Neither Python checker is mechanically verified.
 Run commands from this repository root and do not use `python -O`, because the
 scientific producer and tests deliberately retain assertions.
 
+The snapshot-count adapter uses canonical decimal text with binary equality for
+snapshot keys, preserving the checker's exact signed 120-bit key domain rather
+than narrowing it to SQLite's 64-bit integers. Three additional adapter boundary
+regressions are separate from the frozen 68-method suite:
+
+```sh
+python -B -m unittest discover -s regressions -v
+```
+
 ## One complete checked chain
 
 ```sh
@@ -93,6 +102,14 @@ return code is recorded, and a partial run is not labelled complete.  The test
 protocol writes the discovered method name, source file and line, evidence area,
 orientation, and associated retained inputs to `tests/inventory.json`; the
 retained copy is under `results/tests/`.
+
+The standalone artifact's `scientific-checks.yml` workflow runs these three
+boundary regressions and the complete offline route on Ubuntu 24.04/Python 3.12,
+with a 900-second whole-command limit, 900-second per-process CPU limit, and
+3 GiB address-space limit. Failed gates remain failures; raw output and partial
+results are uploaded even after failure. Preparing the workflow does not establish
+that it has run on a remote runner. Local reruns do not replace the retained
+historical CPU/RSS observations.
 
 `reproduce.py` and `attestation_campaign.py` remain independently invocable for
 bounded reruns.  The former accepts `--case EXACT-STEM` and `--resume`; the latter
