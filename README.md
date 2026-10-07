@@ -52,6 +52,24 @@ regressions are separate from the frozen 68-method suite:
 python -B -m unittest discover -s regressions -v
 ```
 
+The current producer additionally uses a call-local 4,096-entry exact-direction
+LRU for support requests in all three pruning modes. Contract bounds are owned
+inside the query; stored worlds are immutable and each request returns a fresh
+list. Certificates, profiles and historical `support_calls` (logical requests)
+are unchanged. Four separate support/cache/whole-plan regression methods are
+included by the existing `regressions` CI discovery; that directory now has
+seven methods, without altering the source-linked frozen 68-method inventory.
+They also run alone, with current included code and the standard library:
+
+```sh
+python -B -m unittest discover -s regressions -p test_support_cache.py -v
+```
+
+The bounded tests include independent integer-world/SQL plan enumeration,
+eviction, witness isolation and changed-contract calls. They are finite checks,
+not snapshot-membership validation or a general implementation proof. Frozen
+runtime/RSS results precede this support reuse; no new timing benefit is claimed.
+
 ## One complete checked chain
 
 ```sh

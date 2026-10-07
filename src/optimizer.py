@@ -1,15 +1,30 @@
 """Untrusted producer of containment, dominance-closure, and minimax certificates."""
 from __future__ import annotations
+from functools import lru_cache
 from .model import (subsets,cuts,support,sub,add,mask,key,block_profile,plan_cost)
+
+def _support_query(lo, hi, total, maxsize=4096):
+    """Call-local exact directions; immutable stored worlds, fresh public lists."""
+    lower, upper = list(lo), tuple(hi)
+    @lru_cache(maxsize=maxsize)
+    def cached(direction):
+        value, world, threshold = support(direction, lower, upper, total)
+        return value, tuple(world), threshold
+    def query(direction):
+        value, world, threshold = cached(tuple(direction))
+        return value, list(world), threshold
+    query.cache_info = cached.cache_info
+    return query
 
 def optimize(inst, pruning='contract'):
     n,lo,hi,N=inst['n'],inst['lower'],inst['upper'],inst['total']
     h=block_profile(inst); k=len(lo); front={}; profile={}; coverage={}
     calls=0
+    query = _support_query(lo, hi, N)
     def sp(d):
         nonlocal calls
         calls+=1
-        return support(d,lo,hi,N)
+        return query(d)
     def dominates(a,b):
         if pruning=='component': return all(x<=y for x,y in zip(a,b))
         return sp(sub(a,b))[0]<=0
