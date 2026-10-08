@@ -233,9 +233,12 @@ packets, and mutation outcomes.  `attestation_overhead.py` reads the actual
 identical discovered test inventory and passing retained/fresh logs.
 `compare_topology.py` requires the source manifest, inputs, certificates, oracle
 packets, cases, and summary in two distinct directories; it rejects comparing a
-directory with itself.  The topology oracle JSON representation is decoded before
-semantic comparison, so tuple-keyed profiles are compared losslessly rather than
-stringified.
+directory with itself.  It requires exact byte equality of the source manifest,
+inputs, certificates, and oracle packets produced by the deterministic topology
+JSON serialization, and compares case rows and summary fields after excluding
+CPU-time observations.  This topology gate does not decode oracle JSON.  The
+separate interface round-trip test and representation-invariance route use
+`src.oracle_json.from_jsonable` to restore and validate tuple-keyed profiles.
 
 CPU, wall-time, and RSS are deliberately excluded from exact semantic equality.
 A successful command demonstrates reproduction of the finite retained evidence;
