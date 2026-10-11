@@ -37,6 +37,7 @@ jobs:
           timeout --signal=TERM --kill-after=10s 900s bash -c '
             set -euo pipefail
             python -B -m unittest discover -s regressions -v > raw-output/key-regressions.stdout 2> raw-output/key-regressions.stderr
+            python -B reuse_experiment.py --output scientific-reuse --repeats 1 > raw-output/reuse.stdout 2> raw-output/reuse.stderr
             python -B full_reproduction.py --output scientific-output > raw-output/reproduction.stdout 2> raw-output/reproduction.stderr
           '
       - name: Upload raw attempts and partial or completed scientific outputs
@@ -47,5 +48,6 @@ jobs:
           path: |
             raw-output/
             scientific-output/
+            scientific-reuse/
           if-no-files-found: warn
           retention-days: 14

@@ -16,6 +16,40 @@ minimax over the whole declared family, and its regret on that snapshot is at
 most the certified value.  The proof is in `docs/proofs.md`; packet fields and
 trusted boundaries are in `docs/certificate-format.md`.
 
+Membership reveals the current world. Robustness is useful here only for a tree
+committed before future windows are known, not as a better choice after those
+parameters are revealed. `src/reuse.py` implements one plan check at commitment
+and membership-only refreshes of an unchanged tree. `docs/reuse-protocol.md`
+defines the information boundary and the same-information fixed/adaptive baselines.
+
+## Explicit-tree physical reuse
+
+The offline bounded experiment also runs on native Windows with Python's standard
+library (the older full-campaign entry points remain POSIX-specific):
+
+```sh
+python -B reuse_experiment.py --output /tmp/join-reuse --repeats 3
+python -B -m unittest discover -s regressions -p test_reuse.py -v
+```
+
+Choose a fresh output directory. The experiment executes its declared trees using
+`src/physical.py`, not SQL optimizer timings. SQLite checks bag results outside
+the measured batches. It uses one positive-output synthetic contract, three
+24-window schedules, three repeats, 648 policy-window bag checks, and 5,832 timed
+queries. The robust tree reduces maximum cardinality loss relative to the initial
+known-world optimum under changing mixes, but adaptation is cheap and has lower
+work and lower median time in all schedules. Stationary data favors the initially
+optimal tree. Setup, membership, adaptation, and execution time are charged;
+snapshot generation is separately reported. These are not JOB executions or a
+production DBMS performance result. Raw contract, certificate, windows, runs, and
+summary are retained under `results/reuse/`.
+
+The ten reuse regressions are additional to the frozen 68-method suite and the
+seven existing current regressions. They cover all 102 retained contracts across
+two later worlds, exact scalar DP on all 33 worlds of the physical contract,
+immutable owned snapshot rows, failed/replayed refreshes, changed contracts, and
+actual hash-join bags. The full `regressions` discovery now has 17 methods.
+
 ## What acceptance does and does not mean
 
 The snapshot checker validates an exact join-key projection under bag semantics:
@@ -57,8 +91,9 @@ LRU for support requests in all three pruning modes. Contract bounds are owned
 inside the query; stored worlds are immutable and each request returns a fresh
 list. Certificates, profiles and historical `support_calls` (logical requests)
 are unchanged. Four separate support/cache/whole-plan regression methods are
-included by the existing `regressions` CI discovery; that directory now has
-seven methods, without altering the source-linked frozen 68-method inventory.
+included by the existing `regressions` CI discovery. The two adapter/support
+regression modules supply seven methods; the ten reuse methods above bring
+full discovery to 17, without altering the source-linked frozen 68-method inventory.
 They also run alone, with current included code and the standard library:
 
 ```sh

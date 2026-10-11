@@ -337,6 +337,28 @@ The first item is Theorem 2.  The second is Theorem 8.  Applying Theorem 8's
 all-world upper bound to the feasible world supplied by Theorem 2 proves the
 third.  No probabilistic or asymptotic inference is involved.
 
+### Commitment and subsequent parameter revelation
+
+Membership acceptance explicitly returns `w`; it is not an information barrier.
+The fixed-policy interpretation commits `p*` before future snapshots are supplied.
+`src/reuse.py` checks the plan packet once, then only membership at increasing
+window identifiers under the unchanged owned contract. It returns immutable
+snapshot row bags. Failure revokes the current gate; the local caller must obey
+that gate and use the selected tree. Contract changes require a new plan session.
+
+For nonnegative integer query counts `Q_t` in accepted windows, Corollary 9 gives
+
+```
+sum_t Q_t [ C_p*(w_t) - min_q C_q(w_t) ] <= r sum_t Q_t.
+```
+
+Multiply each per-world bound by `Q_t` and sum. No independence, probability law,
+or forecast of drift is required. This is not cumulative-work optimality, and it
+contains neither setup nor execution time. With unrestricted tree changes after
+revelation, ordinary known-world scalar-cost DP achieves zero cardinality regret.
+The physical executor and lifecycle are tested implementations, not new premises
+that extend the cost-model theorem to wall-clock performance.
+
 After any snapshot update, membership must be checked again.  Rejection means the
 old family guarantee is inapplicable to that snapshot.  A changed contract also
 requires a new plan packet or a complete recheck of all old obligations; old
