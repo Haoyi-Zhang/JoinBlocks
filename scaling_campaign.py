@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import argparse
 import csv
-import hashlib
 import json
 import statistics
 import time
@@ -61,7 +60,6 @@ def main() -> int:
                 "checker_accepted":accepted,"oracle_checked":n<=8,
                 "producer_cpu_ns":producer_ns,"checker_cpu_ns":checker_ns,
                 "input_bytes":len(ib),"certificate_bytes":len(cb),
-                "input_sha256":hashlib.sha256(ib).hexdigest(),"certificate_sha256":hashlib.sha256(cb).hexdigest(),
             })
     fields=list(rows[0])
     with (out/"cases.csv").open("w",newline="") as fh:
@@ -70,7 +68,7 @@ def main() -> int:
     producer=[int(r["producer_cpu_ns"]) for r in rows]
     checking=[int(r["checker_cpu_ns"]) for r in rows]
     summary={
-        "schema":"scaling-campaign-v1",
+        "schema":"scaling-campaign",
         "cases":len(rows),"accepted":sum(bool(r["checker_accepted"]) for r in rows),
         "relation_counts":sorted({int(r["relations"]) for r in rows}),
         "shapes":sorted({str(r["shape"]) for r in rows}),
