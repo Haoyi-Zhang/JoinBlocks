@@ -366,3 +366,20 @@ prediction are not claimed.
 The software source written for this artifact is covered by `LICENSE`.  Cited
 papers and publisher template files are not redistributed here and retain their
 own terms.
+
+## Render retained observation plots
+
+The optional `plots/draw_observations.py` route reads the 102 retained campaign
+rows, derives the same frontier and process-CPU tables, and writes two vector
+PDFs to an explicit fresh directory outside the project. ReportLab and the
+external TeX Linux Libertine Type 1 font are required for drawing; validation
+and its nine tests use the standard library alone.
+
+```sh
+python plots/draw_observations.py --output-dir /tmp/joinblocks-figures --font-root /path/to/texmf-dist/fonts
+python -B -S plots/test_draw_observations.py
+```
+
+The declared display width defaults to 430.00462 TeX pt, keeping tick and axis
+labels at 8 TeX pt in the current manuscript. All 102 points, overlapping
+observations, scales and guide lines are retained; no experiment is run.
