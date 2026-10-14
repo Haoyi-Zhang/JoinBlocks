@@ -1,0 +1,20 @@
+{
+  "provenance": "Original P111 fixture authored 2026-10-15, MIT under artifact/LICENSE. No IMDb records. The two isolated local components deliberately exercise JOB 3b's filters, redundant movie-ID equality, duplicate matching information rows, and MIN projection. Not a sample of JOB data.",
+  "templates": [
+    {
+      "keyword": [[1, "sequel"], [2, "drama"]],
+      "title": [[1, "Authored Alpha", 2014], [2, "Authored Old", 2009]],
+      "movie_info": [[1, 1, "Bulgaria"], [2, 1, "Bulgaria"], [3, 1, "Romania"], [4, 2, "Bulgaria"]],
+      "movie_keyword": [[1, 1, 1], [2, 1, 2], [3, 2, 1]]
+    },
+    {
+      "keyword": [[1, "a-sequel"], [2, "drama"]],
+      "title": [[1, "Authored Beta", 2017], [2, "Authored Delta", 2019]],
+      "movie_info": [[1, 1, "Bulgaria"], [2, 2, "Bulgaria"], [3, 2, "Romania"]],
+      "movie_keyword": [[1, 1, 1], [2, 2, 1], [3, 2, 2]]
+    }
+  ],
+  "lower": [0, 0],
+  "upper": [3, 3],
+  "total": 3
+}

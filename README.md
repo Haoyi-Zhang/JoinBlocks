@@ -48,7 +48,98 @@ The ten reuse regressions are additional to the frozen 68-method suite and the
 seven existing current regressions. They cover all 102 retained contracts across
 two later worlds, exact scalar DP on all 33 worlds of the physical contract,
 immutable owned snapshot rows, failed/replayed refreshes, changed contracts, and
-actual hash-join bags. The full `regressions` discovery now has 17 methods.
+actual hash-join bags. These 17 current regressions are retained; thirteen post-run
+native-evidence reconciliation controls bring `regressions` discovery to 30 methods.
+
+## Native SQL execution and retained reconciliation
+
+`newboundednativeJOBwork/native_sql.py` executes every internal node of an
+explicit binary tree as a separate SQLite materialization. The loaded SQL rows
+are read back and checked for membership before execution. Row identities retain
+bag occurrences, decimal text preserves wide exact keys, and a native LIMIT plus
+an overflow sentinel rejects oversized joins without returning truncated results.
+`certified_sql.py` binds the checked selected tree to the local execution API;
+snapshot capture and caller authentication remain separate requirements.
+
+The single selected bounded run is under `results/native-sql/`. Its 122 supplied
+contracts comprise the original 102 contracts and 20 synthetic JOB-topology
+contracts, not new independent workloads. Across 366 snapshots, 1,098 materialized
+trees and 366 ordinary SQL executions have matching row-identity bags and counts.
+The positive-output native experiment retains 864 prebatch policy-window checks
+and 7,776 timed queries: three schedules, three repeats, 24 windows and 216 queries
+per policy/run, with robust fixed, initial-known-world fixed, adaptive, and ordinary
+SQLite SELECT policies.
+
+Median charged wall seconds per 216-query run:
+
+| Schedule | Robust fixed | Known-world fixed | Adaptive | Ordinary SQLite |
+| --- | ---: | ---: | ---: | ---: |
+| Stationary | 3.600 | 3.499 | 3.505 | 2.515 |
+| Migration | 3.741 | 3.745 | 3.660 | 2.649 |
+| Bursts | 3.695 | 3.689 | 3.625 | 2.646 |
+
+The robust tree's maximum observed per-query cardinality regret is 1,024,
+versus 2,048 for known-fixed in the changing schedules and zero for adaptive.
+The burst schedule saves 73,728 intermediate rows relative to known-fixed,
+but its robust median time is slightly higher. Migration timing ranges overlap.
+Adaptation is inexpensive, and ordinary native SQL is faster in every schedule;
+these measurements establish no robust latency advantage. Ordinary SQLite's
+physical intermediate work is unavailable and is stored as null, not assigned
+a cardinality regret.
+
+Raw window CPU/wall observations, run totals, acquisition-inclusive times, all
+repeat ranges/medians, and native EXPLAIN traces are retained without rounding in
+the JSON assets. Policy time includes setup, loading, two membership checks,
+selection, materialization/count probes, result fetch, and cleanup. Snapshot
+generation and source acquisition are separately recorded; untimed correctness
+checks, EXPLAIN inspection, and serialization are excluded. The run used Python
+3.12.14 / SQLite 3.53.1 on Windows, with no engine installation. It was not CPU
+pinned or physically exclusive. `environment.json` records the actual runtime
+and host inventory; the sampled 77,524,992-byte child peak is a Windows working-set
+observation, not system-exclusive RSS.
+
+One unchanged official JOB 3b SELECT was also executed on the original authored
+fixture `newboundednativeJOBwork/authored_job3b.json`. Its filtered native bags and
+MIN result match at two worlds, and its certified regret is zero. No IMDb rows
+are in this fixture. Query origin and execution-time digest are retained, but
+upstream SQL text is not redistributed. Neither this query-semantic check nor
+the topology cases establish real IMDb or full JOB validation. The original
+2013 IMDb source was not consumed; it is approximately 1.26 GB compressed, and
+real filtered relations still need a meaningful admissible template contract.
+
+Offline checks, without network access or retiming:
+
+```sh
+python -B newboundednativeJOBwork/verify_native_sql.py
+python -B -m unittest discover -s newboundednativeJOBwork -p test_native_sql.py -v
+python -B -m unittest discover -s regressions -p test_native_sql_reconciliation.py -v
+```
+
+The first command reconciles retained model counts, fixed/adaptive information
+boundaries, stage sums, work/regret, medians/ranges, resource samples, and source/input
+identities. It does not reexecute the unbundled official SQL or measure fresh
+performance. Fifteen native test methods and thirteen reconciliation controls are
+separate from the frozen 68-method suite. `execution-source-map.json` distinguishes
+ten executed sources, 246 consumed input files, and 45 observed-only sources using
+the actual before/after snapshot. The new verifier and reconciliation tests are
+post-run analysis, not execution-hashed producers of those measurements.
+`reconciliation-map.json` identifies nine byte-exact adopted assets and the limited
+path/upstream-text projections; `reconciliation-receipt.json` records the offline
+check. The source map checks integrity and consistency, not authenticated history.
+Raw before/after source digests remain intact. A separately declared strict UTF-8
+digest maps CRLF pairs to LF only; it preserves BOMs, lone CR, other whitespace,
+content, and final newlines. These digests were derived only after recovering
+preimage bytes that match both captured raw snapshot digests, not from changed
+post-run sources. This supports Git LF/CRLF checkouts while rejecting substantive
+edits. Compressed evidence remains binary-exact. In the actual snapshot all ten
+executed sources were LF; the consumed `results/reuse/contract.json` used CRLF.
+
+The existing scientific CI is configured to exercise the offline verifier, all 15 native methods,
+the 30 current regressions, and its previous finite reproduction route. It never
+invokes the native timing/network experiment. A deliberately separate fresh run
+of `newboundednativeJOBwork/experiment.py --output OUTPUT --repeats 3` requires
+the small author-hosted query archive; it does not download IMDb. The retained
+selected run is not replaced by CI observations.
 
 ## What acceptance does and does not mean
 
@@ -69,10 +160,12 @@ Neither Python checker is mechanically verified.
 
 ## Requirements
 
-- Python 3.10 or newer on Linux/POSIX (the campaigns use the standard-library
-  `resource` module; native Windows execution has not been validated);
+- Python 3.10 or newer; the original full campaigns require Linux/POSIX and its
+  standard-library `resource` module, while hash/native SQL protocols also run on Windows;
 - only the Python standard library and its SQLite module;
-- no network access, package installation, GPU, external solver, or private data.
+- offline checks need no network access, package installation, GPU, external solver,
+  or private data; the optional fresh native timing route retrieves only the tiny
+  public author query archive.
 
 Run commands from this repository root and do not use `python -O`, because the
 scientific producer and tests deliberately retain assertions.
@@ -93,7 +186,8 @@ list. Certificates, profiles and historical `support_calls` (logical requests)
 are unchanged. Four separate support/cache/whole-plan regression methods are
 included by the existing `regressions` CI discovery. The two adapter/support
 regression modules supply seven methods; the ten reuse methods above bring
-full discovery to 17, without altering the source-linked frozen 68-method inventory.
+their original subtotal to 17. Thirteen post-run reconciliation controls make current
+`regressions` discovery 30, without altering the source-linked frozen 68-method inventory.
 They also run alone, with current included code and the standard library:
 
 ```sh
@@ -156,8 +250,8 @@ protocol writes the discovered method name, source file and line, evidence area,
 orientation, and associated retained inputs to `tests/inventory.json`; the
 retained copy is under `results/tests/`.
 
-The standalone artifact's `scientific-checks.yml` workflow runs these three
-boundary regressions and the complete offline route on Ubuntu 24.04/Python 3.12,
+The standalone artifact's `scientific-checks.yml` workflow runs the current
+regressions, native methods/reconciliation verifier, and complete offline route on Ubuntu 24.04/Python 3.12,
 with a 900-second whole-command limit, 900-second per-process CPU limit, and
 3 GiB address-space limit. Failed gates remain failures; raw output and partial
 results are uploaded even after failure. Preparing the workflow does not establish

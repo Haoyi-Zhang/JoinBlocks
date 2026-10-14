@@ -1,0 +1,10 @@
+{
+  "all_bags_and_counts_match": true,
+  "contracts": 122,
+  "full_JOB_validation": false,
+  "materialized_tree_executions": 1098,
+  "native_bag_executions": 1464,
+  "primary_contracts": 102,
+  "snapshots": 366,
+  "topology_contracts": 20
+}

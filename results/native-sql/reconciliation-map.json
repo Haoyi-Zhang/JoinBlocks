@@ -1,0 +1,149 @@
+{
+  "assets": {
+    "completion.json": {
+      "adoption": "byte_exact",
+      "execution_raw_sha256": "0fd2291f02e6afcb22b410c567c44ab0796a9d0c7c827890dda69fac6e8bfdc2",
+      "identity_policy": "utf8-strict-crlf-to-lf-only-v1",
+      "normalized_public_sha256": "0fd2291f02e6afcb22b410c567c44ab0796a9d0c7c827890dda69fac6e8bfdc2",
+      "public_sha256": "0fd2291f02e6afcb22b410c567c44ab0796a9d0c7c827890dda69fac6e8bfdc2",
+      "removed_or_replaced_fields": []
+    },
+    "environment.json": {
+      "added_fields": [
+        "host"
+      ],
+      "adoption": "path_redaction_and_host_inventory",
+      "execution_raw_sha256": "a39bfe9f47a7a38ecef34b9abc1ecff97390ca1d4c26423a902f03935bac9179",
+      "identity_policy": "utf8-strict-crlf-to-lf-only-v1",
+      "normalized_public_sha256": "4d0ebd3cf7fd61c655cf4b5a894141d249ae34c08797a70d6d737a5da59797d5",
+      "public_sha256": "4d0ebd3cf7fd61c655cf4b5a894141d249ae34c08797a70d6d737a5da59797d5",
+      "removed_or_replaced_fields": [
+        "executable"
+      ]
+    },
+    "execution-source-map.json": {
+      "adoption": "execution_snapshot_identities_with_consumption_roles",
+      "execution_raw_sha256": "c8dd5672364cb96f0c949a5d815dd798fa6afe6422d72eca8c7ef6979287899a",
+      "identity_policy": "utf8-strict-crlf-to-lf-only-v1",
+      "normalized_public_sha256": "495114c611fc4ff479179623e406bf9a771f4ade0c7d84904e656031039ca009",
+      "postrun_analysis_is_not_execution_hashed": true,
+      "public_sha256": "495114c611fc4ff479179623e406bf9a771f4ade0c7d84904e656031039ca009",
+      "removed_or_replaced_fields": [
+        "command",
+        "identity_root"
+      ]
+    },
+    "job3b-authored-execution.json": {
+      "adoption": "byte_exact",
+      "execution_raw_sha256": "1838152f1b01f6abf3d1ca5b7b2783b55ebfcb950f8f70ed66554c815cf4aef9",
+      "identity_policy": "utf8-strict-crlf-to-lf-only-v1",
+      "normalized_public_sha256": "1838152f1b01f6abf3d1ca5b7b2783b55ebfcb950f8f70ed66554c815cf4aef9",
+      "public_sha256": "1838152f1b01f6abf3d1ca5b7b2783b55ebfcb950f8f70ed66554c815cf4aef9",
+      "removed_or_replaced_fields": []
+    },
+    "measurement-receipt.json.gz": {
+      "adoption": "execution_paths_removed_identity_maps_split",
+      "execution_raw_sha256": "c8dd5672364cb96f0c949a5d815dd798fa6afe6422d72eca8c7ef6979287899a",
+      "identity_policy": "binary-exact-v1",
+      "numeric_fields_and_memory_samples_preserved": true,
+      "public_sha256": "e73be245e7d31ec0f00835b75f580ae19a6dcce512704d3f44bf0c4fdab375bc",
+      "removed_or_replaced_fields": [
+        "command",
+        "identity_root",
+        "before_identity",
+        "after_identity",
+        "resource_scope"
+      ]
+    },
+    "native-certificate.json": {
+      "adoption": "byte_exact",
+      "execution_raw_sha256": "542d729078f7d08fddddd625bdca11a9dde6761a91f5b05fa3959f17f2463d54",
+      "identity_policy": "utf8-strict-crlf-to-lf-only-v1",
+      "normalized_public_sha256": "542d729078f7d08fddddd625bdca11a9dde6761a91f5b05fa3959f17f2463d54",
+      "public_sha256": "542d729078f7d08fddddd625bdca11a9dde6761a91f5b05fa3959f17f2463d54",
+      "removed_or_replaced_fields": []
+    },
+    "native-contract.json": {
+      "adoption": "byte_exact",
+      "execution_raw_sha256": "a622c32d6a7d5bd7a024126b178477623d27bba39b2002f4a57b291117e83e0f",
+      "identity_policy": "utf8-strict-crlf-to-lf-only-v1",
+      "normalized_public_sha256": "a622c32d6a7d5bd7a024126b178477623d27bba39b2002f4a57b291117e83e0f",
+      "public_sha256": "a622c32d6a7d5bd7a024126b178477623d27bba39b2002f4a57b291117e83e0f",
+      "removed_or_replaced_fields": []
+    },
+    "native-rounds.json.gz": {
+      "adoption": "byte_exact",
+      "execution_raw_sha256": "6693fdec73c084c8dca4df4550186812a2d582bb0fd0b50fc3481c52a8e55850",
+      "identity_policy": "binary-exact-v1",
+      "public_sha256": "6693fdec73c084c8dca4df4550186812a2d582bb0fd0b50fc3481c52a8e55850",
+      "removed_or_replaced_fields": []
+    },
+    "native-runs.json": {
+      "adoption": "byte_exact",
+      "execution_raw_sha256": "a7c62a3e6bf58427e7869f5084f94733fa487c0b32320fb0de2910ed47a8ebce",
+      "identity_policy": "utf8-strict-crlf-to-lf-only-v1",
+      "normalized_public_sha256": "a7c62a3e6bf58427e7869f5084f94733fa487c0b32320fb0de2910ed47a8ebce",
+      "public_sha256": "a7c62a3e6bf58427e7869f5084f94733fa487c0b32320fb0de2910ed47a8ebce",
+      "removed_or_replaced_fields": []
+    },
+    "native-summary.json": {
+      "adoption": "byte_exact",
+      "execution_raw_sha256": "79d986c6e910dca6c22b0279110bb6f917257ef2c9745033b0747adfb26e4413",
+      "identity_policy": "utf8-strict-crlf-to-lf-only-v1",
+      "normalized_public_sha256": "79d986c6e910dca6c22b0279110bb6f917257ef2c9745033b0747adfb26e4413",
+      "public_sha256": "79d986c6e910dca6c22b0279110bb6f917257ef2c9745033b0747adfb26e4413",
+      "removed_or_replaced_fields": []
+    },
+    "official-source-receipt.json": {
+      "adoption": "upstream_text_omission_and_coordination_text_redaction",
+      "execution_raw_sha256": "df40909f420cdbf78132cb5e1fabdb08e850d08a26a4c7394db36117825a0546",
+      "identity_policy": "utf8-strict-crlf-to-lf-only-v1",
+      "normalized_public_sha256": "659dcc0ed0b93f00a8fd1571eddac8ff6a57992048d76da28d6595daa08dfcc4",
+      "numeric_fields_preserved": true,
+      "public_sha256": "659dcc0ed0b93f00a8fd1571eddac8ff6a57992048d76da28d6595daa08dfcc4",
+      "removed_or_replaced_fields": [
+        "query_3b_sql",
+        "imdb_blocker",
+        "licensing.query_archive"
+      ]
+    },
+    "supplied-inputs.json.gz": {
+      "adoption": "artifact_relative_input_paths",
+      "execution_raw_sha256": "04120db78c9dbf0a77ae7462a1f77b92a56f825331140a6e704837694a861862",
+      "identity_policy": "binary-exact-v1",
+      "input_objects_unchanged": true,
+      "public_sha256": "054eb09e01e70d9ed6076427a09e8654408203324068fc54e16b0fc730caef2e",
+      "removed_or_replaced_fields": [
+        "[].path"
+      ]
+    },
+    "supplied-validation.json.gz": {
+      "adoption": "byte_exact",
+      "execution_raw_sha256": "50dbffbc68b81af23f73ae542503a461a5a7686385c2459b065424952f2c4f9d",
+      "identity_policy": "binary-exact-v1",
+      "public_sha256": "50dbffbc68b81af23f73ae542503a461a5a7686385c2459b065424952f2c4f9d",
+      "removed_or_replaced_fields": []
+    },
+    "validation-summary.json": {
+      "adoption": "byte_exact",
+      "execution_raw_sha256": "fbeebafa552a77373f09c14d8a0348d95cb4248b7474f8e64b1e9c2a4d6e17ba",
+      "identity_policy": "utf8-strict-crlf-to-lf-only-v1",
+      "normalized_public_sha256": "fbeebafa552a77373f09c14d8a0348d95cb4248b7474f8e64b1e9c2a4d6e17ba",
+      "public_sha256": "fbeebafa552a77373f09c14d8a0348d95cb4248b7474f8e64b1e9c2a4d6e17ba",
+      "removed_or_replaced_fields": []
+    }
+  },
+  "full_JOB_validation": false,
+  "identity_normalization": {
+    "compressed_policy": "binary-exact-v1; never decompress or normalize for identity comparison",
+    "derivation": "Recovered snapshot preimage bytes were first verified against both original captured raw before/after SHA-256 digests; only then were their normalized before/after digests derived. No changed post-run file supplies an executed digest.",
+    "encoding": "UTF-8 strict; BOM preserved",
+    "rule": "utf8-strict-crlf-to-lf-only-v1",
+    "text_mapping": "Replace CRLF pairs by LF only. Preserve lone CR, all other whitespace, content and final newline."
+  },
+  "preservation": "Timings, CPU values, counts, min/max/medians, all repeats and unfavorable findings are unchanged. Only named path/upstream-text/coordination-text projections are applied; host inventory is identified separately.",
+  "schema_version": 1,
+  "selected_execution": "one completed bounded native SQL run; three repeats per schedule",
+  "source_binding": "Execution source/input hashes are the original captured before/after digests. New reconciliation code and regressions are explicitly post-run. Text checkout compatibility is limited to declared strict UTF-8 CRLF-to-LF equivalence derived from raw-verified snapshot preimages; compressed assets remain binary-exact.",
+  "verification_limit": "Offline reconciliation does not retime or reexecute the unbundled upstream SQL; it checks retained arithmetic, models, trace structure, source/input identity and authored fixture results."
+}

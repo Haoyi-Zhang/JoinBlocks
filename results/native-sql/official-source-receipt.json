@@ -1,0 +1,35 @@
+{
+  "archive_bytes": 17420,
+  "archive_sha256": "a842f6fcf9d1e451fcca52ba7fa3563b60ed222c8c2776df05f1ef7f55da8b0c",
+  "headers": {
+    "imdb": {
+      "content_length": 1263193115,
+      "last_modified": "Thu, 19 Dec 2024 13:33:06 GMT",
+      "status": 200,
+      "url": "https://event.cwi.nl/da/job/imdb.tgz"
+    },
+    "job": {
+      "content_length": 17420,
+      "last_modified": "Thu, 19 Dec 2024 13:34:37 GMT",
+      "status": 200,
+      "url": "https://event.cwi.nl/da/job/job.tgz"
+    }
+  },
+  "imdb_blocker": "Original 2013 IMDb data were not consumed. Authored fixture execution and synthetic topology cases do not establish full JOB or real IMDb applicability; current IMDb TSVs are not the original JOB schema/data.",
+  "imdb_downloaded": false,
+  "licensing": {
+    "author_readme": "https://event.cwi.nl/da/job/readme.txt",
+    "data": "CWI states optimizer research/engineering purpose and unanswered request to IMDb; do not treat public hosting as blanket redistribution permission.",
+    "imdb_official": "https://data.imdb.com/non-commercial-datasets/",
+    "native_engine": "SQLite public domain: https://www.sqlite.org/copyright.html",
+    "own_inputs": "Original authored fixture and supplied generated P111 bags: artifact/LICENSE (MIT).",
+    "query_archive": "No explicit redistribution license file was found; upstream SQL text is not bundled. Query origin and execution-time digest are retained."
+  },
+  "query_3b_origin": "https://event.cwi.nl/da/job/job.tgz",
+  "query_3b_path": "job/3b.sql",
+  "query_3b_sha256": "85987f843e5ac2af34e44f62f2f9a77cf864ba193408f37c9554adc0775af421",
+  "query_archive_license_files": [],
+  "query_count": 113,
+  "retrieved_utc": "2026-10-14T19:44:57Z",
+  "source_acquisition_wall_s": 3.018207100001746
+}
