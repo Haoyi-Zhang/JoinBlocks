@@ -49,7 +49,9 @@ seven existing current regressions. They cover all 102 retained contracts across
 two later worlds, exact scalar DP on all 33 worlds of the physical contract,
 immutable owned snapshot rows, failed/replayed refreshes, changed contracts, and
 actual hash-join bags. These 17 current regressions are retained; thirteen post-run
-native-evidence reconciliation controls bring `regressions` discovery to 30 methods.
+native-evidence reconciliation controls and two schematic-structure checks bring
+`regressions` discovery to 32 methods. The schematic checks are presentation
+controls, separate from the scientific execution inventory.
 
 ## Native SQL execution and retained reconciliation
 
@@ -135,7 +137,7 @@ edits. Compressed evidence remains binary-exact. In the actual snapshot all ten
 executed sources were LF; the consumed `results/reuse/contract.json` used CRLF.
 
 The existing scientific CI is configured to exercise the offline verifier, all 15 native methods,
-the 30 current regressions, and its previous finite reproduction route. It never
+the 32 current regressions, and its previous finite reproduction route. It never
 invokes the native timing/network experiment. A deliberately separate fresh run
 of `newboundednativeJOBwork/experiment.py --output OUTPUT --repeats 3` requires
 the small author-hosted query archive; it does not download IMDb. The retained
@@ -187,7 +189,8 @@ are unchanged. Four separate support/cache/whole-plan regression methods are
 included by the existing `regressions` CI discovery. The two adapter/support
 regression modules supply seven methods; the ten reuse methods above bring
 their original subtotal to 17. Thirteen post-run reconciliation controls make current
-`regressions` discovery 30, without altering the source-linked frozen 68-method inventory.
+`regressions` discovery 30; two schematic-structure controls make the current
+total 32, without altering the source-linked frozen 68-method inventory.
 They also run alone, with current included code and the standard library:
 
 ```sh
