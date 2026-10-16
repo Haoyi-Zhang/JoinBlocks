@@ -369,6 +369,16 @@ own terms.
 
 ## Render retained observation plots
 
+The protocol diagram is generated directly by Python/Matplotlib with embedded
+Libertine fonts from this artifact. It preserves the membership and plan-checking
+branches and their common conclusion. The paper build regenerates this vector
+asset; standalone generation writes only to the supplied directory:
+
+```sh
+python plots/draw_schematics.py --output-dir /tmp/joinblocks-schematics
+python -B -m unittest discover -s regressions -p test_schematic_contract.py -v
+```
+
 The optional `plots/draw_observations.py` route reads the 102 retained campaign
 rows, derives the same frontier and process-CPU tables, and writes two vector
 PDFs to an explicit fresh directory outside the project. ReportLab and the
