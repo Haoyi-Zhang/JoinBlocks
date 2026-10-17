@@ -1,6 +1,6 @@
 """Native, bounded SQL materializations of the checked logical tree.
 
-Original MIT-licensed P111 extension. Each internal node is a separate CTAS,
+Original MIT-licensed JoinBlocks extension. Each internal node is a separate CTAS,
 so SQLite cannot flatten/reorder across logical nodes. SQLite still chooses
 physical scans/indexes within each binary join. Cardinality is not latency.
 """
