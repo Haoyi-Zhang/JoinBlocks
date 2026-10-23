@@ -49,8 +49,9 @@ seven existing current regressions. They cover all 102 retained contracts across
 two later worlds, exact scalar DP on all 33 worlds of the physical contract,
 immutable owned snapshot rows, failed/replayed refreshes, changed contracts, and
 actual hash-join bags. These 17 current regressions are retained; thirteen post-run
-native-evidence reconciliation controls and two schematic-structure checks bring
-`regressions` discovery to 32 methods. The schematic checks are presentation
+native-evidence reconciliation controls and two schematic-structure checks formed
+the earlier 32-method discovery. Seven producer/sweep controls and one additional
+consumed-source control bring current `regressions` discovery to 40 methods. The schematic checks are presentation
 controls, separate from the scientific execution inventory.
 
 ## Native SQL execution and retained reconciliation
@@ -120,7 +121,7 @@ python -B -m unittest discover -s regressions -p test_native_sql_reconciliation.
 The first command reconciles retained model counts, fixed/adaptive information
 boundaries, stage sums, work/regret, medians/ranges, resource samples, and source/input
 identities. It does not reexecute the unbundled official SQL or measure fresh
-performance. Fifteen native test methods and thirteen reconciliation controls are
+performance. Fifteen native test methods and fourteen reconciliation controls are
 separate from the frozen 68-method suite. `execution-source-map.json` distinguishes
 ten executed sources, 246 consumed input files, and 45 observed-only sources using
 the actual before/after snapshot. The new verifier and reconciliation tests are
@@ -137,13 +138,43 @@ edits. Compressed evidence remains binary-exact. In the actual snapshot all ten
 executed sources were LF; the consumed `results/reuse/contract.json` used CRLF.
 
 The existing scientific CI is configured to exercise the offline verifier, all 15 native methods,
-the 32 current regressions, and its previous finite reproduction route. It never
+the 40 current regressions, and its previous finite reproduction route. It never
 invokes the native timing/network experiment. A deliberately separate fresh run
 of `newboundednativeJOBwork/experiment.py --output OUTPUT --repeats 3` requires
 the small author-hosted query archive; it does not download IMDb. The retained
 selected run is not replaced by CI observations.
 
 ## What acceptance does and does not mean
+
+### Producer admission and bounded sweep
+
+The producer rejects relation counts outside 2..8 and unknown pruning policies
+before template expansion. Its 50,000-candidate state cap is checked before
+constructing the next candidate. The existing independent checker caps are
+unchanged. Three regression methods exercise these boundaries, including a fixed
+50,001-split allocation fixture; four more exercise the sweep's real packet and
+checker interfaces, unsupported dimensions, false verdicts and fresh outputs.
+
+`scaling_campaign.py` unpacks the producer's certificate rather than serializing
+its statistics/profile tuple, and invokes the current independent checker API.
+It never marks an exhaustive oracle as checked. The retained owned sweep under
+`results/admission-sweep/` has nine accepted eight-relation cases (three shapes
+and 4/6/8 templates) and nine ten-relation declarations rejected before search.
+Root width reaches 85, packet size reaches 108,784 bytes, and total expansions
+reach 2,967. These are bounded engineering observations, not larger-query or
+production-workload validation. Regenerate into a fresh directory:
+
+```sh
+python -B scaling_campaign.py --output /tmp/join-admission --relations 8 10 --templates 4 6 8
+```
+
+Retained native timings still bind the consumed optimizer bytes, now stored at
+`results/native-executed-src/optimizer.py`. The offline verifier validates that
+file against the unchanged execution map and reports `src/optimizer.py` as a
+current source difference. Other consumed sources and inputs must still match
+their recorded identities. The additional test rejects a missing or changed
+captured optimizer. None of these guard repairs is attributed to the old timing
+run, and its raw measurements and original receipt are unchanged.
 
 The snapshot checker validates an exact join-key projection under bag semantics:
 every row occurrence is covered exactly once, every template-row occurrence is
@@ -188,9 +219,9 @@ list. Certificates, profiles and historical `support_calls` (logical requests)
 are unchanged. Four separate support/cache/whole-plan regression methods are
 included by the existing `regressions` CI discovery. The two adapter/support
 regression modules supply seven methods; the ten reuse methods above bring
-their original subtotal to 17. Thirteen post-run reconciliation controls make current
-`regressions` discovery 30; two schematic-structure controls make the current
-total 32, without altering the source-linked frozen 68-method inventory.
+their original subtotal to 17. Fourteen post-run reconciliation controls,
+two schematic-structure controls and seven producer/sweep controls make the
+current total 40, without altering the source-linked frozen 68-method inventory.
 They also run alone, with current included code and the standard library:
 
 ```sh

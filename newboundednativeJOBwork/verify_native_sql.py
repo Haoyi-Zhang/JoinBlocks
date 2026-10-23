@@ -43,6 +43,7 @@ ASSETS = {'completion.json', 'environment.json', 'job3b-authored-execution.json'
     'execution-source-map.json'}
 TEXT_IDENTITY = 'utf8-strict-crlf-to-lf-only-v1'
 BINARY_IDENTITY = 'binary-exact-v1'
+CONSUMED_SOURCES = {'src/optimizer.py': 'results/native-executed-src/optimizer.py'}
 
 
 class ReconciliationError(ValueError):
@@ -215,11 +216,12 @@ def verify(evidence=ROOT / 'results/native-sql', artifact_root=ROOT):
     require(len(files) == source_map['identity_entries'] == 301, 'execution identity inventory mismatch')
     require({p for p, v in files.items() if v['role'] == 'executed_source'} == EXECUTED,
             'executed source set includes post-run/unexecuted analysis or omits a dependency')
+    current_source_differences = []
     for path, binding in files.items():
         require(binding['role'] in ('executed_source', 'execution_input', 'observed_only_source'), 'source role')
         require(re.fullmatch('[0-9a-f]{64}', binding['before_sha256']) and
                 binding['before_sha256'] == binding['after_sha256'], 'before/after source identity mismatch')
-        actual = safe_path(artifact_root, path)
+        actual = safe_path(artifact_root, CONSUMED_SOURCES.get(path, path))
         if binding['role'] != 'observed_only_source':
             compressed = path.endswith(('.gz', '.tgz', '.zip'))
             if not compressed:
@@ -228,6 +230,12 @@ def verify(evidence=ROOT / 'results/native-sql', artifact_root=ROOT):
             require(actual.is_file() and identity_matches(actual.read_bytes(), binding,
                     'before_sha256', 'normalized_before_sha256', compressed=compressed),
                     'execution source/input changed: ' + path)
+            if path in CONSUMED_SOURCES:
+                current = safe_path(artifact_root, path)
+                require(current.is_file(), 'current source is missing: ' + path)
+                if not identity_matches(current.read_bytes(), binding,
+                        'before_sha256', 'normalized_before_sha256'):
+                    current_source_differences.append(path)
     require(all(p not in files for p in ANALYSIS), 'post-run code falsely attributed to execution snapshot')
 
     inst, cert = data['native-contract.json'], data['native-certificate.json']
@@ -431,6 +439,11 @@ def verify(evidence=ROOT / 'results/native-sql', artifact_root=ROOT):
         retained = read_json(retained_receipt)
         clean(retained)
         require(retained == result, 'retained reconciliation receipt differs from current reconciliation')
+    # The retained receipt describes the selected execution, not later guards.
+    # Validate it above before adding current-vs-consumed source information.
+    result['consumed_source_locations'] = CONSUMED_SOURCES
+    result['current_source_differences'] = current_source_differences
+    result['all_current_sources_retimed'] = False
     return result
 
 

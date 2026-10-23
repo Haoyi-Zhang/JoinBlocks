@@ -52,6 +52,8 @@ class NativeReconciliationTests(unittest.TestCase):
         self.assertEqual(result['execution_sources_bound'], 10)
         self.assertFalse(result['upstream_SQL_reexecuted'])
         self.assertFalse(result['full_JOB_validation'])
+        self.assertEqual(['src/optimizer.py'], result['current_source_differences'])
+        self.assertFalse(result['all_current_sources_retimed'])
 
     def test_timing_byte_tamper_is_rejected(self):
         runs = read_json(self.evidence / 'native-runs.json')
@@ -151,7 +153,22 @@ class NativeReconciliationTests(unittest.TestCase):
             path = target / relative
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(data)
+        captured = target / 'results/native-executed-src/optimizer.py'
+        captured.parent.mkdir(parents=True, exist_ok=True)
+        data = (ROOT / 'results/native-executed-src/optimizer.py').read_bytes().replace(b'\r\n', b'\n')
+        captured.write_bytes(data if style == 'LF' else data.replace(b'\n', b'\r\n'))
         return target
+
+    def test_captured_optimizer_missing_or_changed_cannot_bind_old_timings(self):
+        checkout=self.checkout('LF')
+        source=checkout/'results/native-executed-src/optimizer.py'
+        original=source.read_bytes()
+        source.write_bytes(original+b'\n# changed consumed implementation\n')
+        with self.assertRaisesRegex(ReconciliationError,'execution source/input changed'):
+            verify(self.evidence,artifact_root=checkout)
+        source.unlink()
+        with self.assertRaisesRegex(ReconciliationError,'execution source/input changed'):
+            verify(self.evidence,artifact_root=checkout)
 
     def test_declared_lf_and_crlf_checkouts_reconcile_offline(self):
         for style in ('LF', 'CRLF'):

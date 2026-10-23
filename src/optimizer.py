@@ -17,6 +17,10 @@ def _support_query(lo, hi, total, maxsize=4096):
     return query
 
 def optimize(inst, pruning='contract'):
+    if type(inst.get('n')) is not int or not 2 <= inst['n'] <= 8:
+        raise ValueError('unsupported relation count; expected an integer in 2..8')
+    if pruning not in ('contract', 'component', 'none'):
+        raise ValueError('unknown pruning policy')
     n,lo,hi,N=inst['n'],inst['lower'],inst['upper'],inst['total']
     h=block_profile(inst); k=len(lo); front={}; profile={}; coverage={}
     calls=0
@@ -36,9 +40,10 @@ def optimize(inst, pruning='contract'):
         for a,b in cuts(s,inst['edges']):
             for i,p in enumerate(front[a]):
                 for j,q in enumerate(front[b]):
+                    if len(ex) >= 50000:
+                        raise ValueError('state expansion limit exceeded')
                     ex.append((a,b,i,j,(p,q),add(profile[a][i],profile[b][j],h[s])))
         expansions+=len(ex)
-        if len(ex)>50000: raise ValueError('state expansion limit exceeded')
         unique={}
         for *_,p,c in sorted(ex,key=lambda row:key(row[4])): unique.setdefault(c,p)
         kept=[]

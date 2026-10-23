@@ -1,0 +1,32 @@
+{
+  "accepted": 9,
+  "cases": 18,
+  "certificate_bytes": {
+    "max": 108784,
+    "median": 11150,
+    "min": 7121,
+    "p90": 50429
+  },
+  "checker_cpu_ns": {
+    "max": 296875000,
+    "median": 109375000
+  },
+  "max_accepted_relations": 8,
+  "oracle_boundary": "No exhaustive oracle is run by this driver. n>8 is unsupported, not certified scaling evidence.",
+  "producer_cpu_ns": {
+    "max": 453125000,
+    "median": 15625000
+  },
+  "relation_counts": [
+    8,
+    10
+  ],
+  "schema": "bounded-admission-sweep",
+  "shapes": [
+    "branch",
+    "path",
+    "star"
+  ],
+  "timing_scope": "Single-process CPU observations on the reproduction host; not a latency or throughput claim.",
+  "unsupported": 9
+}

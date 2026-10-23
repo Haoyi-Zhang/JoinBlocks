@@ -42,6 +42,11 @@ jobs:
             python -B reuse_experiment.py --output scientific-reuse --repeats 1 > raw-output/reuse.stdout 2> raw-output/reuse.stderr
             python -B full_reproduction.py --output scientific-output > raw-output/reproduction.stdout 2> raw-output/reproduction.stderr
           '
+      - name: Check the complete bounded admission sweep and unchanged non-timing packets
+        run: |
+          python -B scaling_campaign.py --output scientific-admission --relations 8 10 --templates 4 6 8
+          python -B compare_scaling.py results/admission-sweep scientific-admission
+          python -B -O -m unittest regressions.test_optimizer_budgets regressions.test_scaling_campaign -v
       - name: Upload raw attempts and partial or completed scientific outputs
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
@@ -51,5 +56,6 @@ jobs:
             raw-output/
             scientific-output/
             scientific-reuse/
+            scientific-admission/
           if-no-files-found: warn
           retention-days: 14
